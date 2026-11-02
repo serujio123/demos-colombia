@@ -15,7 +15,7 @@ https://trabajoso-two.vercel.app/san_pedro_veterinaria_mty/propuesta.html
 Funcionalidades clave incluidas:
 - Ubicación privilegiada sobre Av. Vasconcelos en San Pedro Garza García.
 - Especialistas en traumatología, cardiología, oncología y medicina felina.
-- Reserva de citas digital con enlace directo a WhatsApp.
+- Reserva de citas digital con enlace directo al consultorio.
 - Galería de instalaciones hospitalarias y pacientes recuperados.
 - CMS intuitivo para editar promociones, servicios y médicos de guardia.
 
@@ -25,7 +25,7 @@ Propuesta de Inversión:
 - Dominio corporativo: $550 MXN / año (.com / .mx) (pago directo al proveedor)
 Total estimado primer año: $14.550 MXN
 
-Si les parece oportuno revisar los detalles, ¿les gustaría que conversemos cinco minutos por WhatsApp?
+Si les parece oportuno revisar los detalles, ¿les gustaría que conversemos respondiendo directamente a este correo?
 
 Atentamente,
 

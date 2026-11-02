@@ -15,7 +15,7 @@ https://trabajoso-two.vercel.app/oftalmologia_pereira_clinica/propuesta.html
 Funcionalidades clave incluidas:
 - Ubicación de fácil acceso sobre la Avenida Circunvalar en Pereira.
 - Tecnología láser de microincisión y topografía corneal de alta definición.
-- Reserva de citas médicas en línea conectada al WhatsApp del consultorio.
+- Reserva de citas médicas en línea conectada al consultorio.
 - Testimonios y casos de éxito de pacientes que recuperaron su visión.
 - Panel CMS amigable para administrar servicios, médicos y horarios.
 
@@ -25,7 +25,7 @@ Propuesta de Inversión:
 - Dominio corporativo: $55.000 COP / año (.com.co / .com) (pago directo al proveedor)
 Total estimado primer año: $1.095.000 COP
 
-Si les parece oportuno revisar los detalles, ¿les gustaría que conversemos cinco minutos por WhatsApp?
+Si les parece oportuno revisar los detalles, ¿les gustaría que conversemos respondiendo directamente a este correo?
 
 Atentamente,
 

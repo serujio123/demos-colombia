@@ -15,7 +15,7 @@ https://trabajoso-two.vercel.app/clinica_gastroenterologia_bogota/propuesta.html
 Funcionalidades clave incluidas:
 - Ubicación en zona médica de Santa Bárbara (Usaquén, Bogotá).
 - Especialistas miembros de la Asociación Colombiana de Gastroenterología.
-- Formulario de solicitud de citas con confirmación inmediata a WhatsApp.
+- Formulario de solicitud de citas con confirmación inmediata al consultorio.
 - Guías de preparación para procedimientos y entrega de resultados.
 - Panel CMS interactivo para actualización instantánea de médicos y servicios.
 
@@ -25,7 +25,7 @@ Propuesta de Inversión:
 - Dominio corporativo: $55.000 COP / año (.com.co / .com) (pago directo al proveedor)
 Total estimado primer año: $1.095.000 COP
 
-Si les parece oportuno revisar los detalles, ¿les gustaría que conversemos cinco minutos por WhatsApp?
+Si les parece oportuno revisar los detalles, ¿les gustaría que conversemos respondiendo directamente a este correo?
 
 Atentamente,
 

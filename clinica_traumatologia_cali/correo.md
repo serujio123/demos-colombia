@@ -15,7 +15,7 @@ https://trabajoso-two.vercel.app/clinica_traumatologia_cali/propuesta.html
 Funcionalidades clave incluidas:
 - Ubicación en el polo médico de Tequendama sobre la Calle 5B en Cali.
 - Equipo de cirujanos ortopedistas con amplia trayectoria en alta complejidad.
-- Formulario de citas rápido con validación inmediata por WhatsApp.
+- Formulario de citas rápido con validación inmediata por correo o formulario.
 - Galería de casos de recuperación de movilidad y testimonios de pacientes.
 - Panel CMS interactivo para actualización instantánea de contenidos y horarios.
 
@@ -25,7 +25,7 @@ Propuesta de Inversión:
 - Dominio corporativo: $55.000 COP / año (.com.co / .com) (pago directo al proveedor)
 Total estimado primer año: $1.135.000 COP
 
-Si les parece oportuno revisar los detalles, ¿les gustaría que conversemos cinco minutos por WhatsApp?
+Si les parece oportuno revisar los detalles, ¿les gustaría que conversemos respondiendo directamente a este correo?
 
 Atentamente,
 

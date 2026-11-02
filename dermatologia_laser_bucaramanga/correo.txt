@@ -15,7 +15,7 @@ https://trabajoso-two.vercel.app/dermatologia_laser_bucaramanga/propuesta.html
 Funcionalidades clave incluidas:
 - Consultorio exclusivo en el sector de Cabecera del Llano (Bucaramanga).
 - Médicos dermatólogos miembros de la Sociedad Colombiana de Dermatología.
-- Agendamiento de valoraciones online con enlace directo a WhatsApp.
+- Agendamiento de valoraciones online con enlace directo al consultorio.
 - Galería de casos clínicos de piel recuperada y tratamientos estéticos.
 - CMS intuitivo para editar tratamientos, precios y artículos de salud cutánea.
 
@@ -25,7 +25,7 @@ Propuesta de Inversión:
 - Dominio corporativo: $55.000 COP / año (.com.co / .com) (pago directo al proveedor)
 Total estimado primer año: $1.065.000 COP
 
-Si les parece oportuno revisar los detalles, ¿les gustaría que conversemos cinco minutos por WhatsApp?
+Si les parece oportuno revisar los detalles, ¿les gustaría que conversemos respondiendo directamente a este correo?
 
 Atentamente,
 

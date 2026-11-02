@@ -25,7 +25,7 @@ Propuesta de Inversión:
 - Dominio corporativo: 28 € EUR / año (.es / .com) (pago directo al proveedor)
 Total estimado primer año: 633 € EUR
 
-Si les parece oportuno revisar los detalles, ¿les gustaría que conversemos cinco minutos por WhatsApp?
+Si les parece oportuno revisar los detalles, ¿les gustaría que conversemos respondiendo directamente a este correo?
 
 Atentamente,
 

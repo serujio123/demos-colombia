@@ -15,7 +15,7 @@ https://trabajoso-two.vercel.app/rehabilitacion_oral_poblado_med/propuesta.html
 Funcionalidades clave incluidas:
 - Ubicación estratégica sobre la Milla de Oro en El Poblado.
 - Escaneo digital 3D intraoral y diseño de sonrisa asistido por computadora.
-- Módulo de citas en línea con confirmación directa a WhatsApp del paciente.
+- Módulo de citas en línea con confirmación directa de la solicitud de la cita.
 - Galería de casos clínicos de antes y después con autorización de pacientes.
 - Panel CMS autogestionable para actualizar promociones y casos exitosos.
 
@@ -25,7 +25,7 @@ Propuesta de Inversión:
 - Dominio corporativo: $55.000 COP / año (.com.co / .com) (pago directo al proveedor)
 Total estimado primer año: $1.135.000 COP
 
-Si les parece oportuno revisar los detalles, ¿les gustaría que conversemos cinco minutos por WhatsApp?
+Si les parece oportuno revisar los detalles, ¿les gustaría que conversemos respondiendo directamente a este correo?
 
 Atentamente,
 

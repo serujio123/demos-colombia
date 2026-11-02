@@ -15,7 +15,7 @@ https://trabajoso-two.vercel.app/brickell_cosmetic_dentistry_miami/propuesta.htm
 Key Features Included:
 - Prestigious location on Brickell Avenue in Miami.
 - State-of-the-art 3D digital smile simulation and metal-free restorations.
-- Fast mobile-friendly booking portal with direct WhatsApp/SMS integration.
+- Fast mobile-friendly booking portal with direct email and online booking.
 - High-definition patient transformation smile gallery.
 - Comprehensive CMS enabling effortless edits to services and promotions.
 
@@ -25,7 +25,7 @@ Investment Overview:
 - Custom Domain Name: $18 USD / year (.com) (direct provider billing)
 Estimated Year 1 Total: $683 USD
 
-Would you be open to a 5-minute conversation or WhatsApp chat to see how we can customize this for your team?
+If you would like to discuss this proposal, please feel free to reply directly to this email.
 
 Best regards,
 

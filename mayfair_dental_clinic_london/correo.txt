@@ -25,7 +25,7 @@ Investment Overview:
 - Custom Domain Name: £22 GBP / year (.co.uk / .com) (direct provider billing)
 Estimated Year 1 Total: £637 GBP
 
-Would you be open to a 5-minute conversation or WhatsApp chat to see how we can customize this for your team?
+If you would like to discuss this proposal, please feel free to reply directly to this email.
 
 Best regards,
 

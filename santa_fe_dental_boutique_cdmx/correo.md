@@ -15,7 +15,7 @@ https://trabajoso-two.vercel.app/santa_fe_dental_boutique_cdmx/propuesta.html
 Funcionalidades clave incluidas:
 - Ubicación de prestigio sobre Av. Santa Fe en el corporativo de Cuajimalpa.
 - Escáner 3D intraoral de última generación y diseño digital de sonrisa.
-- Agendamiento ágil desde celular con confirmación inmediata por WhatsApp.
+- Agendamiento ágil desde celular con confirmación inmediata por correo o formulario.
 - Galería exclusiva de antes y después de casos clínicos de alta estética.
 - Panel CMS interactivo para actualización instantánea de contenidos y tarifas.
 
@@ -25,7 +25,7 @@ Propuesta de Inversión:
 - Dominio corporativo: $550 MXN / año (.com / .mx) (pago directo al proveedor)
 Total estimado primer año: $15.250 MXN
 
-Si les parece oportuno revisar los detalles, ¿les gustaría que conversemos cinco minutos por WhatsApp?
+Si les parece oportuno revisar los detalles, ¿les gustaría que conversemos respondiendo directamente a este correo?
 
 Atentamente,
 
