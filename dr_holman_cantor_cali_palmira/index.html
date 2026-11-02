@@ -1,0 +1,1457 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clínica Odontológica Dr. Holman Cantor — Sitio Web Oficial | Cali y Palmira, Valle del Cauca (Tequendama)</title>
+  <meta name="description" content="Sitio web oficial de Clínica Odontológica Dr. Holman Cantor en Cali y Palmira, Valle del Cauca (Tequendama). Catálogo en línea, promociones, ubicación y pedidos directos por WhatsApp.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans + Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome 6.5.1 CDN Vector Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    :root {
+      --primary: #0284c7;
+      --primary-dark: #0f172a;
+      --accent: #0369a1;
+      --accent-light: #075985;
+      --text-main: #1f2937;
+      --text-muted: #64748b;
+      --bg: #ffffff;
+      --bg-alt: #f8fafc;
+      --radius: 18px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: var(--text-main);
+      background: var(--bg);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    
+    /* Barra Superior SAIS Gallego (Sin fuga de competidores) */
+    .agency-bar {
+      background: #0f172a;
+      color: #94a3b8;
+      font-size: 13px;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      border-bottom: 1px solid #1e293b;
+    }
+    .agency-badge {
+      background: var(--primary);
+      color: #fff;
+      padding: 3px 10px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    
+    /* Barra de Administración CMS (Visible al autenticarse) */
+    #admin-bar {
+      display: none;
+      background: #047857;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 13px;
+      position: sticky;
+      top: 0;
+      z-index: 2000;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
+    .admin-bar-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .admin-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+    .btn-admin {
+      background: rgba(255,255,255,0.2);
+      border: 1px solid rgba(255,255,255,0.4);
+      color: #fff;
+      padding: 6px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 600;
+      transition: 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .btn-admin:hover { background: rgba(255,255,255,0.35); }
+    .btn-admin-danger { background: #ef4444; border-color: #dc2626; }
+
+    /* Encabezado Principal */
+    header {
+      background: #ffffff;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      transition: top 0.3s;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 0;
+    }
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 23px;
+      font-weight: 800;
+      color: var(--primary);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: opacity 0.2s;
+    }
+    .logo:hover { opacity: 0.9; }
+    .logo i {
+      font-size: 22px;
+      color: var(--primary);
+    }
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      list-style: none;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-main);
+      font-weight: 600;
+      font-size: 14px;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--primary); }
+    
+    .nav-buttons { display: flex; align-items: center; gap: 12px; }
+    .btn-login {
+      background: #f1f5f9;
+      color: #334155;
+      border: 1px solid #cbd5e1;
+      padding: 8px 16px;
+      border-radius: 50px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn-login:hover { background: #e2e8f0; color: #0f172a; }
+    .btn-whatsapp-header {
+      background: #25d366;
+      color: #fff;
+      text-decoration: none;
+      padding: 9px 18px;
+      border-radius: 50px;
+      font-size: 13px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: 0.2s;
+      box-shadow: 0 4px 12px rgba(37,211,102,0.25);
+    }
+    .btn-whatsapp-header:hover { filter: brightness(1.1); transform: translateY(-1px); }
+
+    /* Carrusel Hero */
+    .carousel-section {
+      position: relative;
+      background: #0f172a;
+      overflow: hidden;
+    }
+    .carousel-track {
+      display: flex;
+      transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+      width: 300%;
+    }
+    .carousel-slide {
+      width: 100%;
+      min-height: 540px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      background-size: cover;
+      background-position: center;
+    }
+    .carousel-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(15,23,42,0.88) 0%, rgba(15,23,42,0.55) 60%, rgba(15,23,42,0.25) 100%);
+    }
+    .carousel-content {
+      position: relative;
+      z-index: 10;
+      max-width: 680px;
+      padding: 60px 0;
+      color: #fff;
+    }
+    .slide-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--accent);
+      color: #fff;
+      padding: 5px 14px;
+      border-radius: 50px;
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 16px;
+    }
+    .carousel-content h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(32px, 5vw, 46px);
+      line-height: 1.2;
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+    .carousel-content p {
+      font-size: 17px;
+      color: #e2e8f0;
+      margin-bottom: 28px;
+      line-height: 1.5;
+    }
+    .carousel-btn {
+      background: var(--primary);
+      color: #fff;
+      text-decoration: none;
+      padding: 13px 30px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 14px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: 0.2s;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+    .carousel-btn:hover { filter: brightness(1.15); transform: translateY(-2px); }
+    
+    .carousel-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 20;
+      background: rgba(255,255,255,0.2);
+      backdrop-filter: blur(4px);
+      color: #fff;
+      border: none;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      transition: 0.2s;
+    }
+    .carousel-arrow:hover { background: rgba(255,255,255,0.45); }
+    .arrow-prev { left: 20px; }
+    .arrow-next { right: 20px; }
+    .carousel-dots {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 8px;
+      z-index: 20;
+    }
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.4);
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .dot.active { background: #fff; width: 30px; border-radius: 10px; }
+
+    /* Secciones Generales */
+    section { padding: 75px 0; }
+    .section-header { text-align: center; margin-bottom: 45px; }
+    .section-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--accent-light);
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 12px;
+      padding: 5px 14px;
+      border-radius: 50px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      letter-spacing: 0.5px;
+    }
+    .section-header h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      color: var(--primary-dark);
+      font-weight: 800;
+    }
+    .section-header p {
+      color: var(--text-muted);
+      font-size: 16px;
+      margin-top: 8px;
+      max-width: 650px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* SECCIÓN 1: MENÚ DEL DÍA / ESPECIALES */
+    .bg-menu-dia {
+      background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .menu-dia-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+      gap: 30px;
+    }
+    .menu-dia-card {
+      background: #fff;
+      border-radius: var(--radius);
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.04);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+    .menu-dia-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 35px rgba(0,0,0,0.08);
+      border-color: var(--primary);
+    }
+    .menu-dia-badge {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      z-index: 5;
+      background: var(--accent);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 5px 12px;
+      border-radius: 30px;
+      text-transform: uppercase;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .menu-dia-img-wrap {
+      overflow: hidden;
+      height: 230px;
+      position: relative;
+    }
+    .menu-dia-img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+    .menu-dia-card:hover .menu-dia-img {
+      transform: scale(1.06);
+    }
+    .menu-dia-body {
+      padding: 24px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .menu-dia-body h3 {
+      font-size: 20px;
+      color: var(--primary-dark);
+      font-weight: 800;
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }
+    .menu-dia-body p {
+      color: var(--text-muted);
+      font-size: 14px;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+    .menu-dia-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px dashed #e2e8f0;
+      padding-top: 16px;
+    }
+    .menu-dia-price {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--primary);
+    }
+    .btn-order-wa {
+      background: #25d366;
+      color: #fff;
+      text-decoration: none;
+      padding: 9px 18px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 13px;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      transition: 0.2s;
+    }
+    .btn-order-wa:hover { filter: brightness(1.1); transform: translateY(-1px); }
+
+    /* SECCIÓN 2: LA CARTA COMPLETA */
+    .bg-carta { background: #ffffff; }
+    .carta-controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 35px;
+    }
+    .carta-tabs {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      list-style: none;
+    }
+    .tab-btn {
+      background: #f1f5f9;
+      border: 1px solid #e2e8f0;
+      color: #475569;
+      padding: 8px 18px;
+      border-radius: 50px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .tab-btn.active, .tab-btn:hover {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+    
+    .search-box {
+      position: relative;
+      display: inline-block;
+    }
+    .search-box .search-icon {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #94a3b8;
+      font-size: 14px;
+    }
+    .search-input {
+      padding: 10px 18px 10px 40px;
+      border-radius: 50px;
+      border: 1px solid #cbd5e1;
+      font-size: 14px;
+      outline: none;
+      width: 270px;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .search-input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px var(--accent-light);
+    }
+    
+    .carta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 24px;
+    }
+    .carta-item {
+      background: #fff;
+      border-radius: var(--radius);
+      border: 1px solid #e2e8f0;
+      overflow: hidden;
+      display: flex;
+      transition: 0.25s;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+      position: relative;
+    }
+    .carta-item:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.06);
+      border-color: #cbd5e1;
+    }
+    .carta-item-img {
+      width: 130px;
+      min-height: 130px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    .carta-item-content {
+      padding: 16px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .carta-item-cat {
+      font-size: 11px;
+      text-transform: uppercase;
+      font-weight: 800;
+      color: var(--primary);
+      letter-spacing: 0.5px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .carta-item-content h4 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #0f172a;
+      margin: 4px 0 6px;
+      line-height: 1.3;
+    }
+    .carta-item-content p {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+    .carta-item-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .carta-price {
+      font-size: 15px;
+      font-weight: 800;
+      color: var(--primary-dark);
+    }
+    .btn-order-mini {
+      background: #f0fdf4;
+      color: #16a34a;
+      border: 1px solid #bbf7d0;
+      text-decoration: none;
+      padding: 5px 12px;
+      border-radius: 30px;
+      font-size: 12px;
+      font-weight: 700;
+      transition: 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .btn-order-mini:hover { background: #16a34a; color: #fff; }
+
+    /* SECCIÓN UBICACIÓN Y MAPA GOOGLE */
+    .bg-mapa { background: #f8fafc; border-top: 1px solid #e2e8f0; }
+    .mapa-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.3fr;
+      gap: 35px;
+      align-items: center;
+    }
+    @media (max-width: 850px) {
+      .mapa-layout { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+    }
+    .mapa-card {
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 35px;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    }
+    .mapa-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 26px;
+      color: var(--primary-dark);
+      margin-bottom: 12px;
+    }
+    .info-list { list-style: none; margin: 20px 0 25px; }
+    .info-list li {
+      display: flex;
+      gap: 14px;
+      margin-bottom: 16px;
+      font-size: 14px;
+      color: #334155;
+    }
+    .info-icon {
+      font-size: 18px;
+      color: var(--primary);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .map-frame-box {
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+      border: 1px solid #cbd5e1;
+      height: 380px;
+    }
+    .map-frame-box iframe { width: 100%; height: 100%; border: 0; display: block; }
+
+    /* BOTÓN FLOTANTE WHATSAPP CON PULSO */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #25d366;
+      color: #fff;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+      z-index: 999;
+      text-decoration: none;
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.12);
+      box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+    }
+
+    /* MODAL DE LOGIN */
+    .modal-backdrop {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(15,23,42,0.65);
+      backdrop-filter: blur(4px);
+      z-index: 3000;
+      align-items: center;
+      justify-content: center;
+    }
+    .modal-box {
+      background: #fff;
+      border-radius: 20px;
+      width: 90%;
+      max-width: 440px;
+      padding: 35px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+      position: relative;
+      animation: popIn 0.3s ease;
+    }
+    @keyframes popIn { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
+    .modal-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: none;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+      color: #64748b;
+    }
+    .modal-box h3 {
+      font-size: 22px;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .modal-box p { font-size: 13px; color: #64748b; margin-bottom: 24px; }
+    .form-group { margin-bottom: 16px; }
+    .form-group label {
+      display: block;
+      font-size: 13px;
+      font-weight: 700;
+      color: #334155;
+      margin-bottom: 6px;
+    }
+    .form-control {
+      width: 100%;
+      padding: 11px 14px;
+      border: 1px solid #cbd5e1;
+      border-radius: 10px;
+      font-size: 14px;
+      outline: none;
+    }
+    .form-control:focus { border-color: var(--primary); }
+    .btn-submit {
+      width: 100%;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      padding: 13px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 15px;
+      cursor: pointer;
+      transition: 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+    .btn-submit:hover { filter: brightness(1.1); }
+    .btn-demo-quick {
+      width: 100%;
+      background: #eff6ff;
+      color: #2563eb;
+      border: 1px solid #bfdbfe;
+      padding: 11px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 14px;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+    .btn-demo-quick:hover { background: #dbeafe; }
+    .editor-modal-box { max-width: 520px; }
+
+    /* TOAST NOTIFICACIÓN */
+    .toast {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: #0f172a;
+      color: #fff;
+      padding: 14px 28px;
+      border-radius: 50px;
+      font-size: 14px;
+      font-weight: 600;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      z-index: 4000;
+      opacity: 0;
+      transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .toast.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    footer {
+      background: #090d16;
+      border-top: 1px solid #1e293b;
+      padding: 40px 0;
+      text-align: center;
+      color: #94a3b8;
+      font-size: 14px;
+    }
+    footer a { color: #38bdf8; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <!-- Barra Superior SAIS Gallego -->
+  <div class="agency-bar">
+    <div>
+      <span class="agency-badge"><i class="fa-solid fa-code"></i> SAIS Gallego CMS</span>
+      <span>Demostración de Sitio Web para: <strong>Clínica Odontológica Dr. Holman Cantor</strong> en Cali y Palmira, Valle del Cauca (Tequendama)</span>
+    </div>
+    <div>
+      <span style="font-size: 12px; color: #94a3b8; font-weight: 600;">
+        <i class="fa-solid fa-shield-halved"></i> Demostración Exclusiva · Acceso Privado
+      </span>
+    </div>
+  </div>
+
+  <!-- Barra de Administración CMS (Visible al autenticarse) -->
+  <div id="admin-bar">
+    <div class="admin-bar-content">
+      <div>
+        <i class="fa-solid fa-sliders"></i> Modo Administrador Activo · <strong>Editor en Tiempo Real</strong>
+      </div>
+      <div class="admin-actions">
+        <button class="btn-admin" onclick="openAddModal('menuDia')"><i class="fa-solid fa-plus"></i> Añadir a Especiales</button>
+        <button class="btn-admin" onclick="openAddModal('carta')"><i class="fa-solid fa-plus"></i> Añadir a Carta</button>
+        <button class="btn-admin" onclick="openBizModal()"><i class="fa-solid fa-pen-to-square"></i> Editar Datos Negocio</button>
+        <button class="btn-admin" onclick="resetToDefaults()"><i class="fa-solid fa-rotate-left"></i> Restaurar</button>
+        <button class="btn-admin btn-admin-danger" onclick="logoutAdmin()"><i class="fa-solid fa-right-from-bracket"></i> Salir</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Encabezado Principal -->
+  <header>
+    <div class="container nav">
+      <a href="#inicio" class="logo" id="header-biz-name">
+        <i class="fa-solid fa-tooth"></i> Clínica Odontológica Dr. Holman Cantor
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#menu-del-dia">Especiales</a></li>
+        <li><a href="#la-carta">Carta Completa</a></li>
+        <li><a href="#ubicacion">Ubicación</a></li>
+      </ul>
+
+      <div class="nav-buttons">
+        <button class="btn-login" onclick="openLoginModal()">
+          <i class="fa-solid fa-lock"></i> Acceso CMS
+        </button>
+        <a href="https://wa.me/57573164459821?text=Hola,%20los%20contacto%20desde%20su%20sitio%20web" target="_blank" class="btn-whatsapp-header" id="btn-wa-header">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Carrusel Hero Interactivo -->
+  <section class="carousel-section" id="inicio">
+    <div class="carousel-track" id="carousel-track">
+      <!-- Los slides se inyectan dinámicamente -->
+    </div>
+    <button class="carousel-arrow arrow-prev" onclick="prevSlide()"><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="carousel-arrow arrow-next" onclick="nextSlide()"><i class="fa-solid fa-chevron-right"></i></button>
+    <div class="carousel-dots" id="carousel-dots"></div>
+  </section>
+
+  <!-- SECCIÓN 1: EL MENÚ DEL DÍA / ESPECIALES -->
+  <section class="bg-menu-dia" id="menu-del-dia">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge"><i class="fa-solid fa-star"></i> Recomendados & Promociones</span>
+        <h2>Especiales & Menú del Día</h2>
+        <p>Las mejores opciones seleccionadas para hoy. Pide de forma rápida y directa a nuestro WhatsApp sin intermediarios.</p>
+      </div>
+      <div class="menu-dia-grid" id="menu-dia-container">
+        <!-- Renderizado dinámicamente -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 2: LA CARTA COMPLETA -->
+  <section class="bg-carta" id="la-carta">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge"><i class="fa-solid fa-layer-group"></i> Variedad & Calidad</span>
+        <h2>Nuestra Carta Completa</h2>
+        <p>Explora cada una de nuestras categorías, conoce los detalles e ingredientes y ordena lo que más se te antoje.</p>
+      </div>
+
+      <div class="carta-controls">
+        <ul class="carta-tabs" id="carta-tabs">
+          <!-- Pestañas de categorías inyectadas por JS -->
+        </ul>
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" class="search-input" id="search-input" placeholder="Buscar plato o producto..." onkeyup="filterCarta()">
+        </div>
+      </div>
+
+      <div class="carta-grid" id="carta-container">
+        <!-- Platos de la carta inyectados por JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 3: UBICACIÓN Y MAPA INTERACTIVO -->
+  <section class="bg-mapa" id="ubicacion">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge"><i class="fa-solid fa-location-dot"></i> Punto Físico en Colombia</span>
+        <h2>Encuéntranos Fácilmente</h2>
+        <p>Estamos ubicados en una zona estratégica de Colombia para brindarte la mejor atención presencial y despachos a domicilio.</p>
+      </div>
+
+      <div class="mapa-layout">
+        <div class="mapa-card">
+          <h3 id="info-biz-title">Clínica Odontológica Dr. Holman Cantor</h3>
+          <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 16px;">Ven a vivir la experiencia o comunícate con nosotros para cualquier pedido o cotización.</p>
+          <ul class="info-list">
+            <li>
+              <span class="info-icon"><i class="fa-solid fa-location-dot"></i></span>
+              <div>
+                <strong>Dirección:</strong><br>
+                <span id="info-biz-address">Cra. 38 #5B-28, Tequendama, Cali, Valle</span>
+              </div>
+            </li>
+            <li>
+              <span class="info-icon"><i class="fa-solid fa-clock"></i></span>
+              <div>
+                <strong>Horario de Atención:</strong><br>
+                <span>Lunes a Sábado: 8:00 AM – 9:00 PM<br>Domingos y Festivos: 10:00 AM – 8:00 PM</span>
+              </div>
+            </li>
+            <li>
+              <span class="info-icon"><i class="fa-solid fa-phone"></i></span>
+              <div>
+                <strong>Línea de Pedidos / WhatsApp:</strong><br>
+                <span id="info-biz-phone">+57 316 445 9821</span>
+              </div>
+            </li>
+          </ul>
+          <a href="https://maps.google.com/?q=Carrera+38+5B-28%2C+Cali%2C+Colombia" target="_blank" class="carousel-btn" style="width: 100%; justify-content: center; padding: 12px; font-size: 14px;">
+            <i class="fa-solid fa-map-location-dot"></i> Abrir en Google Maps Móvil
+          </a>
+        </div>
+
+        <div class="map-frame-box">
+          <iframe id="map-iframe" src="https://maps.google.com/maps?q=Carrera+38+5B-28%2C+Cali%2C+Colombia&t=&z=16&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Botón Flotante WhatsApp -->
+  <a href="https://wa.me/57573164459821?text=Hola,%20los%20contacto%20desde%20su%20p%C3%A1gina%20web" class="whatsapp-float" target="_blank" id="wa-float" title="Pedir por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- MODAL INICIAR SESIÓN -->
+  <div class="modal-backdrop" id="login-modal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeLoginModal()"><i class="fa-solid fa-xmark"></i></button>
+      <h3><i class="fa-solid fa-lock"></i> Acceso Administrador</h3>
+      <p>Inicia sesión para ingresar al panel de edición y modificar la Carta, el Menú y los precios en vivo.</p>
+      
+      <form onsubmit="handleLogin(event)">
+        <div class="form-group">
+          <label>Usuario:</label>
+          <input type="text" id="login-user" class="form-control" placeholder="admin" value="admin" required>
+        </div>
+        <div class="form-group">
+          <label>Contraseña:</label>
+          <input type="password" id="login-pass" class="form-control" placeholder="1234" value="1234" required>
+        </div>
+        <button type="submit" class="btn-submit"><i class="fa-solid fa-right-to-bracket"></i> Ingresar al Editor CMS</button>
+      </form>
+      <button class="btn-demo-quick" onclick="quickLoginDemo()"><i class="fa-solid fa-bolt"></i> Ingreso Rápido Demo (1 Clic)</button>
+    </div>
+  </div>
+
+  <!-- MODAL EDITAR DATOS DEL NEGOCIO -->
+  <div class="modal-backdrop" id="biz-modal">
+    <div class="modal-box editor-modal-box">
+      <button class="modal-close" onclick="closeBizModal()"><i class="fa-solid fa-xmark"></i></button>
+      <h3><i class="fa-solid fa-pen-to-square"></i> Editar Datos del Negocio</h3>
+      <p>Modifica el nombre, número de WhatsApp y dirección física.</p>
+      <div class="form-group">
+        <label>Nombre del Negocio:</label>
+        <input type="text" id="edit-biz-name" class="form-control">
+      </div>
+      <div class="form-group">
+        <label>Teléfono WhatsApp (sin espacios ni signos):</label>
+        <input type="text" id="edit-biz-phone" class="form-control" placeholder="573164459821">
+      </div>
+      <div class="form-group">
+        <label>Teléfono Visible:</label>
+        <input type="text" id="edit-biz-phone-display" class="form-control" placeholder="+57 316 445 9821">
+      </div>
+      <div class="form-group">
+        <label>Dirección Física en Colombia:</label>
+        <input type="text" id="edit-biz-address" class="form-control">
+      </div>
+      <button class="btn-submit" onclick="saveBusinessInfo()"><i class="fa-solid fa-floppy-disk"></i> Guardar Información</button>
+    </div>
+  </div>
+
+  <!-- MODAL AÑADIR/EDITAR ÍTEM -->
+  <div class="modal-backdrop" id="item-modal">
+    <div class="modal-box editor-modal-box">
+      <button class="modal-close" onclick="closeItemModal()"><i class="fa-solid fa-xmark"></i></button>
+      <h3 id="item-modal-title"><i class="fa-solid fa-plus"></i> Añadir Ítem</h3>
+      <p id="item-modal-desc">Completa los campos para publicar o editar en tu página web.</p>
+      
+      <input type="hidden" id="item-target-type">
+      <input type="hidden" id="item-edit-index">
+
+      <div class="form-group">
+        <label>Título del Plato o Servicio:</label>
+        <input type="text" id="item-title" class="form-control" required>
+      </div>
+      <div class="form-group" id="group-item-cat">
+        <label>Categoría (para La Carta):</label>
+        <input type="text" id="item-cat" class="form-control" placeholder="Ej: Platos Fuertes, Bebidas, etc.">
+      </div>
+      <div class="form-group" id="group-item-badge">
+        <label>Distintivo / Badge (para Menú del Día):</label>
+        <input type="text" id="item-badge" class="form-control" placeholder="Ej: Plato del Día, 2x1, Recomendado">
+      </div>
+      <div class="form-group">
+        <label>Precio (COP):</label>
+        <input type="text" id="item-price" class="form-control" placeholder="Ej: $25.000 COP" required>
+      </div>
+      <div class="form-group">
+        <label>Descripción / Ingredientes:</label>
+        <textarea id="item-desc" class="form-control" rows="3" required></textarea>
+      </div>
+      <div class="form-group">
+        <label>URL de la Imagen (Unsplash u otra):</label>
+        <input type="text" id="item-img" class="form-control" placeholder="https://images.unsplash.com/..." required>
+      </div>
+      <button class="btn-submit" onclick="saveItem()"><i class="fa-solid fa-floppy-disk"></i> Guardar Ítem</button>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICACIÓN -->
+  <div class="toast" id="toast">
+    <i class="fa-solid fa-circle-check" style="color: #4ade80;"></i>
+    <span id="toast-text">¡Cambios guardados con éxito en tu página web!</span>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2026 Clínica Odontológica Dr. Holman Cantor. Todos los derechos reservados · Cali y Palmira, Valle del Cauca (Tequendama).</p>
+      <p style="margin-top: 6px;">Propuesta y CMS desarrollado por <a href="https://github.com/serujio123" target="_blank">SAIS Gallego</a> · serujio28@gmail.com</p>
+    </div>
+  </footer>
+
+  <!-- Lógica JavaScript Dinámica y CMS -->
+  <script>
+    const INITIAL_BIZ = {"id": "dr_holman_cantor_cali_palmira", "name": "Clínica Odontológica Dr. Holman Cantor", "tagline": "", "phone": "573164459821", "phone_display": "+57 316 445 9821", "address": "Cra. 38 #5B-28, Tequendama, Cali, Valle", "map_query": "Carrera 38 5B-28, Cali, Colombia", "primary_color": "#0284c7", "icon_class": "fa-solid fa-tooth", "city_region": "Cali y Palmira, Valle del Cauca (Tequendama)", "city_short": "Colombia"};
+    const INITIAL_CAROUSEL = [{"badge": "DISEÑO DE SONRISA · CALI & PALMIRA", "title": "Diseño de Sonrisa & Odontología Estética en el Valle", "subtitle": "Atención especializada en Cali (Tequendama) y Palmira para lograr una sonrisa radiante y saludable.", "img": "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=700&q=80"}, {"badge": "Carillas", "title": "Carillas Cerámicas Libres de Desgaste", "subtitle": "Porcelana pura que no cambia de color con alimentos oscuros.", "img": "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=700&q=80"}, {"badge": "Láser", "title": "Blanqueamiento Dental Láser en Consultorio", "subtitle": "Sonrisa visiblemente más blanca en 45 minutos de tratamiento.", "img": "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=700&q=80"}];
+    const INITIAL_MENU_DIA = [{"badge": "Sonrisa", "title": "Diseño de Sonrisa en Resina de Alta Estética", "desc": "Cambio de forma, brillo y longitud dental con materiales de alta gama.", "price": "$780.000 COP", "img": "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=700&q=80"}, {"badge": "Carillas", "title": "Carillas Cerámicas Libres de Desgaste", "desc": "Porcelana pura que no cambia de color con alimentos oscuros.", "price": "$1.150.000 / pieza", "img": "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=700&q=80"}, {"badge": "Láser", "title": "Blanqueamiento Dental Láser en Consultorio", "desc": "Sonrisa visiblemente más blanca en 45 minutos de tratamiento.", "price": "$390.000 COP", "img": "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=700&q=80"}];
+    const INITIAL_CARTA = [{"badge": "Sonrisa", "title": "Diseño de Sonrisa en Resina de Alta Estética", "desc": "Cambio de forma, brillo y longitud dental con materiales de alta gama.", "price": "$780.000 COP", "img": "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=700&q=80"}, {"badge": "Carillas", "title": "Carillas Cerámicas Libres de Desgaste", "desc": "Porcelana pura que no cambia de color con alimentos oscuros.", "price": "$1.150.000 / pieza", "img": "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=700&q=80"}, {"badge": "Láser", "title": "Blanqueamiento Dental Láser en Consultorio", "desc": "Sonrisa visiblemente más blanca en 45 minutos de tratamiento.", "price": "$390.000 COP", "img": "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=700&q=80"}, {"badge": "Ortodoncia", "title": "Ortodoncia Rápida con Brackets de Autoligado", "desc": "Menor tiempo de tratamiento con movimientos dentales continuos.", "price": "$1.700.000 COP", "img": "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=700&q=80"}, {"badge": "Encías", "title": "Gingivoplastia & Armonización de Encía", "desc": "Corrección de sonrisa gingival para proporciones dentales ideales.", "price": "$350.000 COP", "img": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=700&q=80"}, {"badge": "Higiene", "title": "Limpieza y Desmanchado Ultrasónico", "desc": "Eliminación de sarro bacteriano y pulido coronal con flúor.", "price": "$120.000 COP", "img": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=700&q=80"}];
+    const STORAGE_KEY = "sais_cms_" + INITIAL_BIZ.id;
+
+    let appData = {
+      biz: { ...INITIAL_BIZ },
+      carousel: [ ...INITIAL_CAROUSEL ],
+      menuDia: [ ...INITIAL_MENU_DIA ],
+      carta: [ ...INITIAL_CARTA ]
+    };
+
+    let currentSlide = 0;
+    let carouselInterval;
+    let currentCategory = "Todos";
+    let isAdmin = false;
+
+    // Inicialización y Carga de Datos desde localStorage
+    function init() {
+      const saved = localStorage.getItem(STORAGE_KEY);
+      if (saved) {
+        try {
+          appData = JSON.parse(saved);
+        } catch(e) { console.error("Error leyendo datos guardados", e); }
+      }
+      renderAll();
+      startCarousel();
+    }
+
+    function saveToStorage() {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(appData));
+      showToast("¡Cambios guardados con éxito en tu página web!");
+      renderAll();
+    }
+
+    function resetToDefaults() {
+      if (confirm("¿Seguro que deseas restaurar los datos y fotos originales? Se borrarán tus ediciones locales.")) {
+        localStorage.removeItem(STORAGE_KEY);
+        appData = {
+          biz: { ...INITIAL_BIZ },
+          carousel: [ ...INITIAL_CAROUSEL ],
+          menuDia: [ ...INITIAL_MENU_DIA ],
+          carta: [ ...INITIAL_CARTA ]
+        };
+        renderAll();
+        showToast("Datos restaurados al estado original.");
+      }
+    }
+
+    function showToast(msg) {
+      const t = document.getElementById("toast");
+      document.getElementById("toast-text").innerText = msg;
+      t.classList.add("show");
+      setTimeout(() => t.classList.remove("show"), 3500);
+    }
+
+    // RENDERIZADO GENERAL
+    function renderAll() {
+      renderBusinessInfo();
+      renderCarousel();
+      renderMenuDia();
+      renderCartaTabs();
+      renderCarta();
+      updateAdminBar();
+    }
+
+    function renderBusinessInfo() {
+      const icon = appData.biz.icon_class || "fa-solid fa-tooth";
+      document.getElementById("header-biz-name").innerHTML = `<i class="${icon}"></i> ${appData.biz.name}`;
+      document.getElementById("info-biz-title").innerText = appData.biz.name;
+      document.getElementById("info-biz-address").innerText = appData.biz.address;
+      document.getElementById("info-biz-phone").innerText = appData.biz.phone_display;
+      
+      const waLink = "https://wa.me/57" + appData.biz.phone + "?text=Hola,%20los%20contacto%20desde%20su%20sitio%20web";
+      document.getElementById("btn-wa-header").href = waLink;
+      document.getElementById("wa-float").href = waLink;
+    }
+
+    // CARRUSEL
+    function renderCarousel() {
+      const track = document.getElementById("carousel-track");
+      const dotsContainer = document.getElementById("carousel-dots");
+      track.innerHTML = "";
+      dotsContainer.innerHTML = "";
+
+      appData.carousel.forEach((slide, idx) => {
+        const div = document.createElement("div");
+        div.className = "carousel-slide";
+        div.style.backgroundImage = `url('${slide.img}')`;
+        div.innerHTML = `
+          <div class="carousel-overlay"></div>
+          <div class="container">
+            <div class="carousel-content">
+              <span class="slide-badge"><i class="fa-solid fa-star"></i> ${slide.badge}</span>
+              <h1>${slide.title}</h1>
+              <p>${slide.subtitle}</p>
+              <a href="#menu-del-dia" class="carousel-btn"><i class="fa-solid fa-circle-arrow-down"></i> Ver Menú & Ofertas de Hoy</a>
+            </div>
+          </div>
+        `;
+        track.appendChild(div);
+
+        const dot = document.createElement("div");
+        dot.className = "dot" + (idx === 0 ? " active" : "");
+        dot.onclick = () => goToSlide(idx);
+        dotsContainer.appendChild(dot);
+      });
+
+      updateCarouselPosition();
+    }
+
+    function startCarousel() {
+      clearInterval(carouselInterval);
+      carouselInterval = setInterval(nextSlide, 5500);
+    }
+
+    function updateCarouselPosition() {
+      const track = document.getElementById("carousel-track");
+      track.style.transform = `translateX(-${currentSlide * (100 / appData.carousel.length)}%)`;
+      track.style.width = `${appData.carousel.length * 100}%`;
+      
+      const dots = document.querySelectorAll(".carousel-dots .dot");
+      dots.forEach((d, i) => d.classList.toggle("active", i === currentSlide));
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % appData.carousel.length;
+      updateCarouselPosition();
+    }
+
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + appData.carousel.length) % appData.carousel.length;
+      updateCarouselPosition();
+    }
+
+    function goToSlide(idx) {
+      currentSlide = idx;
+      updateCarouselPosition();
+      startCarousel();
+    }
+
+    // SECCIÓN 1: MENÚ DEL DÍA
+    function renderMenuDia() {
+      const container = document.getElementById("menu-dia-container");
+      container.innerHTML = "";
+
+      appData.menuDia.forEach((item, idx) => {
+        const card = document.createElement("div");
+        card.className = "menu-dia-card";
+        
+        let editButtons = "";
+        if (isAdmin) {
+          editButtons = `
+            <div style="position: absolute; top: 14px; right: 14px; z-index: 10; display: flex; gap: 6px;">
+              <button onclick="openEditModal('menuDia', ${idx})" class="btn-admin" style="padding: 4px 8px; font-size: 11px;"><i class="fa-solid fa-pen"></i></button>
+              <button onclick="deleteItem('menuDia', ${idx})" class="btn-admin btn-admin-danger" style="padding: 4px 8px; font-size: 11px;"><i class="fa-solid fa-trash"></i></button>
+            </div>
+          `;
+        }
+
+        const waText = encodeURIComponent(`Hola ${appData.biz.name}, quiero ordenar: ${item.title} (${item.price})`);
+        const waLink = `https://wa.me/57${appData.biz.phone}?text=${waText}`;
+
+        card.innerHTML = `
+          ${editButtons}
+          <span class="menu-dia-badge"><i class="fa-solid fa-tag"></i> ${item.badge}</span>
+          <div class="menu-dia-img-wrap">
+            <img src="${item.img}" class="menu-dia-img" alt="${item.title}" loading="lazy">
+          </div>
+          <div class="menu-dia-body">
+            <div>
+              <h3>${item.title}</h3>
+              <p>${item.desc}</p>
+            </div>
+            <div class="menu-dia-footer">
+              <span class="menu-dia-price">${item.price}</span>
+              <a href="${waLink}" target="_blank" class="btn-order-wa">
+                <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
+              </a>
+            </div>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    // SECCIÓN 2: LA CARTA COMPLETA
+    function renderCartaTabs() {
+      const tabsContainer = document.getElementById("carta-tabs");
+      tabsContainer.innerHTML = "";
+
+      const categories = ["Todos", ...new Set(appData.carta.map(i => i.cat))];
+      
+      categories.forEach(cat => {
+        const li = document.createElement("li");
+        const btn = document.createElement("button");
+        btn.className = "tab-btn" + (cat === currentCategory ? " active" : "");
+        btn.innerText = cat;
+        btn.onclick = () => {
+          currentCategory = cat;
+          document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+          btn.classList.add("active");
+          filterCarta();
+        };
+        li.appendChild(btn);
+        tabsContainer.appendChild(li);
+      });
+    }
+
+    function filterCarta() {
+      const search = document.getElementById("search-input").value.toLowerCase();
+      const container = document.getElementById("carta-container");
+      container.innerHTML = "";
+
+      const filtered = appData.carta.filter(item => {
+        const matchCat = (currentCategory === "Todos" || item.cat === currentCategory);
+        const matchSearch = item.title.toLowerCase().includes(search) || item.desc.toLowerCase().includes(search);
+        return matchCat && matchSearch;
+      });
+
+      if (filtered.length === 0) {
+        container.innerHTML = `<p style="grid-column: 1/-1; text-align: center; color: var(--text-muted); padding: 40px 0;">No se encontraron platos o productos coincidentes.</p>`;
+        return;
+      }
+
+      filtered.forEach((item, originalIndex) => {
+        const idx = appData.carta.indexOf(item);
+        const card = document.createElement("div");
+        card.className = "carta-item";
+
+        let editButtons = "";
+        if (isAdmin) {
+          editButtons = `
+            <div style="position: absolute; top: 8px; right: 8px; z-index: 10; display: flex; gap: 4px;">
+              <button onclick="openEditModal('carta', ${idx})" class="btn-admin" style="padding: 3px 6px; font-size: 10px;"><i class="fa-solid fa-pen"></i></button>
+              <button onclick="deleteItem('carta', ${idx})" class="btn-admin btn-admin-danger" style="padding: 3px 6px; font-size: 10px;"><i class="fa-solid fa-trash"></i></button>
+            </div>
+          `;
+        }
+
+        const waText = encodeURIComponent(`Hola ${appData.biz.name}, deseo ordenar de la carta: ${item.title} (${item.price})`);
+        const waLink = `https://wa.me/57${appData.biz.phone}?text=${waText}`;
+
+        card.innerHTML = `
+          ${editButtons}
+          <img src="${item.img}" class="carta-item-img" alt="${item.title}" loading="lazy">
+          <div class="carta-item-content">
+            <div>
+              <span class="carta-item-cat"><i class="fa-solid fa-bookmark"></i> ${item.cat}</span>
+              <h4>${item.title}</h4>
+              <p>${item.desc}</p>
+            </div>
+            <div class="carta-item-bottom">
+              <span class="carta-price">${item.price}</span>
+              <a href="${waLink}" target="_blank" class="btn-order-mini">
+                <i class="fa-brands fa-whatsapp"></i> Ordenar
+              </a>
+            </div>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    // GESTIÓN CMS Y MODALES
+    function updateAdminBar() {
+      document.getElementById("admin-bar").style.display = isAdmin ? "block" : "none";
+    }
+
+    function openLoginModal() {
+      document.getElementById("login-modal").style.display = "flex";
+    }
+    function closeLoginModal() {
+      document.getElementById("login-modal").style.display = "none";
+    }
+
+    function handleLogin(e) {
+      e.preventDefault();
+      const u = document.getElementById("login-user").value;
+      const p = document.getElementById("login-pass").value;
+      if (u === "admin" && p === "1234") {
+        isAdmin = true;
+        closeLoginModal();
+        renderAll();
+        showToast("¡Sesión iniciada! Modo Editor CMS activado.");
+      } else {
+        alert("Usuario o contraseña incorrectos. Para la demo usa: admin / 1234");
+      }
+    }
+
+    function quickLoginDemo() {
+      isAdmin = true;
+      closeLoginModal();
+      renderAll();
+      showToast("¡Acceso Demo activado! Ahora puedes modificar cualquier plato o dato.");
+    }
+
+    function logoutAdmin() {
+      isAdmin = false;
+      renderAll();
+      showToast("Sesión cerrada.");
+    }
+
+    // MODAL DATOS NEGOCIO
+    function openBizModal() {
+      document.getElementById("edit-biz-name").value = appData.biz.name;
+      document.getElementById("edit-biz-phone").value = appData.biz.phone;
+      document.getElementById("edit-biz-phone-display").value = appData.biz.phone_display;
+      document.getElementById("edit-biz-address").value = appData.biz.address;
+      document.getElementById("biz-modal").style.display = "flex";
+    }
+    function closeBizModal() {
+      document.getElementById("biz-modal").style.display = "none";
+    }
+    function saveBusinessInfo() {
+      appData.biz.name = document.getElementById("edit-biz-name").value;
+      appData.biz.phone = document.getElementById("edit-biz-phone").value;
+      appData.biz.phone_display = document.getElementById("edit-biz-phone-display").value;
+      appData.biz.address = document.getElementById("edit-biz-address").value;
+      closeBizModal();
+      saveToStorage();
+    }
+
+    // MODAL AÑADIR/EDITAR ÍTEM
+    function openAddModal(type) {
+      document.getElementById("item-target-type").value = type;
+      document.getElementById("item-edit-index").value = "-1";
+      document.getElementById("item-modal-title").innerHTML = `<i class="fa-solid fa-plus"></i> Añadir a ${type === 'menuDia' ? 'Especiales / Menú del Día' : 'La Carta'}`;
+      
+      document.getElementById("group-item-cat").style.display = type === 'carta' ? 'block' : 'none';
+      document.getElementById("group-item-badge").style.display = type === 'menuDia' ? 'block' : 'none';
+
+      document.getElementById("item-title").value = "";
+      document.getElementById("item-cat").value = "";
+      document.getElementById("item-badge").value = "";
+      document.getElementById("item-price").value = "";
+      document.getElementById("item-desc").value = "";
+      document.getElementById("item-img").value = "";
+
+      document.getElementById("item-modal").style.display = "flex";
+    }
+
+    function openEditModal(type, index) {
+      document.getElementById("item-target-type").value = type;
+      document.getElementById("item-edit-index").value = index;
+      document.getElementById("item-modal-title").innerHTML = `<i class="fa-solid fa-pen-to-square"></i> Editar Ítem`;
+      
+      document.getElementById("group-item-cat").style.display = type === 'carta' ? 'block' : 'none';
+      document.getElementById("group-item-badge").style.display = type === 'menuDia' ? 'block' : 'none';
+
+      const item = type === 'menuDia' ? appData.menuDia[index] : appData.carta[index];
+      document.getElementById("item-title").value = item.title;
+      document.getElementById("item-cat").value = item.cat || "";
+      document.getElementById("item-badge").value = item.badge || "";
+      document.getElementById("item-price").value = item.price;
+      document.getElementById("item-desc").value = item.desc;
+      document.getElementById("item-img").value = item.img;
+
+      document.getElementById("item-modal").style.display = "flex";
+    }
+
+    function closeItemModal() {
+      document.getElementById("item-modal").style.display = "none";
+    }
+
+    function saveItem() {
+      const type = document.getElementById("item-target-type").value;
+      const index = parseInt(document.getElementById("item-edit-index").value);
+
+      const newItem = {
+        title: document.getElementById("item-title").value,
+        price: document.getElementById("item-price").value,
+        desc: document.getElementById("item-desc").value,
+        img: document.getElementById("item-img").value || "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=500&q=80"
+      };
+
+      if (type === "menuDia") {
+        newItem.badge = document.getElementById("item-badge").value || "Recomendado";
+        if (index >= 0) {
+          appData.menuDia[index] = newItem;
+        } else {
+          appData.menuDia.push(newItem);
+        }
+      } else {
+        newItem.cat = document.getElementById("item-cat").value || "General";
+        if (index >= 0) {
+          appData.carta[index] = newItem;
+        } else {
+          appData.carta.push(newItem);
+        }
+      }
+
+      closeItemModal();
+      saveToStorage();
+    }
+
+    function deleteItem(type, index) {
+      if (confirm("¿Seguro que deseas eliminar este ítem?")) {
+        if (type === "menuDia") {
+          appData.menuDia.splice(index, 1);
+        } else {
+          appData.carta.splice(index, 1);
+        }
+        saveToStorage();
+      }
+    }
+
+    // Arrancar la app al cargar el DOM
+    document.addEventListener("DOMContentLoaded", init);
+  </script>
+</body>
+</html>
