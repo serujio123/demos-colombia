@@ -1,10 +1,10 @@
-SUBJECT: Propuesta de digitalización y pedidos directos para Huila Espacial · Astroturismo & Glamping Tatacoa
+SUBJECT: Propuesta de plataforma web y reservas directas para Huila Espacial · Agencia de Viajes & Tours
 
-Estimado equipo de Huila Espacial · Astroturismo & Glamping Tatacoa:
+Estimado equipo de Huila Espacial · Agencia de Viajes & Tours:
 
-Muchos clientes en Tatacoa / Neiva buscan servicios de Astroturismo, Glamping & Observación Astronómica Starlight en internet fuera del horario de atención, y las ventas suelen limitarse si solo se cuenta con redes sociales o agregadores que cobran comisiones elevadas por cada pedido.
+Cada día cientos de personas en Neiva y el Huila buscan planes vacacionales hacia San Andrés Islas, el Caribe colombiano y destinos internacionales. Con frecuencia se pierden clientes potenciales cuando no encuentran una plataforma web oficial donde cotizar itinerarios, ver qué incluye el paquete y reservar en línea de forma inmediata.
 
-Pensando en la proyección de Huila Espacial · Astroturismo & Glamping Tatacoa, preparé una demostración interactiva en línea junto con una propuesta formal en formato digital/imprimible:
+Pensando en la proyección de Huila Espacial · Agencia de Viajes & Tours, preparé una demostración interactiva en línea junto con una propuesta formal en formato digital/imprimible:
 
 🌐 Demostración interactiva en vivo:
 https://trabajoso-two.vercel.app/huila_espacial_tatacoa/
@@ -13,17 +13,17 @@ https://trabajoso-two.vercel.app/huila_espacial_tatacoa/
 https://trabajoso-two.vercel.app/huila_espacial_tatacoa/propuesta.html
 
 Funcionalidades clave incluidas:
-- Motor de reservas directas en línea sin pagar comisiones de plataformas intermediarias.
-- Catálogo visual de experiencias: astroturismo, noches de telescopio y senderismo en el Cusco y Los Hoyos.
-- Información sobre certificaciones Starlight, clima en tiempo real y fases lunares para la mejor observación.
-- Galería de astrofotografía en alta resolución y testimonios de viajeros nacionales y extranjeros.
-- Panel administrativo (CMS) para que usted mismo actualice precios y promociones.
+- Catálogo interactivo de planes vacacionales a San Andrés, Caribe e Internacionales con fotos reales y precios transparentes.
+- Módulo de cotización y solicitud de reservas en línea para fechas de temporada baja y alta.
+- Información clara de tiquetes aéreos, hoteles todo incluido, tarjeta de turismo de San Andrés y traslados.
+- Panel administrativo (CMS) para que la agencia actualice promociones, cupos disponibles y tarifas de temporada.
+- Panel administrativo (CMS) para que usted mismo actualice cupos, tarifas de temporada y nuevos destinos.
 
 Propuesta de Inversión:
-- Desarrollo web completo y publicación (pago único): $920.000 COP (pago único)
-- Hosting cloud de alta velocidad: desde $190.000 COP/año (pago directo al proveedor)
+- Desarrollo web completo y publicación (pago único): $890.000 COP (pago único)
+- Hosting cloud de alta velocidad: desde $170.000 COP/año (pago directo al proveedor)
 - Dominio propio corporativo: desde $52.000 COP/año (.com / .co) (pago directo al proveedor)
-Total estimado primer año: desde $1.162.000 COP
+Total estimado primer año: desde $1.112.000 COP
 
 Si les parece oportuno revisar la propuesta, ¿les gustaría que conversemos respondiendo directamente a este correo?
 
