@@ -1,58 +1,37 @@
-ASUNTO: Propuesta de página web para Restaurante Avenida Neiva
+SUBJECT: Propuesta de digitalización y pedidos directos para Restaurante Avenida · Tradición Huilense
 
-Hola, equipo de Restaurante Avenida Neiva:
+Estimado equipo de Restaurante Avenida · Tradición Huilense:
 
-¿Han considerado tener una página web propia donde sus clientes puedan conocer sus platos tradicionales, ordenar el asado huilense y pedir a domicilio fácilmente?
+Muchos clientes en Neiva buscan servicios de Comida Típica Huilense, Asados & Folclor en internet fuera del horario de atención, y las ventas suelen limitarse si solo se cuenta con redes sociales o agregadores que cobran comisiones elevadas por cada pedido.
 
-Mi nombre es SAIS Gallego y me dedico al desarrollo de páginas web para negocios. Me tomé el tiempo de preparar una demostración personalizada de cómo podría lucir la presencia digital de Restaurante Avenida Neiva.
+Pensando en la proyección de Restaurante Avenida · Tradición Huilense, preparé una demostración interactiva en línea junto con una propuesta formal en formato digital/imprimible:
 
-🍲 Una página web pensada para su restaurante tradicional y típico huilense
-La propuesta busca facilitar la comunicación con sus clientes y dar mayor visibilidad a sus servicios.
+🌐 Demostración interactiva en vivo:
+https://trabajoso-two.vercel.app/restaurante_avenida_neiva/
 
-Entre sus funcionalidades encontrarán:
-- Cocina tradicional huilense: auténtico asado huilense, viudo de pescado, carnes y sancochos.
-- Menú del día y carta completa: organización visual de platos típicos, combos familiares y bebidas.
-- Pedidos y domicilios a WhatsApp: botón directo para enviar la orden con datos del cliente sin intermediarios.
-- Contacto y ubicación: mapa satelital de la sede en la Cra 5 y horarios de atención.
-- Panel administrativo (CMS): actualizar precios, cambiar el menú diario y fotos sin depender de programadores.
+📄 Propuesta formal ejecutiva (formato documento / PDF):
+https://trabajoso-two.vercel.app/restaurante_avenida_neiva/propuesta.html
 
-Conozcan cómo podría verse su restaurante tradicional y típico huilense en Internet:
-🌐 https://sais-gallego.github.io/trabajo_so/restaurante_avenida_neiva/
+Funcionalidades clave incluidas:
+- Menú digital con los platos típicos y almuerzos ejecutivos del día.
+- Módulo de reserva de mesas para familias, empresas y delegaciones turísticas.
+- Ubicación estratégica en Neiva (Carrera 5 # 25-32) con datos de contacto visibles.
+- Renovación completa de imagen web a estándares modernos y móviles.
+- Panel administrativo (CMS) para que usted mismo actualice precios y promociones.
 
-Esta es una demostración inicial preparada para Restaurante Avenida Neiva. El diseño y las funcionalidades podrán ajustarse a las necesidades de la empresa.
+Propuesta de Inversión:
+- Desarrollo web completo y publicación (pago único): $850.000 COP (pago único)
+- Hosting cloud de alta velocidad: desde $170.000 COP/año (pago directo al proveedor)
+- Dominio propio corporativo: desde $52.000 COP/año (.com / .co) (pago directo al proveedor)
+Total estimado primer año: desde $1.072.000 COP
 
-💻 Propuesta de inversión
-
-Plan Completo: $650.000 COP (pago único)
-Incluye:
-- Diseño y desarrollo de la página web tradicional huilense.
-- Adaptación para celulares, tabletas y computadores.
-- Menú del día y carta completa con buscador y filtros.
-- Botón de pedidos directos a WhatsApp.
-- Panel administrativo (CMS).
-- Configuración y publicación del sitio web.
-
-Servicios de alojamiento y dominio:
-- Hosting H2: $170.000 COP anuales.
-- Dominio .com.co: desde $52.000 COP anuales.
-Estos servicios se contratan directamente con el proveedor de hosting.
-
-Inversión estimada del primer año: $872.000 COP.
-El desarrollo se paga una sola vez. El hosting y el dominio corresponden a renovaciones anuales.
-
-¿Hablamos del proyecto?
-Me gustaría tener la oportunidad de presentarles esta propuesta y conocer qué funcionalidades consideran importantes para su restaurante tradicional y típico huilense.
-
-Si les interesa, podemos conversar por este medio o WhatsApp. Estoy disponible para resolver sus dudas y ajustar la propuesta sin ningún compromiso.
-
-Gracias por su tiempo.
+Si les parece oportuno revisar la propuesta, ¿les gustaría que conversemos respondiendo directamente a este correo?
 
 Atentamente,
 
 SAIS Gallego
 Desarrollo web y soluciones digitales
-Correo: g46113026@gmail.com
-GitHub: https://github.com/Sais-gallego
+Correo: serujio28@gmail.com
+Portafolio: https://github.com/serujio123
 
----
-Si no desea recibir más información sobre este servicio, por favor responda indicándolo y no volveremos a escribirle.
+Si no desea recibir más propuestas, responda 'cancelar'.

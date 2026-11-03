@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Restaurante Avenida Neiva — Sitio Web Oficial | Neiva, Huila</title>
-  <meta name="description" content="Sitio web oficial de Restaurante Avenida Neiva en Neiva, Huila. Catálogo en línea, promociones, ubicación y pedidos directos por WhatsApp.">
+  <title>Restaurante Avenida · Tradición Huilense — Sitio Web Oficial | Carrera 5 # 25-32, Neiva, Huila</title>
+  <meta name="description" content="Sitio web oficial de Restaurante Avenida · Tradición Huilense en Carrera 5 # 25-32, Neiva, Huila. Catálogo en línea, promociones, ubicación y pedidos directos por Contacto Directo.">
   
   <!-- Google Fonts: Plus Jakarta Sans + Playfair Display -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,10 +16,10 @@
 
   <style>
     :root {
-      --primary: #ea580c;
+      --primary: #b45309;
       --primary-dark: #0f172a;
-      --accent: #ea580c;
-      --accent-light: #f8fafc;
+      --accent: #d97706;
+      --accent-light: #78350f;
       --text-main: #1f2937;
       --text-muted: #64748b;
       --bg: #ffffff;
@@ -168,7 +168,7 @@
       gap: 8px;
     }
     .btn-login:hover { background: #e2e8f0; color: #0f172a; }
-    .btn-whatsapp-header {
+    .btn-contact-header {
       background: #25d366;
       color: #fff;
       text-decoration: none;
@@ -182,7 +182,7 @@
       transition: 0.2s;
       box-shadow: 0 4px 12px rgba(37,211,102,0.25);
     }
-    .btn-whatsapp-header:hover { filter: brightness(1.1); transform: translateY(-1px); }
+    .btn-contact-header:hover { filter: brightness(1.1); transform: translateY(-1px); }
 
     /* Carrusel Hero */
     .carousel-section {
@@ -626,8 +626,8 @@
     }
     .map-frame-box iframe { width: 100%; height: 100%; border: 0; display: block; }
 
-    /* BOTÓN FLOTANTE WHATSAPP CON PULSO */
-    .whatsapp-float {
+    /* BOTÓN FLOTANTE CONTACTO CON PULSO */
+    .contact-float {
       position: fixed;
       bottom: 24px;
       right: 24px;
@@ -645,7 +645,7 @@
       text-decoration: none;
       transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
-    .whatsapp-float:hover {
+    .contact-float:hover {
       transform: scale(1.12);
       box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
     }
@@ -788,7 +788,7 @@
   <div class="agency-bar">
     <div>
       <span class="agency-badge"><i class="fa-solid fa-code"></i> SAIS Gallego CMS</span>
-      <span>Demostración de Sitio Web para: <strong>Restaurante Avenida Neiva</strong> en Neiva, Huila</span>
+      <span>Demostración de Sitio Web para: <strong>Restaurante Avenida · Tradición Huilense</strong> en Carrera 5 # 25-32, Neiva, Huila</span>
     </div>
     <div>
       <span style="font-size: 12px; color: #94a3b8; font-weight: 600;">
@@ -817,7 +817,7 @@
   <header>
     <div class="container nav">
       <a href="#inicio" class="logo" id="header-biz-name">
-        <i class="fa-solid fa-bowl-food"></i> Restaurante Avenida Neiva
+        <i class="fa-solid fa-wheat-awn"></i> Restaurante Avenida · Tradición Huilense
       </a>
       
       <ul class="nav-links">
@@ -831,8 +831,8 @@
         <button class="btn-login" onclick="openLoginModal()">
           <i class="fa-solid fa-lock"></i> Acceso CMS
         </button>
-        <a href="https://wa.me/573158937077?text=Hola,%20los%20contacto%20desde%20su%20sitio%20web" target="_blank" class="btn-whatsapp-header" id="btn-wa-header">
-          <i class="fa-brands fa-whatsapp"></i> WhatsApp
+        <a href="mailto:serujio28@gmail.com" target="_blank" class="btn-contact-header" id="btn-wa-header">
+          <i class="fa-solid fa-envelope"></i> Contacto Directo
         </a>
       </div>
     </div>
@@ -854,7 +854,7 @@
       <div class="section-header">
         <span class="section-badge"><i class="fa-solid fa-star"></i> Recomendados & Promociones</span>
         <h2>Especiales & Menú del Día</h2>
-        <p>Las mejores opciones seleccionadas para hoy. Pide de forma rápida y directa a nuestro WhatsApp sin intermediarios.</p>
+        <p>Las mejores opciones seleccionadas para hoy. Pide de forma rápida y directa a nuestro Contacto Directo sin intermediarios.</p>
       </div>
       <div class="menu-dia-grid" id="menu-dia-container">
         <!-- Renderizado dinámicamente -->
@@ -891,21 +891,21 @@
   <section class="bg-mapa" id="ubicacion">
     <div class="container">
       <div class="section-header">
-        <span class="section-badge"><i class="fa-solid fa-location-dot"></i> Punto Físico en Neiva</span>
+        <span class="section-badge"><i class="fa-solid fa-location-dot"></i> Punto Físico en Colombia</span>
         <h2>Encuéntranos Fácilmente</h2>
-        <p>Estamos ubicados en una zona estratégica de Neiva para brindarte la mejor atención presencial y despachos a domicilio.</p>
+        <p>Estamos ubicados en una zona estratégica de Colombia para brindarte la mejor atención presencial y despachos a domicilio.</p>
       </div>
 
       <div class="mapa-layout">
         <div class="mapa-card">
-          <h3 id="info-biz-title">Restaurante Avenida Neiva</h3>
+          <h3 id="info-biz-title">Restaurante Avenida · Tradición Huilense</h3>
           <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 16px;">Ven a vivir la experiencia o comunícate con nosotros para cualquier pedido o cotización.</p>
           <ul class="info-list">
             <li>
               <span class="info-icon"><i class="fa-solid fa-location-dot"></i></span>
               <div>
                 <strong>Dirección:</strong><br>
-                <span id="info-biz-address">Carrera 5 No. 25 - 32, Neiva, Huila</span>
+                <span id="info-biz-address">Carrera 5 # 25-32, Neiva, Huila</span>
               </div>
             </li>
             <li>
@@ -918,26 +918,26 @@
             <li>
               <span class="info-icon"><i class="fa-solid fa-phone"></i></span>
               <div>
-                <strong>Línea de Pedidos / WhatsApp:</strong><br>
-                <span id="info-biz-phone">+57 315 8937077 / (608) 8750584</span>
+                <strong>Línea de Pedidos / Contacto Directo:</strong><br>
+                <span id="info-biz-phone">3153232062</span>
               </div>
             </li>
           </ul>
-          <a href="https://maps.google.com/?q=Carrera+5+No.+25+-+32%2C+Neiva%2C+Huila%2C+Colombia" target="_blank" class="carousel-btn" style="width: 100%; justify-content: center; padding: 12px; font-size: 14px;">
+          <a href="https://maps.google.com/?q=Carrera+5+%23+25-32%2C+Neiva%2C+Huila" target="_blank" class="carousel-btn" style="width: 100%; justify-content: center; padding: 12px; font-size: 14px;">
             <i class="fa-solid fa-map-location-dot"></i> Abrir en Google Maps Móvil
           </a>
         </div>
 
         <div class="map-frame-box">
-          <iframe id="map-iframe" src="https://maps.google.com/maps?q=Carrera+5+No.+25+-+32%2C+Neiva%2C+Huila%2C+Colombia&t=&z=16&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+          <iframe id="map-iframe" src="https://maps.google.com/maps?q=Carrera+5+%23+25-32%2C+Neiva%2C+Huila&t=&z=16&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Botón Flotante WhatsApp -->
-  <a href="https://wa.me/573158937077?text=Hola,%20los%20contacto%20desde%20su%20p%C3%A1gina%20web" class="whatsapp-float" target="_blank" id="wa-float" title="Pedir por WhatsApp">
-    <i class="fa-brands fa-whatsapp"></i>
+  <!-- Botón Flotante Contacto Directo -->
+  <a href="mailto:serujio28@gmail.com" class="contact-float" target="_blank" id="wa-float" title="Pedir por Contacto Directo">
+    <i class="fa-solid fa-envelope"></i>
   </a>
 
   <!-- MODAL INICIAR SESIÓN -->
@@ -967,21 +967,21 @@
     <div class="modal-box editor-modal-box">
       <button class="modal-close" onclick="closeBizModal()"><i class="fa-solid fa-xmark"></i></button>
       <h3><i class="fa-solid fa-pen-to-square"></i> Editar Datos del Negocio</h3>
-      <p>Modifica el nombre, número de WhatsApp y dirección física.</p>
+      <p>Modifica el nombre, número de Contacto Directo y dirección física.</p>
       <div class="form-group">
         <label>Nombre del Negocio:</label>
         <input type="text" id="edit-biz-name" class="form-control">
       </div>
       <div class="form-group">
-        <label>Teléfono WhatsApp (sin espacios ni signos):</label>
-        <input type="text" id="edit-biz-phone" class="form-control" placeholder="3180259219">
+        <label>Teléfono Contacto Directo (sin espacios ni signos):</label>
+        <input type="text" id="edit-biz-phone" class="form-control" placeholder="3153232062">
       </div>
       <div class="form-group">
         <label>Teléfono Visible:</label>
-        <input type="text" id="edit-biz-phone-display" class="form-control" placeholder="318 0259219">
+        <input type="text" id="edit-biz-phone-display" class="form-control" placeholder="3153232062">
       </div>
       <div class="form-group">
-        <label>Dirección Física en Neiva:</label>
+        <label>Dirección Física en Colombia:</label>
         <input type="text" id="edit-biz-address" class="form-control">
       </div>
       <button class="btn-submit" onclick="saveBusinessInfo()"><i class="fa-solid fa-floppy-disk"></i> Guardar Información</button>
@@ -1035,17 +1035,17 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>© 2026 Restaurante Avenida Neiva. Todos los derechos reservados · Neiva, Huila.</p>
-      <p style="margin-top: 6px;">Propuesta y CMS desarrollado por <a href="https://github.com/sais-gallego" target="_blank">SAIS Gallego</a> · g46113026@gmail.com</p>
+      <p>© 2026 Restaurante Avenida · Tradición Huilense. Todos los derechos reservados · Carrera 5 # 25-32, Neiva, Huila.</p>
+      <p style="margin-top: 6px;">Propuesta y CMS desarrollado por <a href="https://github.com/serujio123" target="_blank">SAIS Gallego</a> · serujio28@gmail.com</p>
     </div>
   </footer>
 
   <!-- Lógica JavaScript Dinámica y CMS -->
   <script>
-    const INITIAL_BIZ = {"id": "restaurante_avenida_neiva", "name": "Restaurante Avenida Neiva", "tagline": "Gastronomía Típica en Neiva, Huila", "phone": "3158937077", "phone_display": "+57 315 8937077 / (608) 8750584", "address": "Carrera 5 No. 25 - 32, Neiva, Huila", "map_query": "Carrera 5 No. 25 - 32, Neiva, Huila, Colombia", "primary_color": "#ea580c", "icon_class": "fa-solid fa-bowl-food"};
-    const INITIAL_CAROUSEL = [{"badge": "Especialistas en Neiva", "title": "La Mejor Experiencia en Gastronomía Típica", "subtitle": "Atención de excelencia y productos seleccionados en nuestra sede de Neiva, Huila.", "img": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1400&q=80"}, {"badge": "Calidad Garantizada", "title": "Variedad, Confianza y Soluciones Rápidas", "subtitle": "Conoce nuestro catálogo completo y cotiza o reserva directamente a WhatsApp.", "img": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1400&q=80"}, {"badge": "Atención Prioritaria", "title": "Atención Directa y Despachos en Neiva", "subtitle": "Servicio ágil y personalizado para particulares, contratistas y familias.", "img": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1400&q=80"}];
-    const INITIAL_MENU_DIA = [{"badge": "Recomendado Tradicional", "title": "Asado Huilense Tradicional", "desc": "Cerdo marinado con hierbas de la región, servido con insulso, arepa orejeperro y yuca.", "price": "$34.000 COP", "img": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80"}, {"badge": "Recomendado Pescados", "title": "Viudo de Bocachico al Vapor", "desc": "Pescado de río cocido en lecho de plátano verde, ahogado criollo y papa.", "price": "$38.000 COP", "img": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=600&q=80"}, {"badge": "Recomendado Sopas", "title": "Sancocho de Gallina Criolla", "desc": "Sopa reconfortante con gallina campesina, mazorca, plátano y aguacate.", "price": "$28.000 COP", "img": "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=600&q=80"}];
-    const INITIAL_CARTA = [{"cat": "Carnes", "title": "Sobrebarriga en Salsa Criolla", "desc": "Corte suave bañado en hogao artesanal con arroz y patacón.", "price": "$32.000 COP", "img": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=500&q=80"}, {"cat": "Carnes", "title": "Costillas de Cerdo al Horno", "desc": "Costillas tiernas glaseadas con panela y especias nativas.", "price": "$35.000 COP", "img": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=500&q=80"}, {"cat": "Pescados", "title": "Mojarra Frita Playera", "desc": "Mojarra roja crocante con ensalada de la casa y patacones.", "price": "$30.000 COP", "img": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=500&q=80"}, {"cat": "Bebidas", "title": "Limonada de Panela con Hierbabuena", "desc": "Bebida refrescante tradicional recién preparada.", "price": "$7.000 COP", "img": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=500&q=80"}, {"cat": "Bebidas", "title": "Jugo Natural de Cholupa", "desc": "Fruta insignia del Huila, servida bien fría en agua o leche.", "price": "$8.500 COP", "img": "https://images.unsplash.com/photo-1622597467836-f3285f2131b8?auto=format&fit=crop&w=500&q=80"}];
+    const INITIAL_BIZ = {"id": "restaurante_avenida_neiva", "name": "Restaurante Avenida · Tradición Huilense", "tagline": "", "phone": "3153232062", "phone_display": "3153232062", "address": "Carrera 5 # 25-32, Neiva, Huila", "map_query": "Carrera 5 # 25-32, Neiva, Huila", "primary_color": "#b45309", "icon_class": "fa-solid fa-wheat-awn", "city_region": "Carrera 5 # 25-32, Neiva, Huila", "city_short": "Colombia"};
+    const INITIAL_CAROUSEL = [{"badge": "MÁS DE 25 AÑOS DE TRADICIÓN EN NEIVA", "title": "El Auténtico Sabor del Asado Huilense y la Cultura Opita", "subtitle": "Platos típicos del Huila preparados con recetas tradicionales: asado huilense, insulsos, achiras, tamales y ambiente familiar.", "img": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=700&q=80"}, {"badge": "Típico", "title": "Tamal Huilense Especial", "subtitle": "Masa suave de maíz rellena de carne de cerdo, pollo campesino, huevo y verduras envuelto en hoja de plátano.", "img": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=700&q=80"}, {"badge": "Sopa Tradicional", "title": "Sancocho de Gallina en Leña los Fines de Semana", "subtitle": "Preparado a fuego lento con plátano verde, arracacha, mazorca y presa campesina dorada.", "img": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=80"}];
+    const INITIAL_MENU_DIA = [{"badge": "El Rey de la Casa", "title": "Asado Huilense Tradicional Completo", "desc": "Lomo de cerdo marinado en adobo opita, arepa oreja de perro, insulso campesino y yuca al vapor.", "price": "$38.000 COP", "img": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=700&q=80"}, {"badge": "Típico", "title": "Tamal Huilense Especial", "desc": "Masa suave de maíz rellena de carne de cerdo, pollo campesino, huevo y verduras envuelto en hoja de plátano.", "price": "$16.000 COP", "img": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=700&q=80"}, {"badge": "Sopa Tradicional", "title": "Sancocho de Gallina en Leña los Fines de Semana", "desc": "Preparado a fuego lento con plátano verde, arracacha, mazorca y presa campesina dorada.", "price": "$32.000 COP", "img": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=80"}];
+    const INITIAL_CARTA = [{"badge": "El Rey de la Casa", "title": "Asado Huilense Tradicional Completo", "desc": "Lomo de cerdo marinado en adobo opita, arepa oreja de perro, insulso campesino y yuca al vapor.", "price": "$38.000 COP", "img": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=700&q=80"}, {"badge": "Típico", "title": "Tamal Huilense Especial", "desc": "Masa suave de maíz rellena de carne de cerdo, pollo campesino, huevo y verduras envuelto en hoja de plátano.", "price": "$16.000 COP", "img": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=700&q=80"}, {"badge": "Sopa Tradicional", "title": "Sancocho de Gallina en Leña los Fines de Semana", "desc": "Preparado a fuego lento con plátano verde, arracacha, mazorca y presa campesina dorada.", "price": "$32.000 COP", "img": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=80"}, {"badge": "Parrilla", "title": "Churrasco a la Brasa (350g)", "desc": "Corte de res jugoso asado al carbón con papas a la francesa, ensalada fresca y chimichurri.", "price": "$40.000 COP", "img": "https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=700&q=80"}, {"badge": "Entrada", "title": "Cesta de Achiras Calientes e Insulsos", "desc": "Bizcochos de achira recién horneados acompañados de insulsos dulces típicos de la región.", "price": "$14.000 COP", "img": "https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=700&q=80"}, {"badge": "Bebida Típica", "title": "Jugo Natural de Cholupa Huilense", "desc": "La fruta insignia del Huila servida bien fría en agua o con leche.", "price": "$9.000 COP", "img": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=700&q=80"}];
     const STORAGE_KEY = "sais_cms_" + INITIAL_BIZ.id;
 
     let appData = {
@@ -1110,13 +1110,13 @@
     }
 
     function renderBusinessInfo() {
-      const icon = appData.biz.icon_class || "fa-solid fa-bowl-food";
+      const icon = appData.biz.icon_class || "fa-solid fa-wheat-awn";
       document.getElementById("header-biz-name").innerHTML = `<i class="${icon}"></i> ${appData.biz.name}`;
       document.getElementById("info-biz-title").innerText = appData.biz.name;
       document.getElementById("info-biz-address").innerText = appData.biz.address;
       document.getElementById("info-biz-phone").innerText = appData.biz.phone_display;
       
-      const waLink = "https://wa.me/57" + appData.biz.phone + "?text=Hola,%20los%20contacto%20desde%20su%20sitio%20web";
+      const waLink = "mailto:serujio28@gmail.com" + appData.biz.phone + "?text=Hola,%20los%20contacto%20desde%20su%20sitio%20web";
       document.getElementById("btn-wa-header").href = waLink;
       document.getElementById("wa-float").href = waLink;
     }
@@ -1204,11 +1204,7 @@
         }
 
         const waText = encodeURIComponent(`Hola ${appData.biz.name}, quiero ordenar: ${item.title} (${item.price})`);
-        const waLink = `https://wa.me/57${appData.biz.phone}?text=${waText}`;
-
-        card.innerHTML = `
-          ${editButtons}
-          <span class="menu-dia-badge"><i class="fa-solid fa-tag"></i> ${item.badge}</span>
+        const waLink = `mailto:serujio28@gmail.com"menu-dia-badge"><i class="fa-solid fa-tag"></i> ${item.badge}</span>
           <div class="menu-dia-img-wrap">
             <img src="${item.img}" class="menu-dia-img" alt="${item.title}" loading="lazy">
           </div>
@@ -1220,7 +1216,7 @@
             <div class="menu-dia-footer">
               <span class="menu-dia-price">${item.price}</span>
               <a href="${waLink}" target="_blank" class="btn-order-wa">
-                <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
+                <i class="fa-solid fa-envelope"></i> Pedir por Contacto Directo
               </a>
             </div>
           </div>
@@ -1284,11 +1280,7 @@
         }
 
         const waText = encodeURIComponent(`Hola ${appData.biz.name}, deseo ordenar de la carta: ${item.title} (${item.price})`);
-        const waLink = `https://wa.me/57${appData.biz.phone}?text=${waText}`;
-
-        card.innerHTML = `
-          ${editButtons}
-          <img src="${item.img}" class="carta-item-img" alt="${item.title}" loading="lazy">
+        const waLink = `mailto:serujio28@gmail.com"${item.img}" class="carta-item-img" alt="${item.title}" loading="lazy">
           <div class="carta-item-content">
             <div>
               <span class="carta-item-cat"><i class="fa-solid fa-bookmark"></i> ${item.cat}</span>
@@ -1298,7 +1290,7 @@
             <div class="carta-item-bottom">
               <span class="carta-price">${item.price}</span>
               <a href="${waLink}" target="_blank" class="btn-order-mini">
-                <i class="fa-brands fa-whatsapp"></i> Ordenar
+                <i class="fa-solid fa-envelope"></i> Ordenar
               </a>
             </div>
           </div>
