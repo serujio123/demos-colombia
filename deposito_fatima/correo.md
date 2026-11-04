@@ -26,7 +26,7 @@ La propuesta busca facilitar la comunicación con sus clientes y dar mayor visib
 
 Entre sus funcionalidades encontrarán:
 - Catálogo de insumos pesados: cemento gris y blanco, hierro figurado, mallas electrosoldadas y ladrillo.
-- Cotización inmediata por WhatsApp: atención directa a maestros de obra, ingenieros y autoconstructores.
+- Cotización inmediata por correo: atención directa a maestros de obra, ingenieros y autoconstructores.
 - Contacto y ubicación de bodegas: mapa interactivo de la sede Centro y bodega en Quebraditas.
 - Galería de flota y acopios: muestra de capacidad de despacho y entregas directas a obra en Neiva.
 - Panel administrativo (CMS): actualizar listas de precios por volumen y promociones en vivo.

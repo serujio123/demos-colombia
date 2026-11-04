@@ -2,7 +2,7 @@ ASUNTO: Propuesta de página web para El Mundo de la Mascota Villavicencio
 
 Hola, equipo de El Mundo de la Mascota Villavicencio:
 
-¿Han considerado tener una página web propia donde sus clientes puedan conocer sus servicios, conocer sus servicios veterinarios, catálogo de productos y agendar citas por WhatsApp?
+¿Han considerado tener una página web propia donde sus clientes puedan conocer sus servicios, conocer sus servicios veterinarios, catálogo de productos y agendar citas por correo?
 
 Mi nombre es SAIS Gallego y me dedico al desarrollo de páginas web para negocios en Colombia. Me tomé el tiempo de preparar una demostración personalizada de cómo podría lucir la presencia digital de El Mundo de la Mascota Villavicencio.
 

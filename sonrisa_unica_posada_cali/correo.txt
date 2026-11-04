@@ -12,7 +12,7 @@ La propuesta busca facilitar la comunicación con sus clientes y dar mayor visib
 Entre sus funcionalidades encontrarán:
 - Ubicación en el prestigioso barrio Santa Mónica Norte de Cali.
 - Especialistas en implantes dentales osteointegrados y estética dental.
-- Módulo de agendamiento digital con confirmación instantánea por WhatsApp.
+- Módulo de agendamiento digital con confirmación instantánea por correo.
 - Galería de casos clínicos de rehabilitación oral antes y después.
 - Panel CMS interactivo para gestionar contenido y precios sin terceros.
 

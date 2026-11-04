@@ -12,7 +12,7 @@ La propuesta busca facilitar la comunicación con sus clientes y dar mayor visib
 Entre sus funcionalidades encontrarán:
 - Sede en el Edificio Central del Eje (Av. 30 de Agosto, Pereira).
 - Tratamientos odontológicos integrales para toda la familia con especialistas.
-- Canal digital para agendar citas con confirmación por WhatsApp.
+- Canal digital para agendar citas con confirmación por correo.
 - Galería de casos clínicos y tecnología de vanguardia.
 - Panel CMS interactivo para actualización fácil de contenidos.
 

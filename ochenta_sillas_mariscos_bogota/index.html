@@ -163,7 +163,7 @@
   <div class="top-banner">
     <div class="container d-flex justify-content-between align-items-center">
       <div><i class="fa-solid fa-location-dot me-1 text-warning"></i> Calle 118 # 6A-05, Usaquén, Bogotá, Colombia</div>
-      <div><i class="fa-solid fa-phone me-1 text-warning"></i> +57 1 644 7777 &bull; <i class="fa-brands fa-instagram me-1 text-warning"></i> @80sillas</div>
+      <div> <i class="fa-brands fa-instagram me-1 text-warning"></i> @80sillas</div>
     </div>
   </div>
 
@@ -218,7 +218,7 @@
       <div class="order-box">
         <h5 class="fw-bold text-dark mb-1">¿Desea solicitar una reserva o información en 80 Sillas Cocina de Mar?</h5>
         <p class="text-muted mb-3" style="font-size: 14px;">Atención directa y personalizada en Bogotá, D.C., Colombia.</p>
-        <a href="tel:5716447777" class="btn btn-dark fw-bold px-4 py-2 me-2"><i class="fa-solid fa-phone me-1"></i> Contactar al +57 1 644 7777</a>
+        
         <a href="propuesta.html" class="btn btn-outline-secondary fw-semibold px-4 py-2"><i class="fa-solid fa-download me-1"></i> Ver Cotización Oficial PDF</a>
       </div>
     </div>
@@ -228,7 +228,7 @@
   <footer class="footer-custom">
     <div class="container text-center">
       <div class="fw-bold text-white mb-2">80 Sillas Cocina de Mar &bull; 80 Sillas Restaurante S.A.S.</div>
-      <div class="mb-3">Calle 118 # 6A-05, Usaquén, Bogotá, Colombia &bull; Contacto: +57 1 644 7777</div>
+      <div class="mb-3">Calle 118 # 6A-05, Usaquén, Bogotá, Colombia &bull; Contacto: serujio28@gmail.com</div>
       <div class="text-muted" style="font-size: 12px;">Demostración web y arquitectura digital diseñada por SAIS Gallego (serujio28@gmail.com). Todos los derechos reservados.</div>
     </div>
   </footer>
@@ -300,9 +300,7 @@
       document.getElementById('modalDishPrice').textContent = item.price || '';
       document.getElementById('modalDishDesc').textContent = item.desc || '';
       
-      const phoneDigits = '';
-      const waText = encodeURIComponent(`Hola, quisiera consultar por: ${item.title} (${item.price}).`);
-      document.getElementById('modalWaBtn').href = `https://wa.me/${phoneDigits}?text=${waText}`;
+      const subject = encodeURIComponent(`Consulta: ${item.title}`); const body = encodeURIComponent(`Hola, quisiera recibir más información y reservar el servicio: ${item.title} (${item.price}).`); if (document.getElementById('modalMailBtn')) document.getElementById('modalMailBtn').href = `mailto:serujio28@gmail.com?subject=${subject}&body=${body}`;
       
       const modalEl = document.getElementById('quickBookingModal');
       if (window.bootstrap && bootstrap.Modal) {
@@ -329,12 +327,10 @@
           <p class="text-muted" id="modalDishDesc" style="font-size: 14px; line-height: 1.6;"></p>
           
           <div class="d-grid gap-2 mt-4">
-            <a href="#" id="modalWaBtn" target="_blank" class="btn btn-success fw-bold py-2" style="background: #25d366; border: none; border-radius: 10px; font-size: 15px;">
-              <i class="fa-brands fa-whatsapp me-2 fs-5"></i> Reservar / Pedir por WhatsApp
+            <a href="mailto:serujio28@gmail.com?subject=Consulta%20de%20Servicio" id="modalMailBtn" class="btn btn-dark fw-bold py-2" style="border-radius: 10px; font-size: 15px; background: #0f172a;">
+              <i class="fa-solid fa-envelope me-2"></i> Solicitar Información / Reservar por Correo
             </a>
-            <a href="tel:" id="modalTelBtn" class="btn btn-outline-dark fw-semibold py-2" style="border-radius: 10px; font-size: 14px;">
-              <i class="fa-solid fa-phone me-2"></i> Llamar al Establecimiento
-            </a>
+            
           </div>
         </div>
       </div>
@@ -342,11 +338,7 @@
   </div>
 
 
-  <!-- Botón Flotante Armónico de WhatsApp -->
-  <a href="https://wa.me/?text=Hola,%20quisiera%20m%C3%A1s%20informaci%C3%B3n" id="floatingWaBtn" target="_blank" style="position: fixed; bottom: 25px; right: 25px; background: #25d366; color: white; border-radius: 50px; padding: 12px 20px; font-weight: 700; font-size: 14px; box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4); text-decoration: none; z-index: 9999; display: flex; align-items: center; gap: 8px; transition: transform 0.2s ease;">
-    <i class="fa-brands fa-whatsapp fs-5"></i>
-    <span class="d-none d-sm-inline">Chatear por WhatsApp</span>
-  </a>
+  
 
 </body>
 </html>

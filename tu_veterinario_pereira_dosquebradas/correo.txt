@@ -12,7 +12,7 @@ La propuesta busca facilitar la comunicación con sus clientes y dar mayor visib
 Entre sus funcionalidades encontrarán:
 - Atención veterinaria sin estrés en la comodidad de tu hogar en Pereira y Dosquebradas.
 - Consultas generales, toma de muestras de sangre y vacunación sin traslados molestos.
-- Solicitud directa de visita por WhatsApp con indicación de dirección y urgencia.
+- Solicitud directa de visita por correo con indicación de dirección y urgencia.
 - Convenios con quirófanos aliados para procedimientos quirúrgicos programados.
 - Panel administrativo (CMS): publicar zonas de cobertura y consejos de medicina preventiva.
 

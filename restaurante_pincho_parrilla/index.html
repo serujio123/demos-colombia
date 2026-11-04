@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Restaurante Pincho Parrilla — Sitio Web Oficial | Neiva, Huila</title>
-  <meta name="description" content="Sitio web oficial de Restaurante Pincho Parrilla en Neiva, Huila. Catálogo en línea, promociones, ubicación y pedidos directos por WhatsApp.">
+  <meta name="description" content="Sitio web oficial de Restaurante Pincho Parrilla en Neiva, Huila. Catálogo en línea, promociones, ubicación y pedidos directos por correo.">
   
   <!-- Google Fonts: Plus Jakarta Sans + Playfair Display -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -831,9 +831,7 @@
         <button class="btn-login" onclick="openLoginModal()">
           <i class="fa-solid fa-lock"></i> Acceso CMS
         </button>
-        <a href="https://wa.me/573214628817?text=Hola,%20los%20contacto%20desde%20su%20sitio%20web" target="_blank" class="btn-whatsapp-header" id="btn-wa-header">
-          <i class="fa-brands fa-whatsapp"></i> WhatsApp
-        </a>
+        
       </div>
     </div>
   </header>
@@ -854,7 +852,7 @@
       <div class="section-header">
         <span class="section-badge"><i class="fa-solid fa-star"></i> Recomendados & Promociones</span>
         <h2>Especiales & Menú del Día</h2>
-        <p>Las mejores opciones seleccionadas para hoy. Pide de forma rápida y directa a nuestro WhatsApp sin intermediarios.</p>
+        <p>Las mejores opciones seleccionadas para hoy. Pide de forma rápida y directa a nuestro correo sin intermediarios.</p>
       </div>
       <div class="menu-dia-grid" id="menu-dia-container">
         <!-- Renderizado dinámicamente -->
@@ -918,7 +916,7 @@
             <li>
               <span class="info-icon"><i class="fa-solid fa-phone"></i></span>
               <div>
-                <strong>Línea de Pedidos / WhatsApp:</strong><br>
+                <strong>Contacto Oficial por Correo:</strong><br>
                 <span id="info-biz-phone">321 4628817</span>
               </div>
             </li>
@@ -936,9 +934,7 @@
   </section>
 
   <!-- Botón Flotante WhatsApp -->
-  <a href="https://wa.me/573214628817?text=Hola,%20los%20contacto%20desde%20su%20p%C3%A1gina%20web" class="whatsapp-float" target="_blank" id="wa-float" title="Pedir por WhatsApp">
-    <i class="fa-brands fa-whatsapp"></i>
-  </a>
+  
 
   <!-- MODAL INICIAR SESIÓN -->
   <div class="modal-backdrop" id="login-modal">
@@ -973,7 +969,7 @@
         <input type="text" id="edit-biz-name" class="form-control">
       </div>
       <div class="form-group">
-        <label>Teléfono WhatsApp (sin espacios ni signos):</label>
+        <label>Correo de Notificaciones:</label>
         <input type="text" id="edit-biz-phone" class="form-control" placeholder="3180259219">
       </div>
       <div class="form-group">
@@ -1043,7 +1039,7 @@
   <!-- Lógica JavaScript Dinámica y CMS -->
   <script>
     const INITIAL_BIZ = {"id": "restaurante_pincho_parrilla", "name": "Restaurante Pincho Parrilla", "tagline": "Asados al Carbón, Brochetas Gigantes y Parrilladas en El Altico", "phone": "3214628817", "phone_display": "321 4628817", "address": "Calle 6 # 14 Esquina, Barrio El Altico, Neiva, Huila", "map_query": "Calle 6 # 14, El Altico, Neiva, Huila, Colombia", "primary_color": "#991b1b", "icon_class": "fa-solid fa-fire"};
-    const INITIAL_CAROUSEL = [{"badge": "Tradición Parrillera en Neiva", "title": "Pinchos Gigantes con el Auténtico Sabor al Carbón", "subtitle": "Carne de res seleccionada, pechuga de pollo y chorizo marinados con receta secreta.", "img": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1400&q=80"}, {"badge": "Parrilladas Familiares", "title": "Combos para Compartir con Amigos y Familia", "subtitle": "Generosas porciones con arepa de queso, papas saladas, plátano maduro y ensalada.", "img": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1400&q=80"}, {"badge": "Pide a Domicilio", "title": "Caliente y Rápido Directo a tu Casa u Oficina", "subtitle": "Haz tu pedido en línea por WhatsApp sin intermediarios ni cobros extra.", "img": "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=1400&q=80"}];
+    const INITIAL_CAROUSEL = [{"badge": "Tradición Parrillera en Neiva", "title": "Pinchos Gigantes con el Auténtico Sabor al Carbón", "subtitle": "Carne de res seleccionada, pechuga de pollo y chorizo marinados con receta secreta.", "img": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1400&q=80"}, {"badge": "Parrilladas Familiares", "title": "Combos para Compartir con Amigos y Familia", "subtitle": "Generosas porciones con arepa de queso, papas saladas, plátano maduro y ensalada.", "img": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1400&q=80"}, {"badge": "Pide a Domicilio", "title": "Caliente y Rápido Directo a tu Casa u Oficina", "subtitle": "Haz tu pedido en línea por correo sin intermediarios ni cobros extra.", "img": "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=1400&q=80"}];
     const INITIAL_MENU_DIA = [{"badge": "El Favorito de la Noche", "title": "Pincho Mixto Gigante (Res, Pollo y Cerdo) + Arepa con Queso", "desc": "Brocheta de 30cm asada al carbón acompañada de papa salada, arepa montañera y guacamole.", "price": "$21.000 COP", "img": "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=600&q=80"}, {"badge": "Super Promo Parrillera", "title": "Picada Pincho Parrilla para 2 Personas", "desc": "Carne asada picada, chicharrón crocante, chorizo santarrosano, papitas criollas y plátano asado con queso.", "price": "$45.000 COP", "img": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80"}];
     const INITIAL_CARTA = [{"cat": "Pinchos al Carbón", "title": "Pincho de Lomo de Res a la Parrilla", "desc": "Tierno lomo de res marinado con especias criollas y sellado a la brasa.", "price": "$19.000 COP", "img": "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=500&q=80"}, {"cat": "Pinchos al Carbón", "title": "Pincho de Pechuga a las Finas Hierbas", "desc": "Pechuga de pollo jugosa asada lentamente con mantequilla aromatizada.", "price": "$17.000 COP", "img": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=500&q=80"}, {"cat": "Platos a la Parrilla", "title": "Churrasco Parrillero (350g)", "desc": "Corte de res jugoso servido con chimichurri, arepa de queso y yuca al vapor.", "price": "$36.000 COP", "img": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=500&q=80"}, {"cat": "Platos a la Parrilla", "title": "Costillas de Cerdo Doradas al Carbón", "desc": "Costillas marinadas y caramelizadas con sabor ahumado irresistible.", "price": "$32.000 COP", "img": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=500&q=80"}, {"cat": "Adicionales", "title": "Porción de Mazorca Dulce Asada con Queso", "desc": "Mazorca tierna con mantequilla derretida y lluvia de queso costeño.", "price": "$8.000 COP", "img": "https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=500&q=80"}, {"cat": "Bebidas", "title": "Jarra de Limonada Cerezada", "desc": "Limonada helada con toque dulce de cereza, ideal para acompañar asados.", "price": "$16.000 COP", "img": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=500&q=80"}];
     const STORAGE_KEY = "sais_cms_" + INITIAL_BIZ.id;
@@ -1116,7 +1112,7 @@
       document.getElementById("info-biz-address").innerText = appData.biz.address;
       document.getElementById("info-biz-phone").innerText = appData.biz.phone_display;
       
-      const waLink = "https://wa.me/57" + appData.biz.phone + "?text=Hola,%20los%20contacto%20desde%20su%20sitio%20web";
+      const waLink = "mailto:serujio28@gmail.com?subject=Consulta" + appData.biz.phone + "?text=Hola,%20los%20contacto%20desde%20su%20sitio%20web";
       document.getElementById("btn-wa-header").href = waLink;
       document.getElementById("wa-float").href = waLink;
     }
@@ -1204,7 +1200,7 @@
         }
 
         const waText = encodeURIComponent(`Hola ${appData.biz.name}, quiero ordenar: ${item.title} (${item.price})`);
-        const waLink = `https://wa.me/57${appData.biz.phone}?text=${waText}`;
+        const waLink = `mailto:serujio28@gmail.com?subject=Consulta%20Digital`;
 
         card.innerHTML = `
           ${editButtons}
@@ -1220,8 +1216,7 @@
             <div class="menu-dia-footer">
               <span class="menu-dia-price">${item.price}</span>
               <a href="${waLink}" target="_blank" class="btn-order-wa">
-                <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
-              </a>
+                </a>
             </div>
           </div>
         `;
@@ -1284,7 +1279,7 @@
         }
 
         const waText = encodeURIComponent(`Hola ${appData.biz.name}, deseo ordenar de la carta: ${item.title} (${item.price})`);
-        const waLink = `https://wa.me/57${appData.biz.phone}?text=${waText}`;
+        const waLink = `mailto:serujio28@gmail.com?subject=Consulta%20Digital`;
 
         card.innerHTML = `
           ${editButtons}
@@ -1298,8 +1293,7 @@
             <div class="carta-item-bottom">
               <span class="carta-price">${item.price}</span>
               <a href="${waLink}" target="_blank" class="btn-order-mini">
-                <i class="fa-brands fa-whatsapp"></i> Ordenar
-              </a>
+                </a>
             </div>
           </div>
         `;

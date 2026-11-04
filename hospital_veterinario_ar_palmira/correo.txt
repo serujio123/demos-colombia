@@ -12,7 +12,7 @@ La propuesta busca facilitar la comunicación con sus clientes y dar mayor visib
 Entre sus funcionalidades encontrarán:
 - Medicina general, hospitalización y cirugías complejas en Palmira.
 - Quirófano estéril con anestesia monitorizada para esterilizaciones y procedimientos de urgencia.
-- Agendamiento ágil por WhatsApp para vacunas, desparasitación y chequeos.
+- Agendamiento ágil por correo para vacunas, desparasitación y chequeos.
 - Ubicación de fácil acceso para mascotas de todo Palmira y sus corregimientos.
 - Panel administrativo (CMS): actualizar promociones sanitarias y fotos de pacientes.
 

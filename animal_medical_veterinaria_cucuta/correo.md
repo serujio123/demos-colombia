@@ -26,7 +26,7 @@ Plan Completo: $650.000 COP (pago único)
 Incluye:
 - Diseño y desarrollo web médico veterinario profesional en Cúcuta.
 - Adaptación para celulares, tabletas y computadores.
-- Línea directa para atención de urgencias y consultas por WhatsApp.
+- Línea directa para atención de urgencias y consultas por correo.
 - Catálogo de cirugías, laboratorio clínico y vacunación.
 - Panel administrativo (CMS).
 - Configuración y publicación del sitio web.

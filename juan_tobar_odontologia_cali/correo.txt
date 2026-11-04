@@ -13,7 +13,7 @@ Entre sus funcionalidades encontrarán:
 - Ubicación privilegiada en Centro Sur Plaza (Cali).
 - Tratamientos personalizados de diseño de sonrisa y carillas cerámicas.
 - Materiales de alta durabilidad y estética natural europea.
-- Reserva de citas digital y atención directa por WhatsApp.
+- Reserva de citas digital y atención directa por correo.
 - Panel autogestionable (CMS) para actualización en tiempo real.
 
 Conozcan cómo podría verse su negocio en Internet:

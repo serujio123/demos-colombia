@@ -24,12 +24,11 @@ Inversión estimada:
 - Registro de Dominio Corporativo: $52.000 COP/año
 Total estimado primer año: $872.000 COP
 
-Si desean revisar los detalles, pueden responder directamente a este correo o contactarnos al WhatsApp +57 321 338 6504.
+Si desean revisar los detalles, pueden responder directamente a este correo o contactarnos a este correo.
 
 Atentamente,
 
 SAIS Gallego
 Desarrollo web y soluciones digitales
-WhatsApp: +57 321 338 6504
 Correo: serujio28@gmail.com
 Portafolio: https://github.com/serujio123

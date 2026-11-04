@@ -12,7 +12,7 @@ La propuesta busca facilitar la comunicación con sus clientes y dar mayor visib
 Entre sus funcionalidades encontrarán:
 - Ubicación en el C.C.C.T. (Nivel C1), fácil acceso y máxima seguridad.
 - Pioneros en tratamientos con tecnología láser indolora en Caracas.
-- Módulo de reserva y contacto directo con confirmación por WhatsApp.
+- Módulo de reserva y contacto directo con confirmación por correo.
 - Galería de sonrisas renovadas y tecnología médica de punta.
 - Panel CMS interactivo para actualización instantánea de tarifas y promociones.
 

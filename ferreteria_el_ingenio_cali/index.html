@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ferretería El Ingenio — Sitio Web Oficial | Cali, Valle del Cauca</title>
-  <meta name="description" content="Sitio web oficial de Ferretería El Ingenio en Cali, Valle del Cauca. Catálogo en línea, promociones, ubicación y pedidos directos por WhatsApp.">
+  <meta name="description" content="Sitio web oficial de Ferretería El Ingenio en Cali, Valle del Cauca. Catálogo en línea, promociones, ubicación y pedidos directos por correo.">
   
   <!-- Google Fonts: Plus Jakarta Sans + Playfair Display -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -831,9 +831,7 @@
         <button class="btn-login" onclick="openLoginModal()">
           <i class="fa-solid fa-lock"></i> Acceso CMS
         </button>
-        <a href="https://wa.me/573185231499?text=Hola,%20los%20contacto%20desde%20su%20sitio%20web" target="_blank" class="btn-whatsapp-header" id="btn-wa-header">
-          <i class="fa-brands fa-whatsapp"></i> WhatsApp
-        </a>
+        
       </div>
     </div>
   </header>
@@ -854,7 +852,7 @@
       <div class="section-header">
         <span class="section-badge"><i class="fa-solid fa-star"></i> Recomendados & Promociones</span>
         <h2>Especiales & Menú del Día</h2>
-        <p>Las mejores opciones seleccionadas para hoy. Pide de forma rápida y directa a nuestro WhatsApp sin intermediarios.</p>
+        <p>Las mejores opciones seleccionadas para hoy. Pide de forma rápida y directa a nuestro correo sin intermediarios.</p>
       </div>
       <div class="menu-dia-grid" id="menu-dia-container">
         <!-- Renderizado dinámicamente -->
@@ -918,7 +916,7 @@
             <li>
               <span class="info-icon"><i class="fa-solid fa-phone"></i></span>
               <div>
-                <strong>Línea de Pedidos / WhatsApp:</strong><br>
+                <strong>Contacto Oficial por Correo:</strong><br>
                 <span id="info-biz-phone">+57 318 523 1499 / (602) 3337777</span>
               </div>
             </li>
@@ -936,9 +934,7 @@
   </section>
 
   <!-- Botón Flotante WhatsApp -->
-  <a href="https://wa.me/573185231499?text=Hola,%20los%20contacto%20desde%20su%20p%C3%A1gina%20web" class="whatsapp-float" target="_blank" id="wa-float" title="Pedir por WhatsApp">
-    <i class="fa-brands fa-whatsapp"></i>
-  </a>
+  
 
   <!-- MODAL INICIAR SESIÓN -->
   <div class="modal-backdrop" id="login-modal">
@@ -973,7 +969,7 @@
         <input type="text" id="edit-biz-name" class="form-control">
       </div>
       <div class="form-group">
-        <label>Teléfono WhatsApp (sin espacios ni signos):</label>
+        <label>Correo de Notificaciones:</label>
         <input type="text" id="edit-biz-phone" class="form-control" placeholder="3185231499">
       </div>
       <div class="form-group">
@@ -1043,7 +1039,7 @@
   <!-- Lógica JavaScript Dinámica y CMS -->
   <script>
     const INITIAL_BIZ = {"id": "ferreteria_el_ingenio_cali", "name": "Ferretería El Ingenio", "tagline": "Ferretería & Materiales de Obra en El Ingenio, Cali", "phone": "3185231499", "phone_display": "+57 318 523 1499 / (602) 3337777", "address": "Calle 25 # 84A - 40, Barrio El Ingenio, Cali, Valle del Cauca", "map_query": "Calle 25 # 84A-40, Cali, Colombia", "primary_color": "#d97706", "icon_class": "fa-solid fa-hammer", "city_region": "Cali, Valle del Cauca", "city_short": "El Ingenio, Cali"};
-    const INITIAL_CAROUSEL = [{"badge": "Tu Ferretería en El Ingenio Cali", "title": "Materiales para Construcción y Remodelación", "subtitle": "Los mejores precios en cementos, aceros, tuberías y pinturas con entrega directa en obra.", "img": "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=1400&q=80"}, {"badge": "Herramientas & Pinturas", "title": "Marcas Líderes para Acabados Profesionales", "subtitle": "Encuentra todo lo que necesitas para tu proyecto en un solo lugar.", "img": "https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=1400&q=80"}, {"badge": "Despachos Rápidos", "title": "Cotiza por WhatsApp y Recibe en tu Obra", "subtitle": "Asesoría personalizada y tiempos de despacho garantizados en Cali.", "img": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=80"}];
+    const INITIAL_CAROUSEL = [{"badge": "Tu Ferretería en El Ingenio Cali", "title": "Materiales para Construcción y Remodelación", "subtitle": "Los mejores precios en cementos, aceros, tuberías y pinturas con entrega directa en obra.", "img": "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=1400&q=80"}, {"badge": "Herramientas & Pinturas", "title": "Marcas Líderes para Acabados Profesionales", "subtitle": "Encuentra todo lo que necesitas para tu proyecto en un solo lugar.", "img": "https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=1400&q=80"}, {"badge": "Despachos Rápidos", "title": "Cotiza por correo y Recibe en tu Obra", "subtitle": "Asesoría personalizada y tiempos de despacho garantizados en Cali.", "img": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=80"}];
     const INITIAL_MENU_DIA = [{"badge": "Material Principal", "title": "Cemento Gris Uso General Saco 50kg", "desc": "Cemento estructural de alta resistencia para vigas, columnas y mampostería.", "price": "$32.500 COP", "img": "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80"}, {"badge": "Insumo de Acero", "title": "Varilla Corrugada 1/2 pulgada x 6 metros", "desc": "Acero de refuerzo certificado estándar sismorresistente colombiano.", "price": "$38.000 COP", "img": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80"}, {"badge": "Hidráulico", "title": "Tubo Sanitario PVC 4 pulgadas x 6m Pavco", "desc": "Tubería norma técnica para evacuación de aguas servidas y pluviales.", "price": "$56.000 COP", "img": "https://images.unsplash.com/photo-1581244277943-fe4a9c777189?auto=format&fit=crop&w=600&q=80"}];
     const INITIAL_CARTA = [{"cat": "Pinturas", "title": "Cuñete de Pintura Vinilo Tipo 1 Lavable", "desc": "Pintura blanca base agua de alto cubrimiento para interiores y exteriores.", "price": "$235.000 COP", "img": "https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=500&q=80"}, {"cat": "Pegantes", "title": "Pegacor Blanco Corona Saco 25kg", "desc": "Mortero adhesivo modificado para enchape cerámico y porcelanato.", "price": "$28.000 COP", "img": "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=500&q=80"}, {"cat": "Herramientas", "title": "Taladro Percutor Industrial 650W", "desc": "Herramienta eléctrica versátil para perforación en ladrillo y concreto.", "price": "$175.000 COP", "img": "https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=500&q=80"}, {"cat": "Agregados", "title": "Metro Cúbico de Arena Fina Lavada de Río", "desc": "Arena limpia libre de impurezas para revoque, pañete y mortero.", "price": "$78.000 COP", "img": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=500&q=80"}, {"cat": "Ladrillos", "title": "Millar de Bloque No. 5 Estructural de Arcilla", "desc": "Bloque cerámico ranurado de alta compresión para cerramientos limpios.", "price": "$1.450.000 COP", "img": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=500&q=80"}];
     const STORAGE_KEY = "sais_cms_" + INITIAL_BIZ.id;
@@ -1116,7 +1112,7 @@
       document.getElementById("info-biz-address").innerText = appData.biz.address;
       document.getElementById("info-biz-phone").innerText = appData.biz.phone_display;
       
-      const waLink = "https://wa.me/57" + appData.biz.phone + "?text=Hola,%20los%20contacto%20desde%20su%20sitio%20web";
+      const waLink = "mailto:serujio28@gmail.com?subject=Consulta" + appData.biz.phone + "?text=Hola,%20los%20contacto%20desde%20su%20sitio%20web";
       document.getElementById("btn-wa-header").href = waLink;
       document.getElementById("wa-float").href = waLink;
     }
@@ -1204,7 +1200,7 @@
         }
 
         const waText = encodeURIComponent(`Hola ${appData.biz.name}, quiero ordenar: ${item.title} (${item.price})`);
-        const waLink = `https://wa.me/57${appData.biz.phone}?text=${waText}`;
+        const waLink = `mailto:serujio28@gmail.com?subject=Consulta%20Digital`;
 
         card.innerHTML = `
           ${editButtons}
@@ -1220,8 +1216,7 @@
             <div class="menu-dia-footer">
               <span class="menu-dia-price">${item.price}</span>
               <a href="${waLink}" target="_blank" class="btn-order-wa">
-                <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
-              </a>
+                </a>
             </div>
           </div>
         `;
@@ -1284,7 +1279,7 @@
         }
 
         const waText = encodeURIComponent(`Hola ${appData.biz.name}, deseo ordenar de la carta: ${item.title} (${item.price})`);
-        const waLink = `https://wa.me/57${appData.biz.phone}?text=${waText}`;
+        const waLink = `mailto:serujio28@gmail.com?subject=Consulta%20Digital`;
 
         card.innerHTML = `
           ${editButtons}
@@ -1298,8 +1293,7 @@
             <div class="carta-item-bottom">
               <span class="carta-price">${item.price}</span>
               <a href="${waLink}" target="_blank" class="btn-order-mini">
-                <i class="fa-brands fa-whatsapp"></i> Ordenar
-              </a>
+                </a>
             </div>
           </div>
         `;

@@ -12,7 +12,7 @@ La propuesta busca facilitar la comunicación con sus clientes y dar mayor visib
 Entre sus funcionalidades encontrarán:
 - Ubicación en Torre Yamato, La Urbina (Caracas).
 - Especialistas en medicina interna, ecografía y procedimientos quirúrgicos.
-- Contacto de urgencias y agendamiento directo por WhatsApp.
+- Contacto de urgencias y agendamiento directo por correo.
 - Galería de instalaciones médicas y casos de recuperación animal.
 - Panel CMS interactivo para compartir campañas de vacunación y jornadas.
 

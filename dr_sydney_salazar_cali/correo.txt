@@ -13,7 +13,7 @@ Entre sus funcionalidades encontrarán:
 - Atención experta en San Fernando (Cali) y sede en Palmira.
 - Especialistas en alineadores invisibles y brackets de zafiro de alta estética.
 - Ortopedia maxilofacial para niños y adolescentes.
-- Canal de citas directas por WhatsApp con recordatorios.
+- Canal de citas directas por correo con recordatorios.
 - Panel CMS para actualizar casos de éxito y tratamientos.
 
 Conozcan cómo podría verse su negocio en Internet:

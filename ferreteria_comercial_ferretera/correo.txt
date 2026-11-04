@@ -2,11 +2,11 @@ ASUNTO: Ferretería Comercial Ferretera — así quedaría su página web 🔥
 
 Hola, monté una demostración de cómo luciría la página web de Comercial Ferretera con tus categorías de materiales, herramientas y ubicación en el centro de Neiva. Puedes revisarla aquí: https://sais-gallego.github.io/trabajo_so/ferreteria_comercial_ferretera/
 
-Tus clientes maestros de obra podrán consultar tu catálogo desde la obra y pedir cotizaciones rápidas por WhatsApp, y tú mismo podrás actualizar productos destacados cuando quieras desde tu panel.
+Tus clientes maestros de obra podrán consultar tu catálogo desde la obra y pedir cotizaciones rápidas por correo, y tú mismo podrás actualizar productos destacados cuando quieras desde tu panel.
 
 Te sugiero el Plan Básico por $350.000 COP (pago único) para tener catálogo de líneas, mapa, WhatsApp y editor CMS. El hosting es aparte (arriendo anual de tu espacio web, desde $80.000/año directo al proveedor; nosotros no ganamos ahí) y el dominio .com.co desde $45.000/año.
 
-¿Te gustaría revisarla? Respóndeme este correo o hablemos por WhatsApp para resolver cualquier inquietud sin ningún compromiso.
+¿Te gustaría revisarla? Respóndeme este correo o hablemos por correo para resolver cualquier inquietud sin ningún compromiso.
 
 SAIS Gallego
 g46113026@gmail.com

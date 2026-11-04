@@ -12,7 +12,7 @@ La propuesta busca facilitar la comunicación con sus clientes y dar mayor visib
 Entre sus funcionalidades encontrarán:
 - Medicina veterinaria en Robledo y López de Mesa: consultas, vacunación y desparasitación.
 - Quirófano estéril para esterilizaciones y cirugías de tejidos blandos.
-- Agendamiento ágil por WhatsApp para evitar filas y estrés en las mascotas.
+- Agendamiento ágil por correo para evitar filas y estrés en las mascotas.
 - Ubicación en la Calle 80C con fácil acceso para residentes de Robledo y Castilla.
 - Panel administrativo (CMS): publicar campañas comunitarias y fotos del equipo médico.
 

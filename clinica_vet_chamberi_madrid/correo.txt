@@ -12,7 +12,7 @@ La propuesta busca facilitar la comunicación con sus clientes y dar mayor visib
 Entre sus funcionalidades encontrarán:
 - Ubicación céntrica en Calle de Santa Engracia (barrio de Chamberí).
 - Veterinarios colegiados con amplia experiencia en medicina felina y canina.
-- Reserva de citas digital y contacto inmediato por WhatsApp.
+- Reserva de citas digital y contacto inmediato por correo.
 - Muro de pacientes y testimonios de familias madrileñas.
 - Panel CMS interactivo para actualización instantánea de contenidos y horarios.
 

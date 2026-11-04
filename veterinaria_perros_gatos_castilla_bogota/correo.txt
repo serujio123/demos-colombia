@@ -12,7 +12,7 @@ La propuesta busca facilitar la comunicación con sus clientes y dar mayor visib
 Entre sus funcionalidades encontrarán:
 - Servicio médico en Kennedy y Castilla: consultas veterinarias, desparasitación y vacunación.
 - Hospitalización supervisada para perros y gatos con áreas separadas.
-- Contacto directo por WhatsApp para agendar citas sin esperas telefónicas.
+- Contacto directo por correo para agendar citas sin esperas telefónicas.
 - Ubicación en el corazón de Castilla sobre la Carrera 78.
 - Panel administrativo (CMS): publicar campañas de esterilización y consejos de salud.
 

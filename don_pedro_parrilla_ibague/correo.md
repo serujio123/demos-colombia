@@ -27,7 +27,7 @@ Incluye:
 - Diseño y desarrollo web de parrilla típica tolimense.
 - Adaptación para celulares, tabletas y computadores.
 - Menú digital de cortes premium, lechona, picadas y asados.
-- Botón directo de reservas y pedidos por WhatsApp.
+- Botón directo de reservas y pedidos por correo.
 - Panel administrativo (CMS).
 - Configuración y publicación del sitio web.
 

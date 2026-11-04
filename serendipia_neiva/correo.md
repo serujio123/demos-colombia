@@ -23,7 +23,7 @@ Tus clientes podrán consultar tus horarios exactos y reservar mesa sin enredos,
 
 Para Serendipia el Plan Básico por $350.000 COP (pago único) es ideal para tener tu menú con fotos, ubicación, WhatsApp y editor CMS. El hosting es aparte (arriendo anual directo al proveedor, desde $80.000/año; nosotros no ganamos ahí) más tu dominio desde $45.000/año.
 
-Si quieres revisarla juntos, solo responde este mensaje o escríbeme por WhatsApp cuando te quede cómodo.
+Si quieres revisarla juntos, solo responde este mensaje o escríbeme por correo cuando te quede cómodo.
 
 SAIS Gallego
 g46113026@gmail.com

@@ -11,7 +11,7 @@ La propuesta busca facilitar la comunicación con sus clientes y dar mayor visib
 
 Entre sus funcionalidades encontrarán:
 - Catálogo técnico industrial: electro-herramientas, abrasivos, discos diamantados, tornillería y soldadura.
-- Cotizaciones por WhatsApp: atención ágil para talleres metalmecánicos, empresas e instaladores.
+- Cotizaciones por correo: atención ágil para talleres metalmecánicos, empresas e instaladores.
 - Contacto y ubicación céntrica: mapa interactivo de la sede en la Carrera 51 y teléfonos de atención.
 - Muestra de marcas certificadas: visibilidad de marcas aliadas y asesoría técnica.
 - Panel administrativo (CMS): actualizar listas de precios y productos destacados sin terceros.

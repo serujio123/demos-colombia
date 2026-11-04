@@ -12,7 +12,7 @@ La propuesta busca facilitar la comunicación con sus clientes y dar mayor visib
 Entre sus funcionalidades encontrarán:
 - Atención médica en Barrio Santa Bárbara: consultas veterinarias, hospitalización y cirugías.
 - Quirófano estéril con anestesia monitorizada para esterilizaciones y procedimientos de urgencia.
-- Agendamiento ágil por WhatsApp para vacunas, desparasitación y baño spa.
+- Agendamiento ágil por correo para vacunas, desparasitación y baño spa.
 - Ubicación de fácil acceso para familias de Palmira.
 - Panel administrativo (CMS): actualizar promociones sanitarias y fotos de pacientes.
 

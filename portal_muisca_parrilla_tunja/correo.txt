@@ -27,7 +27,7 @@ Incluye:
 - Diseño y desarrollo web para asadero tradicional en Tunja.
 - Adaptación para celulares, tabletas y computadores.
 - Carta digital de carnes a la brasa, picadas y cocido boyacense.
-- Botón directo de domicilios y reservas por WhatsApp.
+- Botón directo de domicilios y reservas por correo.
 - Panel administrativo (CMS).
 - Configuración y publicación del sitio web.
 

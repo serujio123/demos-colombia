@@ -12,7 +12,7 @@ La propuesta busca facilitar la comunicación con sus clientes y dar mayor visib
 Entre sus funcionalidades encontrarán:
 - Atención médica por el Dr. Carlos Alberto Ortega Casilla, MVZ registrado ante el ICA.
 - Medicina preventiva, cirugías de tejidos blandos y consultoría sanitaria.
-- Agendamiento ágil por WhatsApp para vacunas y chequeos periódicos.
+- Agendamiento ágil por correo para vacunas y chequeos periódicos.
 - Cobertura en Montería y municipios ganaderos del departamento de Córdoba.
 - Panel administrativo (CMS): actualizar promociones sanitarias y avisos.
 

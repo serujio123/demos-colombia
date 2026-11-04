@@ -12,7 +12,7 @@ La propuesta busca facilitar la comunicación con sus clientes y dar mayor visib
 Entre sus funcionalidades encontrarán:
 - Atención médica en Barrio Vista Hermosa: consultas veterinarias, desparasitación y vacunación.
 - Asesoría para pequeños y grandes animales en Montería y el departamento de Córdoba.
-- Agendamiento ágil por WhatsApp para evitar esperas innecesarias.
+- Agendamiento ágil por correo para evitar esperas innecesarias.
 - Venta de fármacos veterinarios, biológicos y nutrición especializada.
 - Panel administrativo (CMS): actualizar promociones y avisos agropecuarios fácilmente.
 

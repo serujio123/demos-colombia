@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Innova Odontología Premium — Sitio Web Oficial | Ibagué, Tolima</title>
-  <meta name="description" content="Sitio web oficial de Innova Odontología Premium en Ibagué, Tolima. Catálogo en línea, promociones, ubicación y pedidos directos por WhatsApp.">
+  <meta name="description" content="Sitio web oficial de Innova Odontología Premium en Ibagué, Tolima. Catálogo en línea, promociones, ubicación y pedidos directos por correo.">
   
   <!-- Google Fonts: Plus Jakarta Sans + Playfair Display -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -831,9 +831,7 @@
         <button class="btn-login" onclick="openLoginModal()">
           <i class="fa-solid fa-lock"></i> Acceso CMS
         </button>
-        <a href="https://wa.me/573124567890?text=Hola,%20los%20contacto%20desde%20su%20sitio%20web" target="_blank" class="btn-whatsapp-header" id="btn-wa-header">
-          <i class="fa-brands fa-whatsapp"></i> WhatsApp
-        </a>
+        
       </div>
     </div>
   </header>
@@ -854,7 +852,7 @@
       <div class="section-header">
         <span class="section-badge"><i class="fa-solid fa-star"></i> Recomendados & Promociones</span>
         <h2>Especiales & Menú del Día</h2>
-        <p>Las mejores opciones seleccionadas para hoy. Pide de forma rápida y directa a nuestro WhatsApp sin intermediarios.</p>
+        <p>Las mejores opciones seleccionadas para hoy. Pide de forma rápida y directa a nuestro correo sin intermediarios.</p>
       </div>
       <div class="menu-dia-grid" id="menu-dia-container">
         <!-- Renderizado dinámicamente -->
@@ -918,7 +916,7 @@
             <li>
               <span class="info-icon"><i class="fa-solid fa-phone"></i></span>
               <div>
-                <strong>Línea de Pedidos / WhatsApp:</strong><br>
+                <strong>Contacto Oficial por Correo:</strong><br>
                 <span id="info-biz-phone">+57 312 456 7890</span>
               </div>
             </li>
@@ -936,9 +934,7 @@
   </section>
 
   <!-- Botón Flotante WhatsApp -->
-  <a href="https://wa.me/573124567890?text=Hola,%20los%20contacto%20desde%20su%20p%C3%A1gina%20web" class="whatsapp-float" target="_blank" id="wa-float" title="Pedir por WhatsApp">
-    <i class="fa-brands fa-whatsapp"></i>
-  </a>
+  
 
   <!-- MODAL INICIAR SESIÓN -->
   <div class="modal-backdrop" id="login-modal">
@@ -973,7 +969,7 @@
         <input type="text" id="edit-biz-name" class="form-control">
       </div>
       <div class="form-group">
-        <label>Teléfono WhatsApp (sin espacios ni signos):</label>
+        <label>Correo de Notificaciones:</label>
         <input type="text" id="edit-biz-phone" class="form-control" placeholder="3124567890">
       </div>
       <div class="form-group">
@@ -1116,7 +1112,7 @@
       document.getElementById("info-biz-address").innerText = appData.biz.address;
       document.getElementById("info-biz-phone").innerText = appData.biz.phone_display;
       
-      const waLink = "https://wa.me/57" + appData.biz.phone + "?text=Hola,%20los%20contacto%20desde%20su%20sitio%20web";
+      const waLink = "mailto:serujio28@gmail.com?subject=Consulta" + appData.biz.phone + "?text=Hola,%20los%20contacto%20desde%20su%20sitio%20web";
       document.getElementById("btn-wa-header").href = waLink;
       document.getElementById("wa-float").href = waLink;
     }
@@ -1204,7 +1200,7 @@
         }
 
         const waText = encodeURIComponent(`Hola ${appData.biz.name}, quiero ordenar: ${item.title} (${item.price})`);
-        const waLink = `https://wa.me/57${appData.biz.phone}?text=${waText}`;
+        const waLink = `mailto:serujio28@gmail.com?subject=Consulta%20Digital`;
 
         card.innerHTML = `
           ${editButtons}
@@ -1220,8 +1216,7 @@
             <div class="menu-dia-footer">
               <span class="menu-dia-price">${item.price}</span>
               <a href="${waLink}" target="_blank" class="btn-order-wa">
-                <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
-              </a>
+                </a>
             </div>
           </div>
         `;
@@ -1284,7 +1279,7 @@
         }
 
         const waText = encodeURIComponent(`Hola ${appData.biz.name}, deseo ordenar de la carta: ${item.title} (${item.price})`);
-        const waLink = `https://wa.me/57${appData.biz.phone}?text=${waText}`;
+        const waLink = `mailto:serujio28@gmail.com?subject=Consulta%20Digital`;
 
         card.innerHTML = `
           ${editButtons}
@@ -1298,8 +1293,7 @@
             <div class="carta-item-bottom">
               <span class="carta-price">${item.price}</span>
               <a href="${waLink}" target="_blank" class="btn-order-mini">
-                <i class="fa-brands fa-whatsapp"></i> Ordenar
-              </a>
+                </a>
             </div>
           </div>
         `;

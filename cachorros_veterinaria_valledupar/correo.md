@@ -12,7 +12,7 @@ La propuesta busca facilitar la comunicación con sus clientes y dar mayor visib
 Entre sus funcionalidades encontrarán:
 - Atención médica en Avenida La Popa: consultas veterinarias, hospitalización y cirugías.
 - Quirófano estéril con anestesia monitorizada para esterilizaciones y procedimientos de urgencia.
-- Agendamiento ágil por WhatsApp para vacunas, desparasitación y baño spa.
+- Agendamiento ágil por correo para vacunas, desparasitación y baño spa.
 - Ubicación céntrica sobre la Calle 16 con fácil acceso y parqueo.
 - Panel administrativo (CMS): actualizar promociones sanitarias y fotos de pacientes.
 

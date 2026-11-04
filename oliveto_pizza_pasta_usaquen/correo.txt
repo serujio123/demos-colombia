@@ -23,13 +23,12 @@ Beneficios inmediatos para Oliveto Trattoria Italiana Usaquén:
 - Botones de contacto y reserva directa sin intermediarios ni comisiones.
 - Presencia profesional en Google con mapa interactivo y diseño adaptable a celulares.
 
-Si les interesa evaluar la implementación, pueden responder directamente a este correo o escribirnos al WhatsApp +57 321 338 6504.
+Si les interesa evaluar la implementación, pueden responder directamente a este correo o respondiendo directamente a este correo.
 
 Atentamente,
 
 SAIS Gallego | Desarrollo web y soluciones digitales
 Correo: serujio28@gmail.com
-WhatsApp: +57 321 338 6504
 Portafolio: https://github.com/serujio123
 
 Si no desea recibir más propuestas, responda 'cancelar'.

@@ -27,7 +27,7 @@ Incluye:
 - Diseño y desarrollo web para clínica veterinaria.
 - Adaptación para celulares, tabletas y computadores.
 - Catálogo de cirugías, consultas y medicina preventiva.
-- Botón directo de urgencias y consultas por WhatsApp.
+- Botón directo de urgencias y consultas por correo.
 - Panel administrativo (CMS).
 - Configuración y publicación del sitio web.
 

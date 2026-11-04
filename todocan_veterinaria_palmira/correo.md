@@ -12,7 +12,7 @@ La propuesta busca facilitar la comunicación con sus clientes y dar mayor visib
 Entre sus funcionalidades encontrarán:
 - Atención médica en Palmira: consultas veterinarias, desparasitación y vacunación.
 - Peluquería y spa canino profesional: baños antipulgas y corte de raza.
-- Agendamiento ágil por WhatsApp para evitar esperas y estrés en las mascotas.
+- Agendamiento ágil por correo para evitar esperas y estrés en las mascotas.
 - Ubicación céntrica sobre la Calle 35 con fácil acceso.
 - Panel administrativo (CMS): publicar campañas sanitarias y fotos del equipo.
 

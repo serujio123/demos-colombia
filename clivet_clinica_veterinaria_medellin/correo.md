@@ -12,7 +12,7 @@ La propuesta busca facilitar la comunicación con sus clientes y dar mayor visib
 Entre sus funcionalidades encontrarán:
 - Atención médica en Belén sobre la Carrera 77: consultas veterinarias, hospitalización y cirugías.
 - Quirófano con monitoreo anestésico permanente y recuperación monitorizada.
-- Agendamiento ágil por WhatsApp para vacunas, desparasitación y baño spa.
+- Agendamiento ágil por correo para vacunas, desparasitación y baño spa.
 - Ubicación estratégica en Belén con fácil acceso desde Laureles y Guayabal.
 - Panel administrativo (CMS): modificar horarios, servicios y promociones de forma autónoma.
 

@@ -12,7 +12,7 @@ La propuesta busca facilitar la comunicación con sus clientes y dar mayor visib
 Entre sus funcionalidades encontrarán:
 - Ubicación en el corazón de Kennedy Central (Bogotá).
 - Especialistas en cardiología veterinaria y monitorización clínica.
-- Solicitud de citas en línea y botón directo de urgencias por WhatsApp.
+- Solicitud de citas en línea y botón directo de urgencias por correo.
 - Galería de instalaciones clínicas y testimonios de pacientes.
 - Panel CMS interactivo para publicar campañas de vacunación y promociones.
 

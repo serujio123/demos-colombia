@@ -27,7 +27,7 @@ Incluye:
 - Diseño y desarrollo web odontológico accesible en Armenia.
 - Adaptación para celulares, tabletas y computadores.
 - Directorio de servicios de ortodoncia, prótesis y estética.
-- Botón directo de citas por WhatsApp.
+- Botón directo de citas por correo.
 - Panel administrativo (CMS).
 - Configuración y publicación del sitio web.
 

@@ -27,7 +27,7 @@ Incluye:
 - Diseño y desarrollo web de parrilla tradicional antioqueña.
 - Adaptación para celulares, tabletas y computadores.
 - Carta digital de carnes al carbón, picadas y platos típicos.
-- Botón directo de pedidos a domicilio por WhatsApp.
+- Botón directo de pedidos a domicilio por correo.
 - Panel administrativo (CMS).
 - Configuración y publicación del sitio web.
 

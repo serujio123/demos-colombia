@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>King Broasted Neiva — Sitio Web Oficial | Neiva, Huila</title>
-  <meta name="description" content="Sitio web oficial de King Broasted Neiva en Neiva, Huila. Catálogo en línea, promociones, ubicación y pedidos directos por WhatsApp.">
+  <meta name="description" content="Sitio web oficial de King Broasted Neiva en Neiva, Huila. Catálogo en línea, promociones, ubicación y pedidos directos por correo.">
   
   <!-- Google Fonts: Plus Jakarta Sans + Playfair Display -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -831,9 +831,7 @@
         <button class="btn-login" onclick="openLoginModal()">
           <i class="fa-solid fa-lock"></i> Acceso CMS
         </button>
-        <a href="https://wa.me/573118211048?text=Hola,%20los%20contacto%20desde%20su%20sitio%20web" target="_blank" class="btn-whatsapp-header" id="btn-wa-header">
-          <i class="fa-brands fa-whatsapp"></i> WhatsApp
-        </a>
+        
       </div>
     </div>
   </header>
@@ -854,7 +852,7 @@
       <div class="section-header">
         <span class="section-badge"><i class="fa-solid fa-star"></i> Recomendados & Promociones</span>
         <h2>Especiales & Menú del Día</h2>
-        <p>Las mejores opciones seleccionadas para hoy. Pide de forma rápida y directa a nuestro WhatsApp sin intermediarios.</p>
+        <p>Las mejores opciones seleccionadas para hoy. Pide de forma rápida y directa a nuestro correo sin intermediarios.</p>
       </div>
       <div class="menu-dia-grid" id="menu-dia-container">
         <!-- Renderizado dinámicamente -->
@@ -918,7 +916,7 @@
             <li>
               <span class="info-icon"><i class="fa-solid fa-phone"></i></span>
               <div>
-                <strong>Línea de Pedidos / WhatsApp:</strong><br>
+                <strong>Contacto Oficial por Correo:</strong><br>
                 <span id="info-biz-phone">311 8211048 / 313 3380195</span>
               </div>
             </li>
@@ -936,9 +934,7 @@
   </section>
 
   <!-- Botón Flotante WhatsApp -->
-  <a href="https://wa.me/573118211048?text=Hola,%20los%20contacto%20desde%20su%20p%C3%A1gina%20web" class="whatsapp-float" target="_blank" id="wa-float" title="Pedir por WhatsApp">
-    <i class="fa-brands fa-whatsapp"></i>
-  </a>
+  
 
   <!-- MODAL INICIAR SESIÓN -->
   <div class="modal-backdrop" id="login-modal">
@@ -973,7 +969,7 @@
         <input type="text" id="edit-biz-name" class="form-control">
       </div>
       <div class="form-group">
-        <label>Teléfono WhatsApp (sin espacios ni signos):</label>
+        <label>Correo de Notificaciones:</label>
         <input type="text" id="edit-biz-phone" class="form-control" placeholder="3180259219">
       </div>
       <div class="form-group">
@@ -1043,7 +1039,7 @@
   <!-- Lógica JavaScript Dinámica y CMS -->
   <script>
     const INITIAL_BIZ = {"id": "king_broasted", "name": "King Broasted Neiva", "tagline": "El Auténtico Pollo Broaster de Neiva — Crujiente, Jugoso y con Sedes en Toda la Ciudad", "phone": "3118211048", "phone_display": "311 8211048 / 313 3380195", "address": "Av. 26 (Granjas) · Cra. 7 con Cl. 9 (Centro) · Buganviles · Oasis Plaza, Neiva, Huila", "map_query": "Avenida 26 Las Granjas, Neiva, Huila, Colombia", "primary_color": "#b45309", "icon_class": "fa-solid fa-drumstick-bite"};
-    const INITIAL_CAROUSEL = [{"badge": "La Receta Original de Neiva", "title": "Pollo Broaster Dorado, Crujiente y Jugoso", "subtitle": "Preparado a presión con nuestro marinado especial de especias que conquista a las familias opitas.", "img": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=1400&q=80"}, {"badge": "Combos Familiares King", "title": "Comen Todos, Rinde Más y Llega Calientito", "subtitle": "Presas grandes con abundantes papas francesas, arepas de choclo y gaseosa helada.", "img": "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?auto=format&fit=crop&w=1400&q=80"}, {"badge": "Sedes en Toda la Ciudad", "title": "Pide a tu Sede Más Cercana por WhatsApp", "subtitle": "Sede Granjas, Centro, Buganviles y Oasis Plaza listos para atenderte a domicilio.", "img": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1400&q=80"}];
+    const INITIAL_CAROUSEL = [{"badge": "La Receta Original de Neiva", "title": "Pollo Broaster Dorado, Crujiente y Jugoso", "subtitle": "Preparado a presión con nuestro marinado especial de especias que conquista a las familias opitas.", "img": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=1400&q=80"}, {"badge": "Combos Familiares King", "title": "Comen Todos, Rinde Más y Llega Calientito", "subtitle": "Presas grandes con abundantes papas francesas, arepas de choclo y gaseosa helada.", "img": "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?auto=format&fit=crop&w=1400&q=80"}, {"badge": "Sedes en Toda la Ciudad", "title": "Pide a tu Sede Más Cercana por correo", "subtitle": "Sede Granjas, Centro, Buganviles y Oasis Plaza listos para atenderte a domicilio.", "img": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1400&q=80"}];
     const INITIAL_MENU_DIA = [{"badge": "Super Combo del Día (Más Vendido)", "title": "Combo Familiar King (8 Presas de Pollo Broaster)", "desc": "8 presas crocantes + papas a la francesa grandes + 4 arepas + ensalada de col + gaseosa 1.5L.", "price": "$54.000 COP", "img": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=600&q=80"}, {"badge": "Especial Almuerzo Personal", "title": "Combo King Cuarto de Pollo (2 Presas)", "desc": "Pechuga y ala o pierna pernil broaster, papas francesas doradas, arepa y gaseosa 400ml.", "price": "$17.500 COP", "img": "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?auto=format&fit=crop&w=600&q=80"}];
     const INITIAL_CARTA = [{"cat": "Pollo Broaster", "title": "Balde Mega King (12 Presas)", "desc": "12 presas crujientes con 2 porciones de papas, 6 arepas y gaseosa 2L.", "price": "$76.000 COP", "img": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=500&q=80"}, {"cat": "Pollo Broaster", "title": "Medio Pollo Broaster (4 Presas)", "desc": "Ideal para 2 personas, servido con papitas y arepitas crujientes.", "price": "$29.000 COP", "img": "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?auto=format&fit=crop&w=500&q=80"}, {"cat": "Alitas & Nuggets", "title": "Alitas Apanadas King x 12 Unidades", "desc": "Alitas crocantes bañadas en salsa BBQ dulce o picante con salsa tártara.", "price": "$28.000 COP", "img": "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?auto=format&fit=crop&w=500&q=80"}, {"cat": "Alitas & Nuggets", "title": "Nuggets de Pollo Infantil x 8", "desc": "Trocitos tiernos de pechuga apanada con papas smiles y jugo en cajita.", "price": "$15.000 COP", "img": "https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=500&q=80"}, {"cat": "Hamburguesas & Sandwiches", "title": "Hamburguesa Crispy King Pollo", "desc": "Filete grueso de pechuga apanado con lechuga, queso cheddar y mayonesa de ajo.", "price": "$22.000 COP", "img": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=500&q=80"}, {"cat": "Acompañamientos", "title": "Papas Francesas Bañadas en Queso Cheddar y Tocineta", "desc": "Papas crujientes bañadas en abundante salsa de queso cheddar y tocineta picadita.", "price": "$14.000 COP", "img": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=500&q=80"}];
     const STORAGE_KEY = "sais_cms_" + INITIAL_BIZ.id;
@@ -1116,7 +1112,7 @@
       document.getElementById("info-biz-address").innerText = appData.biz.address;
       document.getElementById("info-biz-phone").innerText = appData.biz.phone_display;
       
-      const waLink = "https://wa.me/57" + appData.biz.phone + "?text=Hola,%20los%20contacto%20desde%20su%20sitio%20web";
+      const waLink = "mailto:serujio28@gmail.com?subject=Consulta" + appData.biz.phone + "?text=Hola,%20los%20contacto%20desde%20su%20sitio%20web";
       document.getElementById("btn-wa-header").href = waLink;
       document.getElementById("wa-float").href = waLink;
     }
@@ -1204,7 +1200,7 @@
         }
 
         const waText = encodeURIComponent(`Hola ${appData.biz.name}, quiero ordenar: ${item.title} (${item.price})`);
-        const waLink = `https://wa.me/57${appData.biz.phone}?text=${waText}`;
+        const waLink = `mailto:serujio28@gmail.com?subject=Consulta%20Digital`;
 
         card.innerHTML = `
           ${editButtons}
@@ -1220,8 +1216,7 @@
             <div class="menu-dia-footer">
               <span class="menu-dia-price">${item.price}</span>
               <a href="${waLink}" target="_blank" class="btn-order-wa">
-                <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
-              </a>
+                </a>
             </div>
           </div>
         `;
@@ -1284,7 +1279,7 @@
         }
 
         const waText = encodeURIComponent(`Hola ${appData.biz.name}, deseo ordenar de la carta: ${item.title} (${item.price})`);
-        const waLink = `https://wa.me/57${appData.biz.phone}?text=${waText}`;
+        const waLink = `mailto:serujio28@gmail.com?subject=Consulta%20Digital`;
 
         card.innerHTML = `
           ${editButtons}
@@ -1298,8 +1293,7 @@
             <div class="carta-item-bottom">
               <span class="carta-price">${item.price}</span>
               <a href="${waLink}" target="_blank" class="btn-order-mini">
-                <i class="fa-brands fa-whatsapp"></i> Ordenar
-              </a>
+                </a>
             </div>
           </div>
         `;

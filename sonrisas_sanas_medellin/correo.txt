@@ -27,7 +27,7 @@ Incluye:
 - Diseño y desarrollo web odontológico accesible y dinámico.
 - Adaptación para celulares, tabletas y computadores.
 - Directorio de servicios de estética, ortodoncia e higiene.
-- Botón directo de citas por WhatsApp y llamadas.
+- Botón directo de citas por correo y llamadas.
 - Panel administrativo (CMS).
 - Configuración y publicación del sitio web.
 

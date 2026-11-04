@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ferretería Técnica S.A. — Sitio Web Oficial | Medellín, Antioquia</title>
-  <meta name="description" content="Sitio web oficial de Ferretería Técnica S.A. en Medellín, Antioquia. Catálogo en línea, promociones, ubicación y pedidos directos por WhatsApp.">
+  <meta name="description" content="Sitio web oficial de Ferretería Técnica S.A. en Medellín, Antioquia. Catálogo en línea, promociones, ubicación y pedidos directos por correo.">
   
   <!-- Google Fonts: Plus Jakarta Sans + Playfair Display -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -831,9 +831,7 @@
         <button class="btn-login" onclick="openLoginModal()">
           <i class="fa-solid fa-lock"></i> Acceso CMS
         </button>
-        <a href="https://wa.me/573243727462?text=Hola,%20los%20contacto%20desde%20su%20sitio%20web" target="_blank" class="btn-whatsapp-header" id="btn-wa-header">
-          <i class="fa-brands fa-whatsapp"></i> WhatsApp
-        </a>
+        
       </div>
     </div>
   </header>
@@ -854,7 +852,7 @@
       <div class="section-header">
         <span class="section-badge"><i class="fa-solid fa-star"></i> Recomendados & Promociones</span>
         <h2>Especiales & Menú del Día</h2>
-        <p>Las mejores opciones seleccionadas para hoy. Pide de forma rápida y directa a nuestro WhatsApp sin intermediarios.</p>
+        <p>Las mejores opciones seleccionadas para hoy. Pide de forma rápida y directa a nuestro correo sin intermediarios.</p>
       </div>
       <div class="menu-dia-grid" id="menu-dia-container">
         <!-- Renderizado dinámicamente -->
@@ -918,7 +916,7 @@
             <li>
               <span class="info-icon"><i class="fa-solid fa-phone"></i></span>
               <div>
-                <strong>Línea de Pedidos / WhatsApp:</strong><br>
+                <strong>Contacto Oficial por Correo:</strong><br>
                 <span id="info-biz-phone">+57 324 372 7462 / (604) 5119828</span>
               </div>
             </li>
@@ -936,9 +934,7 @@
   </section>
 
   <!-- Botón Flotante WhatsApp -->
-  <a href="https://wa.me/573243727462?text=Hola,%20los%20contacto%20desde%20su%20p%C3%A1gina%20web" class="whatsapp-float" target="_blank" id="wa-float" title="Pedir por WhatsApp">
-    <i class="fa-brands fa-whatsapp"></i>
-  </a>
+  
 
   <!-- MODAL INICIAR SESIÓN -->
   <div class="modal-backdrop" id="login-modal">
@@ -973,7 +969,7 @@
         <input type="text" id="edit-biz-name" class="form-control">
       </div>
       <div class="form-group">
-        <label>Teléfono WhatsApp (sin espacios ni signos):</label>
+        <label>Correo de Notificaciones:</label>
         <input type="text" id="edit-biz-phone" class="form-control" placeholder="3243727462">
       </div>
       <div class="form-group">
@@ -1043,7 +1039,7 @@
   <!-- Lógica JavaScript Dinámica y CMS -->
   <script>
     const INITIAL_BIZ = {"id": "ferreteria_tecnica_medellin", "name": "Ferretería Técnica S.A.", "tagline": "Ferretería & Herramientas Técnicas en Medellín", "phone": "3243727462", "phone_display": "+57 324 372 7462 / (604) 5119828", "address": "Carrera 51 # 44 - 98, Centro / Palacé, Medellín, Antioquia", "map_query": "Carrera 51 # 44-98, Medellín, Colombia", "primary_color": "#1e40af", "icon_class": "fa-solid fa-screwdriver-wrench", "city_region": "Medellín, Antioquia", "city_short": "Medellín"};
-    const INITIAL_CAROUSEL = [{"badge": "Suministros Técnicos en Medellín", "title": "Herramientas de Alta Precisión y Materiales Industriales", "subtitle": "Abastecemos industrias, talleres y contratistas con productos certificados en Antioquia.", "img": "https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=1400&q=80"}, {"badge": "Equipos Electro-portátiles", "title": "Taladros, Pulidoras, Sierras y Rotomartillos", "subtitle": "Máquinas para trabajo continuo con respaldo de garantía y servicio posventa.", "img": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1400&q=80"}, {"badge": "Cotización Directa", "title": "Despachos Inmediatos en Todo el Valle de Aburrá", "subtitle": "Envía tu requerimiento por WhatsApp y recibe respuesta inmediata de nuestros asesores.", "img": "https://images.unsplash.com/photo-1581244277943-fe4a9c777189?auto=format&fit=crop&w=1400&q=80"}];
+    const INITIAL_CAROUSEL = [{"badge": "Suministros Técnicos en Medellín", "title": "Herramientas de Alta Precisión y Materiales Industriales", "subtitle": "Abastecemos industrias, talleres y contratistas con productos certificados en Antioquia.", "img": "https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=1400&q=80"}, {"badge": "Equipos Electro-portátiles", "title": "Taladros, Pulidoras, Sierras y Rotomartillos", "subtitle": "Máquinas para trabajo continuo con respaldo de garantía y servicio posventa.", "img": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1400&q=80"}, {"badge": "Cotización Directa", "title": "Despachos Inmediatos en Todo el Valle de Aburrá", "subtitle": "Envía tu requerimiento por correo y recibe respuesta inmediata de nuestros asesores.", "img": "https://images.unsplash.com/photo-1581244277943-fe4a9c777189?auto=format&fit=crop&w=1400&q=80"}];
     const INITIAL_MENU_DIA = [{"badge": "Equipo Destacado", "title": "Pulidora Industrial 4-1/2 pulgada 850W", "desc": "Corte y desbaste en metales y concreto con blindaje contra polvo y botón traba eje.", "price": "$195.000 COP", "img": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80"}, {"badge": "Herramienta Esencial", "title": "Taladro Percutor 1/2 pulg 700W con Maletín", "desc": "Doble función percusión y rotación para madera, acero y mampostería pesada.", "price": "$185.000 COP", "img": "https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=600&q=80"}, {"badge": "Abrasivo Industrial", "title": "Pack Discos de Corte Fino para Inox (x20)", "desc": "Discos de corte milimétrico de 1.2mm con fibra de vidrio reforzada.", "price": "$55.000 COP", "img": "https://images.unsplash.com/photo-1581244277943-fe4a9c777189?auto=format&fit=crop&w=600&q=80"}];
     const INITIAL_CARTA = [{"cat": "Soldadura", "title": "Inversor Soldador MMA 160A Compacto", "desc": "Tecnología digital para electrodos 6013, 7018 con antorcha y pinza de tierra.", "price": "$380.000 COP", "img": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=500&q=80"}, {"cat": "Herramientas Manuales", "title": "Juego de Destornilladores Aislados 1000V (x7)", "desc": "Certificación dieléctrica para trabajos eléctricos profesionales seguros.", "price": "$78.000 COP", "img": "https://images.unsplash.com/photo-1581244277943-fe4a9c777189?auto=format&fit=crop&w=500&q=80"}, {"cat": "Medición", "title": "Nivel Láser Autonivelante de Líneas Cruzadas", "desc": "Alcance 15m con soporte magnético para instalación de drywall y baldosas.", "price": "$230.000 COP", "img": "https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=500&q=80"}, {"cat": "Fijación", "title": "Caja de Chazos Metálicos Expansivos 3/8 (x50)", "desc": "Anclaje de alta resistencia para estructuras pesadas en concreto sólido.", "price": "$42.000 COP", "img": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=500&q=80"}, {"cat": "Protección", "title": "Gafas de Seguridad Anti-empañante UV400", "desc": "Policarbonato de alta resistencia a esquirlas y salpicaduras químicas.", "price": "$16.000 COP", "img": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=500&q=80"}];
     const STORAGE_KEY = "sais_cms_" + INITIAL_BIZ.id;
@@ -1116,7 +1112,7 @@
       document.getElementById("info-biz-address").innerText = appData.biz.address;
       document.getElementById("info-biz-phone").innerText = appData.biz.phone_display;
       
-      const waLink = "https://wa.me/57" + appData.biz.phone + "?text=Hola,%20los%20contacto%20desde%20su%20sitio%20web";
+      const waLink = "mailto:serujio28@gmail.com?subject=Consulta" + appData.biz.phone + "?text=Hola,%20los%20contacto%20desde%20su%20sitio%20web";
       document.getElementById("btn-wa-header").href = waLink;
       document.getElementById("wa-float").href = waLink;
     }
@@ -1204,7 +1200,7 @@
         }
 
         const waText = encodeURIComponent(`Hola ${appData.biz.name}, quiero ordenar: ${item.title} (${item.price})`);
-        const waLink = `https://wa.me/57${appData.biz.phone}?text=${waText}`;
+        const waLink = `mailto:serujio28@gmail.com?subject=Consulta%20Digital`;
 
         card.innerHTML = `
           ${editButtons}
@@ -1220,8 +1216,7 @@
             <div class="menu-dia-footer">
               <span class="menu-dia-price">${item.price}</span>
               <a href="${waLink}" target="_blank" class="btn-order-wa">
-                <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
-              </a>
+                </a>
             </div>
           </div>
         `;
@@ -1284,7 +1279,7 @@
         }
 
         const waText = encodeURIComponent(`Hola ${appData.biz.name}, deseo ordenar de la carta: ${item.title} (${item.price})`);
-        const waLink = `https://wa.me/57${appData.biz.phone}?text=${waText}`;
+        const waLink = `mailto:serujio28@gmail.com?subject=Consulta%20Digital`;
 
         card.innerHTML = `
           ${editButtons}
@@ -1298,8 +1293,7 @@
             <div class="carta-item-bottom">
               <span class="carta-price">${item.price}</span>
               <a href="${waLink}" target="_blank" class="btn-order-mini">
-                <i class="fa-brands fa-whatsapp"></i> Ordenar
-              </a>
+                </a>
             </div>
           </div>
         `;

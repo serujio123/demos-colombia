@@ -12,7 +12,7 @@ La propuesta busca facilitar la comunicación con sus clientes y dar mayor visib
 Entre sus funcionalidades encontrarán:
 - Atención médica con enfoque cálido en la Carrera 10 de Tunja.
 - Medicina preventiva, vacunación para cachorros y control antiparasitario.
-- Agendamiento ágil por WhatsApp para evitar esperas y estrés en las mascotas.
+- Agendamiento ágil por correo para evitar esperas y estrés en las mascotas.
 - Ubicación céntrica con fácil acceso.
 - Panel administrativo (CMS): publicar campañas sanitarias y fotos de pacientes.
 

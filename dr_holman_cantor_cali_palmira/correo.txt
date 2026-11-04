@@ -12,7 +12,7 @@ La propuesta busca facilitar la comunicación con sus clientes y dar mayor visib
 Entre sus funcionalidades encontrarán:
 - Atención con sedes en Tequendama (Cali) y Palmira.
 - Especialistas en diseño de sonrisa en resina, carillas y ortodoncia.
-- Agendamiento de citas rápido y consulta directa por WhatsApp.
+- Agendamiento de citas rápido y consulta directa por correo.
 - Galería de resultados estéticos y testimonios de pacientes.
 - Panel CMS interactivo para actualización autónoma de ofertas y servicios.
 

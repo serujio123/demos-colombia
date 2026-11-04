@@ -27,7 +27,7 @@ Incluye:
 - Diseño y desarrollo web de parrilla tradicional santandereana.
 - Adaptación para celulares, tabletas y computadores.
 - Carta digital de carnes a la brasa, cabrito y platos típicos.
-- Botón directo de pedidos a domicilio por WhatsApp.
+- Botón directo de pedidos a domicilio por correo.
 - Panel administrativo (CMS).
 - Configuración y publicación del sitio web.
 

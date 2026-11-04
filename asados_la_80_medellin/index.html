@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Asados La 80 — Sitio Web Oficial | Medellín, Antioquia</title>
-  <meta name="description" content="Sitio web oficial de Asados La 80 en Medellín, Antioquia. Catálogo en línea, promociones, ubicación y pedidos directos por WhatsApp.">
+  <meta name="description" content="Sitio web oficial de Asados La 80 en Medellín, Antioquia. Catálogo en línea, promociones, ubicación y pedidos directos por correo.">
   
   <!-- Google Fonts: Plus Jakarta Sans + Playfair Display -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -831,9 +831,7 @@
         <button class="btn-login" onclick="openLoginModal()">
           <i class="fa-solid fa-lock"></i> Acceso CMS
         </button>
-        <a href="https://wa.me/573004034045?text=Hola,%20los%20contacto%20desde%20su%20sitio%20web" target="_blank" class="btn-whatsapp-header" id="btn-wa-header">
-          <i class="fa-brands fa-whatsapp"></i> WhatsApp
-        </a>
+        
       </div>
     </div>
   </header>
@@ -854,7 +852,7 @@
       <div class="section-header">
         <span class="section-badge"><i class="fa-solid fa-star"></i> Recomendados & Promociones</span>
         <h2>Especiales & Menú del Día</h2>
-        <p>Las mejores opciones seleccionadas para hoy. Pide de forma rápida y directa a nuestro WhatsApp sin intermediarios.</p>
+        <p>Las mejores opciones seleccionadas para hoy. Pide de forma rápida y directa a nuestro correo sin intermediarios.</p>
       </div>
       <div class="menu-dia-grid" id="menu-dia-container">
         <!-- Renderizado dinámicamente -->
@@ -918,7 +916,7 @@
             <li>
               <span class="info-icon"><i class="fa-solid fa-phone"></i></span>
               <div>
-                <strong>Línea de Pedidos / WhatsApp:</strong><br>
+                <strong>Contacto Oficial por Correo:</strong><br>
                 <span id="info-biz-phone">+57 (604) 403 4045 / +57 300 403 4045</span>
               </div>
             </li>
@@ -936,9 +934,7 @@
   </section>
 
   <!-- Botón Flotante WhatsApp -->
-  <a href="https://wa.me/573004034045?text=Hola,%20los%20contacto%20desde%20su%20p%C3%A1gina%20web" class="whatsapp-float" target="_blank" id="wa-float" title="Pedir por WhatsApp">
-    <i class="fa-brands fa-whatsapp"></i>
-  </a>
+  
 
   <!-- MODAL INICIAR SESIÓN -->
   <div class="modal-backdrop" id="login-modal">
@@ -973,7 +969,7 @@
         <input type="text" id="edit-biz-name" class="form-control">
       </div>
       <div class="form-group">
-        <label>Teléfono WhatsApp (sin espacios ni signos):</label>
+        <label>Correo de Notificaciones:</label>
         <input type="text" id="edit-biz-phone" class="form-control" placeholder="3004034045">
       </div>
       <div class="form-group">
@@ -1043,7 +1039,7 @@
   <!-- Lógica JavaScript Dinámica y CMS -->
   <script>
     const INITIAL_BIZ = {"id": "asados_la_80_medellin", "name": "Asados La 80", "tagline": "Parrilla Tradicional & Asados en Medellín", "phone": "3004034045", "phone_display": "+57 (604) 403 4045 / +57 300 403 4045", "address": "Carrera 81 # 30 - 7 (Av. 80 con Calle 30), Medellín, Antioquia", "map_query": "Carrera 81 # 30-7, Medellín, Colombia", "primary_color": "#b91c1c", "icon_class": "fa-solid fa-fire", "city_region": "Medellín, Antioquia", "city_short": "Medellín"};
-    const INITIAL_CAROUSEL = [{"badge": "Tradición Parrillera en Medellín", "title": "Los Mejores Asados al Carbón en La 80", "subtitle": "Cortes de res, cerdo y pollo seleccionados con el auténtico sabor tradicional paisa.", "img": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1400&q=80"}, {"badge": "Picadas para Compartir", "title": "Generosas Porciones con Arepa de Choclo y Papitas Criollas", "subtitle": "El plan perfecto para almorzar con amigos y familia en Medellín.", "img": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1400&q=80"}, {"badge": "Pide a Domicilio", "title": "Caliente y Rápido en la Puerta de tu Casa", "subtitle": "Ordena en línea por WhatsApp directo sin sobrecostos.", "img": "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=1400&q=80"}];
+    const INITIAL_CAROUSEL = [{"badge": "Tradición Parrillera en Medellín", "title": "Los Mejores Asados al Carbón en La 80", "subtitle": "Cortes de res, cerdo y pollo seleccionados con el auténtico sabor tradicional paisa.", "img": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1400&q=80"}, {"badge": "Picadas para Compartir", "title": "Generosas Porciones con Arepa de Choclo y Papitas Criollas", "subtitle": "El plan perfecto para almorzar con amigos y familia en Medellín.", "img": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1400&q=80"}, {"badge": "Pide a Domicilio", "title": "Caliente y Rápido en la Puerta de tu Casa", "subtitle": "Ordena en línea por correo directo sin sobrecostos.", "img": "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=1400&q=80"}];
     const INITIAL_MENU_DIA = [{"badge": "Plato Insignia", "title": "Punta de Anca a la Brasa (350g) + Arepa con Queso", "desc": "Corte suave y jugoso con corteza dorada al carbón, papa al vapor y ensalada fresca.", "price": "$46.000 COP", "img": "https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=600&q=80"}, {"badge": "Super Picada", "title": "Picada Criolla La 80 para 3 Personas", "desc": "Carne asada, chicharrón crujiente, chorizo antioqueño, morcilla, papas criollas y plátano con queso.", "price": "$85.000 COP", "img": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80"}, {"badge": "Recomendado del Día", "title": "Costillas de Cerdo al Carbón con Hogao Casero", "desc": "Costillas tiernas marinadas con hierbas nativas y bañadas en hogao criollo.", "price": "$38.000 COP", "img": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80"}];
     const INITIAL_CARTA = [{"cat": "Carnes al Carbón", "title": "Churrasco Tradicional Marinado (400g)", "desc": "Corte clásico con chimichurri casero, arepa y yuca frita.", "price": "$48.000 COP", "img": "https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=500&q=80"}, {"cat": "Aves", "title": "Pechuga Gratinada al Carbón", "desc": "Pechuga jugosa cubierta de queso campesino derretido y maíz dulce.", "price": "$34.000 COP", "img": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=500&q=80"}, {"cat": "Entradas Paisas", "title": "Porción de Chicharrón 100 Patas", "desc": "Tiras de tocino crujientes con arepa redonda y limón mandarino.", "price": "$18.000 COP", "img": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=500&q=80"}, {"cat": "Bebidas", "title": "Jarra de Limonada de Panela Frappé", "desc": "Bebida refrescante servida bien fría con toque de hierbabuena.", "price": "$14.000 COP", "img": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=500&q=80"}, {"cat": "Postres", "title": "Mazamorra Paisa con Panela y Leche", "desc": "El postre tradicional antioqueño con maíz tierno y dulce de panela.", "price": "$8.000 COP", "img": "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=500&q=80"}];
     const STORAGE_KEY = "sais_cms_" + INITIAL_BIZ.id;
@@ -1116,7 +1112,7 @@
       document.getElementById("info-biz-address").innerText = appData.biz.address;
       document.getElementById("info-biz-phone").innerText = appData.biz.phone_display;
       
-      const waLink = "https://wa.me/57" + appData.biz.phone + "?text=Hola,%20los%20contacto%20desde%20su%20sitio%20web";
+      const waLink = "mailto:serujio28@gmail.com?subject=Consulta" + appData.biz.phone + "?text=Hola,%20los%20contacto%20desde%20su%20sitio%20web";
       document.getElementById("btn-wa-header").href = waLink;
       document.getElementById("wa-float").href = waLink;
     }
@@ -1204,7 +1200,7 @@
         }
 
         const waText = encodeURIComponent(`Hola ${appData.biz.name}, quiero ordenar: ${item.title} (${item.price})`);
-        const waLink = `https://wa.me/57${appData.biz.phone}?text=${waText}`;
+        const waLink = `mailto:serujio28@gmail.com?subject=Consulta%20Digital`;
 
         card.innerHTML = `
           ${editButtons}
@@ -1220,8 +1216,7 @@
             <div class="menu-dia-footer">
               <span class="menu-dia-price">${item.price}</span>
               <a href="${waLink}" target="_blank" class="btn-order-wa">
-                <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
-              </a>
+                </a>
             </div>
           </div>
         `;
@@ -1284,7 +1279,7 @@
         }
 
         const waText = encodeURIComponent(`Hola ${appData.biz.name}, deseo ordenar de la carta: ${item.title} (${item.price})`);
-        const waLink = `https://wa.me/57${appData.biz.phone}?text=${waText}`;
+        const waLink = `mailto:serujio28@gmail.com?subject=Consulta%20Digital`;
 
         card.innerHTML = `
           ${editButtons}
@@ -1298,8 +1293,7 @@
             <div class="carta-item-bottom">
               <span class="carta-price">${item.price}</span>
               <a href="${waLink}" target="_blank" class="btn-order-mini">
-                <i class="fa-brands fa-whatsapp"></i> Ordenar
-              </a>
+                </a>
             </div>
           </div>
         `;

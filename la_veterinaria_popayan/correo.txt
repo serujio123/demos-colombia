@@ -12,7 +12,7 @@ La propuesta busca facilitar la comunicación con sus clientes y dar mayor visib
 Entre sus funcionalidades encontrarán:
 - Atención médica en Barrio Bella Vista sobre la Transversal 9 en Popayán.
 - Consultas generales, desparasitación, esquemas de vacunación y cirugías de tejidos blandos.
-- Agendamiento ágil por WhatsApp para evitar esperas y estrés en las mascotas.
+- Agendamiento ágil por correo para evitar esperas y estrés en las mascotas.
 - Ubicación accesible en el norte de Popayán con facilidad de parqueo.
 - Panel administrativo (CMS): actualizar promociones y fotos de pacientes de forma autónoma.
 

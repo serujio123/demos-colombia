@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ferretería Comercial Ferretera — Sitio Web Oficial | Neiva, Huila</title>
-  <meta name="description" content="Sitio web oficial de Ferretería Comercial Ferretera en Neiva, Huila. Catálogo en línea, promociones, ubicación y pedidos directos por WhatsApp.">
+  <meta name="description" content="Sitio web oficial de Ferretería Comercial Ferretera en Neiva, Huila. Catálogo en línea, promociones, ubicación y pedidos directos por correo.">
   
   <!-- Google Fonts: Plus Jakarta Sans + Playfair Display -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -831,9 +831,7 @@
         <button class="btn-login" onclick="openLoginModal()">
           <i class="fa-solid fa-lock"></i> Acceso CMS
         </button>
-        <a href="https://wa.me/573112728289?text=Hola,%20los%20contacto%20desde%20su%20sitio%20web" target="_blank" class="btn-whatsapp-header" id="btn-wa-header">
-          <i class="fa-brands fa-whatsapp"></i> WhatsApp
-        </a>
+        
       </div>
     </div>
   </header>
@@ -854,7 +852,7 @@
       <div class="section-header">
         <span class="section-badge"><i class="fa-solid fa-star"></i> Recomendados & Promociones</span>
         <h2>Especiales & Menú del Día</h2>
-        <p>Las mejores opciones seleccionadas para hoy. Pide de forma rápida y directa a nuestro WhatsApp sin intermediarios.</p>
+        <p>Las mejores opciones seleccionadas para hoy. Pide de forma rápida y directa a nuestro correo sin intermediarios.</p>
       </div>
       <div class="menu-dia-grid" id="menu-dia-container">
         <!-- Renderizado dinámicamente -->
@@ -918,7 +916,7 @@
             <li>
               <span class="info-icon"><i class="fa-solid fa-phone"></i></span>
               <div>
-                <strong>Línea de Pedidos / WhatsApp:</strong><br>
+                <strong>Contacto Oficial por Correo:</strong><br>
                 <span id="info-biz-phone">311 2728289 / (608) 8715054</span>
               </div>
             </li>
@@ -936,9 +934,7 @@
   </section>
 
   <!-- Botón Flotante WhatsApp -->
-  <a href="https://wa.me/573112728289?text=Hola,%20los%20contacto%20desde%20su%20p%C3%A1gina%20web" class="whatsapp-float" target="_blank" id="wa-float" title="Pedir por WhatsApp">
-    <i class="fa-brands fa-whatsapp"></i>
-  </a>
+  
 
   <!-- MODAL INICIAR SESIÓN -->
   <div class="modal-backdrop" id="login-modal">
@@ -973,7 +969,7 @@
         <input type="text" id="edit-biz-name" class="form-control">
       </div>
       <div class="form-group">
-        <label>Teléfono WhatsApp (sin espacios ni signos):</label>
+        <label>Correo de Notificaciones:</label>
         <input type="text" id="edit-biz-phone" class="form-control" placeholder="3180259219">
       </div>
       <div class="form-group">
@@ -1043,7 +1039,7 @@
   <!-- Lógica JavaScript Dinámica y CMS -->
   <script>
     const INITIAL_BIZ = {"id": "ferreteria_comercial_ferretera", "name": "Ferretería Comercial Ferretera", "tagline": "Materiales para Construcción, Tubería PVC y Ferretería Pesada", "phone": "3112728289", "phone_display": "311 2728289 / (608) 8715054", "address": "Carrera 3 # 4 - 24, Centro, Neiva, Huila", "map_query": "Carrera 3 # 4-24, Centro, Neiva, Huila, Colombia", "primary_color": "#075985", "icon_class": "fa-solid fa-screwdriver-wrench"};
-    const INITIAL_CAROUSEL = [{"badge": "Distribuidor Mayorista en Neiva", "title": "Materiales de Construcción con Despacho Inmediato", "subtitle": "Cemento, varillas corrugadas, mallas electro-soldadas y agregados para tu obra civil.", "img": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=80"}, {"badge": "Plomería & Redes Hidráulicas", "title": "Tubería Sanitaria, Presión y Ventilación PVC", "subtitle": "Marcas líderes con certificación de calidad para proyectos residenciales e industriales.", "img": "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=1400&q=80"}, {"badge": "Cotiza por WhatsApp", "title": "Atención Prioritaria para Maestros y Contratistas", "subtitle": "Envíanos tu lista de materiales y te responderemos con precios especiales por volumen.", "img": "https://images.unsplash.com/photo-1581783898377-1c85bf937427?auto=format&fit=crop&w=1400&q=80"}];
+    const INITIAL_CAROUSEL = [{"badge": "Distribuidor Mayorista en Neiva", "title": "Materiales de Construcción con Despacho Inmediato", "subtitle": "Cemento, varillas corrugadas, mallas electro-soldadas y agregados para tu obra civil.", "img": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=80"}, {"badge": "Plomería & Redes Hidráulicas", "title": "Tubería Sanitaria, Presión y Ventilación PVC", "subtitle": "Marcas líderes con certificación de calidad para proyectos residenciales e industriales.", "img": "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=1400&q=80"}, {"badge": "Cotiza por correo", "title": "Atención Prioritaria para Maestros y Contratistas", "subtitle": "Envíanos tu lista de materiales y te responderemos con precios especiales por volumen.", "img": "https://images.unsplash.com/photo-1581783898377-1c85bf937427?auto=format&fit=crop&w=1400&q=80"}];
     const INITIAL_MENU_DIA = [{"badge": "Oferta de la Semana en Obra", "title": "Combo Cemento Gris x 50kg + Pegacor Blanco", "desc": "Precios directos de distribuidor para fundiciones y enchapes, entrega en obra en Neiva.", "price": "Cotización por Volumen", "img": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80"}, {"badge": "Destacado en Fontanería", "title": "Tanque Plástico de Almacenamiento 1.000 Litros", "desc": "Tanque tricapa con filtro y accesorios completos, resistente a rayos UV y altas temperaturas del Huila.", "price": "$380.000 COP", "img": "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=600&q=80"}];
     const INITIAL_CARTA = [{"cat": "Obra Gris", "title": "Varilla Corrugada de 3/8 y 1/2 Pulgada", "desc": "Acero figurado y recto certificado bajo norma sismorresistente NSR-10.", "price": "Precios por Tonelada", "img": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=500&q=80"}, {"cat": "Obra Gris", "title": "Bloque de Arcilla Estructural #5", "desc": "Resistencia óptima para muros de mampostería y cerramientos perimetrales.", "price": "Precios por Millar", "img": "https://images.unsplash.com/photo-1581783898377-1c85bf937427?auto=format&fit=crop&w=500&q=80"}, {"cat": "Plomería & Gas", "title": "Tubo PVC Presión RDE 21 de 1/2 Pulgada", "desc": "Para conducción de agua potable con uniones y soldadura líquida PVC.", "price": "$16.500 COP", "img": "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=500&q=80"}, {"cat": "Plomería & Gas", "title": "Válvula de Bola en Bronce 3/4", "desc": "Cierre hermético para instalaciones residenciales y comerciales de alto flujo.", "price": "$28.000 COP", "img": "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=500&q=80"}, {"cat": "Acabados & Pinturas", "title": "Cuñete Vinilo Tipo 1 Blanco Lavable", "desc": "Pintura acrilar de alto cubrimiento y resistencia al lavado para interiores y exteriores.", "price": "$145.000 COP", "img": "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=500&q=80"}, {"cat": "Herramienta Manual", "title": "Pala Redonda Herragro Mango Fibra", "desc": "Forjada en una sola pieza de acero de alta resistencia para excavación y mezcla.", "price": "$42.000 COP", "img": "https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=500&q=80"}];
     const STORAGE_KEY = "sais_cms_" + INITIAL_BIZ.id;
@@ -1116,7 +1112,7 @@
       document.getElementById("info-biz-address").innerText = appData.biz.address;
       document.getElementById("info-biz-phone").innerText = appData.biz.phone_display;
       
-      const waLink = "https://wa.me/57" + appData.biz.phone + "?text=Hola,%20los%20contacto%20desde%20su%20sitio%20web";
+      const waLink = "mailto:serujio28@gmail.com?subject=Consulta" + appData.biz.phone + "?text=Hola,%20los%20contacto%20desde%20su%20sitio%20web";
       document.getElementById("btn-wa-header").href = waLink;
       document.getElementById("wa-float").href = waLink;
     }
@@ -1204,7 +1200,7 @@
         }
 
         const waText = encodeURIComponent(`Hola ${appData.biz.name}, quiero ordenar: ${item.title} (${item.price})`);
-        const waLink = `https://wa.me/57${appData.biz.phone}?text=${waText}`;
+        const waLink = `mailto:serujio28@gmail.com?subject=Consulta%20Digital`;
 
         card.innerHTML = `
           ${editButtons}
@@ -1220,8 +1216,7 @@
             <div class="menu-dia-footer">
               <span class="menu-dia-price">${item.price}</span>
               <a href="${waLink}" target="_blank" class="btn-order-wa">
-                <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
-              </a>
+                </a>
             </div>
           </div>
         `;
@@ -1284,7 +1279,7 @@
         }
 
         const waText = encodeURIComponent(`Hola ${appData.biz.name}, deseo ordenar de la carta: ${item.title} (${item.price})`);
-        const waLink = `https://wa.me/57${appData.biz.phone}?text=${waText}`;
+        const waLink = `mailto:serujio28@gmail.com?subject=Consulta%20Digital`;
 
         card.innerHTML = `
           ${editButtons}
@@ -1298,8 +1293,7 @@
             <div class="carta-item-bottom">
               <span class="carta-price">${item.price}</span>
               <a href="${waLink}" target="_blank" class="btn-order-mini">
-                <i class="fa-brands fa-whatsapp"></i> Ordenar
-              </a>
+                </a>
             </div>
           </div>
         `;

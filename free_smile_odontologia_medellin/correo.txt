@@ -13,7 +13,7 @@ Entre sus funcionalidades encontrarán:
 - Amplia trayectoria en rehabilitación oral y diseño estético en Medellín.
 - Facilidades de pago y planes de financiamiento a tu medida.
 - Tecnología no invasiva para tratamientos sin dolor ni molestias.
-- Atención con cita previa y confirmación inmediata por WhatsApp.
+- Atención con cita previa y confirmación inmediata por correo.
 - Panel administrativo (CMS) para publicar ofertas y nuevos testimonios.
 
 Conozcan cómo podría verse su negocio en Internet:
