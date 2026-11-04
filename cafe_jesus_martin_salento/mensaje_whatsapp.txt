@@ -1,0 +1,15 @@
+Hola equipo de *Café Jesús Martín* (Salento, Quindío, Eje Cafetero, Colombia) 👋
+
+Les escribe Sergio de *SAIS Gallego (Desarrollo Web & Soluciones Digitales)*.
+
+Estuvimos revisando su excelente trayectoria en *Laboratorio de Café Especial & Cataciones Guiadas* y preparamos una *demostración web en vivo con catálogo interactivo* para que sus clientes puedan reservar o pedir directamente con 1 clic por WhatsApp sin intermediarios:
+
+🌐 *Ver demostración en vivo:*
+https://trabajoso-two.vercel.app/cafe_jesus_martin_salento/
+
+📄 *Ver cotización oficial PDF:*
+https://trabajoso-two.vercel.app/cafe_jesus_martin_salento/propuesta.html
+
+Plan Completo recomendado por *$650.000 COP* (inversión total primer año con hosting de alta velocidad y dominio propio desde *$872.000 COP*).
+
+¿Les gustaría que conversemos brevemente sobre cómo publicarla para su negocio? Pueden responder directamente o escribirnos al WhatsApp *+57 321 338 6504*. ¡Muchas gracias!
