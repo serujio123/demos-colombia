@@ -1,0 +1,15 @@
+Hola equipo de *Cardinal Casa de Café Roma Norte* (Roma Norte, CDMX, México) 👋
+
+Les escribe Sergio de *SAIS Gallego (Desarrollo Web & Soluciones Digitales)*.
+
+Estuvimos revisando su excelente trayectoria en Café de Especialidad & Métodos de Extracción en Roma Norte, CDMX, México y preparamos una *demostración web en vivo* con su catálogo de servicios y precios interactivos para que sus clientes puedan reservar y consultar directamente sin comisiones de terceros:
+
+🌐 *Ver demo en vivo:*
+https://trabajoso-two.vercel.app/cardinal_casa_de_cafe_cdmx/
+
+📄 *Ver cotización formal PDF:*
+https://trabajoso-two.vercel.app/cardinal_casa_de_cafe_cdmx/propuesta.html
+
+Plan Completo recomendado por *$4.500 MXN* (inversión total primer año con hosting y dominio propio desde *$6.050 MXN*).
+
+¿Les gustaría que conversemos brevemente sobre cómo publicarla para su negocio? Quedo muy atento. ¡Muchas gracias!

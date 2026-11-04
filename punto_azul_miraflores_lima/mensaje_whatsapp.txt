@@ -1,0 +1,15 @@
+Hola equipo de *Punto Azul Pescados & Mariscos Miraflores* (Miraflores, Lima, Perú) 👋
+
+Les escribe Sergio de *SAIS Gallego (Desarrollo Web & Soluciones Digitales)*.
+
+Estuvimos revisando su excelente trayectoria en Pescados, Mariscos & Gastronomía Costeña Peruana en Miraflores, Lima, Perú y preparamos una *demostración web en vivo* con su catálogo de servicios y precios interactivos para que sus clientes puedan reservar y consultar directamente sin comisiones de terceros:
+
+🌐 *Ver demo en vivo:*
+https://trabajoso-two.vercel.app/punto_azul_miraflores_lima/
+
+📄 *Ver cotización formal PDF:*
+https://trabajoso-two.vercel.app/punto_azul_miraflores_lima/propuesta.html
+
+Plan Completo recomendado por *S/ 580 PEN* (inversión total primer año con hosting y dominio propio desde *S/ 778 PEN*).
+
+¿Les gustaría que conversemos brevemente sobre cómo publicarla para su negocio? Quedo muy atento. ¡Muchas gracias!

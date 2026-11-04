@@ -1,0 +1,15 @@
+Hola equipo de *Colinas de San Diego Hotel Campestre* (San Agustín, Huila, Colombia) 👋
+
+Les escribe Sergio de *SAIS Gallego (Desarrollo Web & Soluciones Digitales)*.
+
+Estuvimos revisando su excelente trayectoria en Hotel Campestre, Cabañas & Turismo Arqueológico en San Agustín, Huila, Colombia y preparamos una *demostración web en vivo* con su catálogo de servicios y precios interactivos para que sus clientes puedan reservar y consultar directamente sin comisiones de terceros:
+
+🌐 *Ver demo en vivo:*
+https://trabajoso-two.vercel.app/colinas_san_diego_san_agustin/
+
+📄 *Ver cotización formal PDF:*
+https://trabajoso-two.vercel.app/colinas_san_diego_san_agustin/propuesta.html
+
+Plan Completo recomendado por *$650.000 COP* (inversión total primer año con hosting y dominio propio desde *$872.000 COP*).
+
+¿Les gustaría que conversemos brevemente sobre cómo publicarla para su negocio? Quedo muy atento. ¡Muchas gracias!
