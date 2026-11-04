@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-bs-theme="light">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dark Restaurantes Ocultos - Hub Delivery Neiva | Cocinas Ocultas & Marcas Gastronómicas Virtuales en Neiva, Huila</title>
+  <title>Dark Restaurantes Ocultos - Hub Delivery Neiva | Catálogo Oficial & Demostración Web</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
@@ -16,61 +16,70 @@
       font-family: 'Plus Jakarta Sans', sans-serif;
       background-color: #f8fafc;
       color: #1e293b;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    [data-bs-theme="dark"] body {
+      background-color: #0b0f19;
+      color: #e2e8f0;
+    }
+    [data-bs-theme="dark"] .navbar-custom,
+    [data-bs-theme="dark"] .dish-card,
+    [data-bs-theme="dark"] .feature-box,
+    [data-bs-theme="dark"] .order-box,
+    [data-bs-theme="dark"] .review-card,
+    [data-bs-theme="dark"] .faq-card,
+    [data-bs-theme="dark"] .calc-card {
+      background-color: #111827 !important;
+      border-color: #1f2937 !important;
+      color: #f1f5f9 !important;
+    }
+    [data-bs-theme="dark"] .dish-title,
+    [data-bs-theme="dark"] .dish-price,
+    [data-bs-theme="dark"] .brand-title,
+    [data-bs-theme="dark"] .section-heading {
+      color: #ffffff !important;
+    }
+    [data-bs-theme="dark"] .dish-desc,
+    [data-bs-theme="dark"] .text-muted {
+      color: #94a3b8 !important;
     }
     .top-banner {
-      background: #0f172a;
+      background: #090d16;
       color: #94a3b8;
       font-size: 13px;
-      padding: 7px 0;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
     }
     .navbar-custom {
       background: #ffffff;
-      box-shadow: 0 2px 15px rgba(0,0,0,0.05);
-      padding: 15px 0;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+      padding: 16px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
     .brand-title {
       font-weight: 800;
-      font-size: 20px;
+      font-size: 21px;
       color: #0f172a;
-    }
-    .hero-section {
-      background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(30, 41, 59, 0.9)), url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1600&q=80') center/cover;
-      color: white;
-      padding: 85px 0 70px;
-      text-align: center;
+      letter-spacing: -0.5px;
     }
     .hero-badge {
-      background: rgba(255,255,255,0.12);
-      border: 1px solid rgba(255,255,255,0.25);
-      padding: 6px 16px;
+      background: rgba(255,255,255,0.14);
+      border: 1px solid rgba(255,255,255,0.28);
+      padding: 6px 18px;
       border-radius: 50px;
       font-size: 13px;
       font-weight: 600;
       color: #fcd34d;
       display: inline-block;
-      margin-bottom: 20px;
-    }
-    .hero-title {
-      font-size: 38px;
-      font-weight: 800;
-      margin-bottom: 15px;
-      letter-spacing: -0.5px;
-    }
-    .hero-lead {
-      font-size: 16px;
-      color: #cbd5e1;
-      max-width: 720px;
-      margin: 0 auto 30px;
-      line-height: 1.6;
-    }
-    .menu-section {
-      padding: 60px 0;
+      backdrop-filter: blur(6px);
     }
     .cat-pill {
       border: 1px solid #e2e8f0;
       background: #ffffff;
       color: #475569;
-      padding: 8px 18px;
+      padding: 9px 20px;
       border-radius: 30px;
       font-size: 13.5px;
       font-weight: 600;
@@ -82,78 +91,118 @@
       background: var(--primary);
       color: white;
       border-color: var(--primary);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
     .search-input {
       border-radius: 30px;
-      padding: 10px 20px;
+      padding: 11px 22px;
       border: 1px solid #cbd5e1;
       font-size: 14px;
-      width: 100%;
-      max-width: 380px;
     }
     .dish-card {
       background: white;
-      border-radius: 12px;
-      overflow: hidden;
       border: 1px solid #e2e8f0;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.03);
-      transition: transform 0.2s ease;
+      border-radius: 16px;
+      overflow: hidden;
+      transition: all 0.25s ease;
       height: 100%;
       display: flex;
       flex-direction: column;
     }
     .dish-card:hover {
       transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.06);
     }
     .dish-img {
-      height: 180px;
-      width: 100%;
+      height: 200px;
       object-fit: cover;
+      width: 100%;
     }
     .dish-body {
-      padding: 18px;
+      padding: 20px;
       flex-grow: 1;
       display: flex;
       flex-direction: column;
     }
     .dish-cat {
       font-size: 11px;
-      font-weight: 700;
+      font-weight: 800;
       text-transform: uppercase;
       color: var(--primary);
-      margin-bottom: 4px;
+      letter-spacing: 0.5px;
+      margin-bottom: 5px;
     }
     .dish-title {
-      font-size: 17px;
+      font-size: 18px;
       font-weight: 700;
       color: #0f172a;
       margin-bottom: 8px;
     }
     .dish-desc {
-      font-size: 13px;
+      font-size: 13.5px;
       color: #64748b;
-      line-height: 1.5;
-      margin-bottom: 15px;
+      line-height: 1.55;
+      margin-bottom: 16px;
       flex-grow: 1;
     }
     .dish-price {
-      font-size: 18px;
+      font-size: 19px;
       font-weight: 800;
       color: #0f172a;
     }
-    .footer-custom {
-      background: #0f172a;
-      color: #94a3b8;
-      padding: 50px 0 25px;
-      font-size: 13.5px;
+    .review-card {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 24px;
+      height: 100%;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.02);
     }
-    .order-box {
+    .calc-card {
       background: #ffffff;
-      border: 1px dashed #cbd5e1;
-      border-radius: 12px;
-      padding: 20px;
-      margin-top: 30px;
-      text-align: center;
+      border: 2px solid #2b4c7e;
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: 0 10px 30px rgba(43, 76, 126, 0.08);
+    }
+    .floating-cart-btn {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #0f172a;
+      color: white;
+      border-radius: 50px;
+      padding: 13px 22px;
+      font-weight: 700;
+      font-size: 14px;
+      box-shadow: 0 10px 25px rgba(15, 23, 42, 0.4);
+      border: 2px solid rgba(255,255,255,0.2);
+      z-index: 1050;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .floating-cart-btn:hover {
+      transform: scale(1.05);
+      background: var(--primary);
+      color: white;
+    }
+    .cart-badge {
+      background: #10b981;
+      color: white;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 3px 8px;
+      border-radius: 20px;
+    }
+    .footer-custom {
+      background: #090d16;
+      color: #94a3b8;
+      padding: 60px 0 30px;
+      font-size: 13.5px;
+      border-top: 1px solid rgba(255,255,255,0.06);
     }
   </style>
 </head>
@@ -162,8 +211,13 @@
   <!-- Top bar -->
   <div class="top-banner">
     <div class="container d-flex justify-content-between align-items-center">
-      <div><i class="fa-solid fa-location-dot me-1 text-warning"></i> Calle 12 Sur # 2 - 47, Neiva, Huila</div>
-      <div> <i class="fa-brands fa-instagram me-1 text-warning"></i> @darkrestaurantesneiva</div>
+      <div><i class="fa-solid fa-location-dot me-1 text-warning"></i> Neiva, Huila &bull; <i class="fa-solid fa-clock me-1 text-warning"></i> Horario de Atención: Abierto Hoy</div>
+      <div class="d-flex align-items-center gap-3">
+        <span><i class="fa-solid fa-envelope me-1 text-warning"></i> serujio28@gmail.com</span>
+        <button class="btn btn-sm btn-outline-light py-0 px-2" onclick="toggleTheme()" id="themeBtn" title="Cambiar Tema Claro/Oscuro" style="font-size: 12px; border-radius: 20px;">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
     </div>
   </div>
 
@@ -171,94 +225,463 @@
   <nav class="navbar navbar-expand-lg navbar-custom">
     <div class="container">
       <a class="navbar-brand brand-title" href="#">
-        <i class="fa-solid fa-utensils me-2" style="color: var(--primary);"></i>Dark Restaurantes Ocultos - Hub Delivery Neiva
+        <i class="fa-solid fa-store me-2" style="color: var(--primary);"></i>Dark Restaurantes Ocultos - Hub Delivery Neiva
       </a>
-      <div class="ms-auto d-flex gap-2">
-        <a href="propuesta.html" class="btn btn-outline-dark btn-sm fw-semibold"><i class="fa-solid fa-file-pdf me-1"></i> Ver Cotización Oficial PDF</a>
-        <a href="#carta" class="btn btn-primary btn-sm fw-semibold" style="background: var(--primary); border-color: var(--primary);"><i class="fa-solid fa-book-open me-1"></i> Carta Digital</a>
+      <div class="ms-auto d-flex align-items-center gap-2">
+        <a href="#catalogo" class="btn btn-outline-secondary btn-sm fw-semibold d-none d-md-inline-block">
+          <i class="fa-solid fa-book-open me-1"></i> Catálogo
+        </a>
+        <a href="#simulador" class="btn btn-outline-primary btn-sm fw-semibold d-none d-md-inline-block">
+          <i class="fa-solid fa-calculator me-1"></i> Simulador Web
+        </a>
+        <a href="propuesta.html" class="btn btn-dark btn-sm fw-semibold" style="background: #0f172a;">
+          <i class="fa-solid fa-file-pdf me-1"></i> Ver Cotización Oficial PDF
+        </a>
       </div>
     </div>
   </nav>
 
-  <!-- Hero -->
-  <header class="hero-section">
-    <div class="container">
-      <div class="hero-badge"><i class="fa-solid fa-award me-1"></i> Establecimiento Oficial &bull; Neiva, Huila</div>
-      <h1 class="hero-title">Dark Restaurantes Ocultos - Hub Delivery Neiva</h1>
-      <p class="hero-lead">El primer hub multimarca de cocinas ocultas en Neiva. Diseñado para ofrecer pedidos directos de comida rápida gourmet, bowls y pizzas sin las comisiones abusivas de las aplicaciones de delivery.</p>
-      <div class="d-flex justify-content-center gap-3">
-        <a href="#carta" class="btn btn-warning btn-lg fw-bold px-4 py-2 text-dark"><i class="fa-solid fa-fire me-1"></i> Explorar Menú y Precios</a>
-        <a href="propuesta.html" class="btn btn-outline-light btn-lg fw-semibold px-4 py-2"><i class="fa-solid fa-file-contract me-1"></i> Cotización Web</a>
+  <!-- Hero Carousel Section (Visual, Dinámico & Alta Definición) -->
+  <section id="heroCarousel" class="carousel slide carousel-fade shadow-sm" data-bs-ride="carousel" data-bs-interval="4500">
+    <!-- Indicadores -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <!-- Slides del Carrusel -->
+    <div class="carousel-inner">
+      <!-- Slide 1: Identidad & Bienvenida -->
+      <div class="carousel-item active" style="background: linear-gradient(180deg, rgba(15,23,42,0.76) 0%, rgba(15,23,42,0.88) 100%), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;">
+        <div class="container d-flex flex-column justify-content-center align-items-center text-center text-white" style="min-height: 540px; padding: 85px 20px;">
+          <div class="hero-badge mb-3"><i class="fa-solid fa-award text-warning me-1"></i> Neiva, Huila</div>
+          <h1 class="display-4 fw-black mb-3 text-white" style="letter-spacing: -1px; text-shadow: 0 4px 12px rgba(0,0,0,0.5); font-weight: 800;">Dark Restaurantes Ocultos - Hub Delivery Neiva</h1>
+          <p class="lead mb-4" style="max-width: 760px; color: #e2e8f0; font-size: 1.15rem; line-height: 1.6;">El primer hub multimarca de cocinas ocultas en Neiva. Diseñado para ofrecer pedidos directos de comida rápida gourmet, bowls y pizzas sin las comisiones abusivas de las aplicaciones de delivery.</p>
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            <a href="#catalogo" class="btn btn-warning btn-lg fw-bold px-4 py-2 text-dark shadow-sm">
+              <i class="fa-solid fa-sparkles me-2"></i>Explorar Catálogo / Menú
+            </a>
+            <a href="#simulador" class="btn btn-outline-light btn-lg fw-semibold px-4 py-2">
+              <i class="fa-solid fa-calculator me-2"></i>Simulador de Inversión Web
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2: Calidad, Especialidad & Experiencia -->
+      <div class="carousel-item" style="background: linear-gradient(180deg, rgba(15,23,42,0.76) 0%, rgba(15,23,42,0.88) 100%), url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;">
+        <div class="container d-flex flex-column justify-content-center align-items-center text-center text-white" style="min-height: 540px; padding: 85px 20px;">
+          <div class="hero-badge mb-3" style="background: rgba(16, 185, 129, 0.2); border-color: rgba(16, 185, 129, 0.4); color: #6ee7b7;"><i class="fa-solid fa-star me-1"></i> Experiencia & Calidad Garantizada</div>
+          <h2 class="display-4 fw-black mb-3 text-white" style="letter-spacing: -1px; text-shadow: 0 4px 12px rgba(0,0,0,0.5); font-weight: 800;">Tradición, Sabor & Servicio Exclusivo</h2>
+          <p class="lead mb-4" style="max-width: 760px; color: #e2e8f0; font-size: 1.15rem; line-height: 1.6;">Selección artesanal de ingredientes, preparaciones maestras y atención personalizada para una experiencia memorable en cada visita.</p>
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            <button onclick="openCart()" class="btn btn-success btn-lg fw-bold px-4 py-2 shadow-sm">
+              <i class="fa-solid fa-clipboard-check me-2"></i>Hacer Mi Solicitud
+            </button>
+            <a href="#testimonios" class="btn btn-outline-light btn-lg fw-semibold px-4 py-2">
+              <i class="fa-solid fa-comments me-2"></i>Ver Opiniones de Clientes
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3: Plataforma Web & Cotización Transparente -->
+      <div class="carousel-item" style="background: linear-gradient(180deg, rgba(15,23,42,0.76) 0%, rgba(15,23,42,0.88) 100%), url('https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;">
+        <div class="container d-flex flex-column justify-content-center align-items-center text-center text-white" style="min-height: 540px; padding: 85px 20px;">
+          <div class="hero-badge mb-3" style="background: rgba(59, 130, 246, 0.2); border-color: rgba(59, 130, 246, 0.4); color: #93c5fd;"><i class="fa-solid fa-globe me-1"></i> Plataforma Digital Oficial</div>
+          <h2 class="display-4 fw-black mb-3 text-white" style="letter-spacing: -1px; text-shadow: 0 4px 12px rgba(0,0,0,0.5); font-weight: 800;">Página Web Profesional Sin Comisiones</h2>
+          <p class="lead mb-4" style="max-width: 760px; color: #e2e8f0; font-size: 1.15rem; line-height: 1.6;">Diseño moderno, catálogo autogestionable, dominio propio y hosting de alta velocidad desde $872.000 COP el primer año.</p>
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            <a href="propuesta.html" class="btn btn-light btn-lg fw-bold px-4 py-2 text-dark shadow-sm">
+              <i class="fa-solid fa-file-pdf text-danger me-2"></i>Ver Propuesta Oficial PDF
+            </a>
+            <a href="#simulador" class="btn btn-outline-warning btn-lg fw-semibold px-4 py-2">
+              <i class="fa-solid fa-laptop-code me-2"></i>Calcular Plan en Línea
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-  </header>
 
-  <!-- Carta / Menú Interactivo -->
-  <section class="menu-section" id="carta">
+    <!-- Controles Izquierda / Derecha -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" style="width: 55px; opacity: 0.9;">
+      <span class="d-flex align-items-center justify-content-center rounded-circle" style="width: 44px; height: 44px; background: rgba(0,0,0,0.55); backdrop-filter: blur(4px);">
+        <i class="fa-solid fa-chevron-left text-white fs-5"></i>
+      </span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" style="width: 55px; opacity: 0.9;">
+      <span class="d-flex align-items-center justify-content-center rounded-circle" style="width: 44px; height: 44px; background: rgba(0,0,0,0.55); backdrop-filter: blur(4px);">
+        <i class="fa-solid fa-chevron-right text-white fs-5"></i>
+      </span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </section>
+
+  <!-- Catálogo Interactivo -->
+  <section class="py-5" id="catalogo">
     <div class="container">
       <div class="row align-items-end mb-4">
         <div class="col-md-7">
-          <div class="text-uppercase fw-bold" style="color: var(--primary); font-size: 13px;">Nuestra Carta Digital</div>
-          <h2 class="fw-bold" style="color: #0f172a; font-size: 30px;">Especialidades & Precios en Línea</h2>
-          <p class="text-muted mb-0">Explore nuestros platos preparados al momento con ingredientes frescos.</p>
+          <div class="text-uppercase fw-bold" style="color: var(--primary); font-size: 13px;">Servicios & Catálogo en Línea</div>
+          <h2 class="fw-bold section-heading" style="font-size: 32px; letter-spacing: -0.5px;">Catálogo Oficial & Precios Transparentes</h2>
+          <p class="text-muted mb-0">Seleccione los ítems de su preferencia para consultar o solicitar presupuesto directamente por correo electrónico.</p>
         </div>
-        <div class="col-md-5 text-md-end mt-3 mt-md-0">
-          <input type="text" id="searchInput" class="search-input" placeholder="Buscar en la carta..." onkeyup="searchMenu()">
+        <div class="col-md-5 mt-3 mt-md-0 d-flex gap-2">
+          <div class="position-relative w-100">
+            <i class="fa-solid fa-magnifying-glass position-absolute text-muted" style="left: 16px; top: 14px;"></i>
+            <input type="text" id="searchInput" class="form-control search-input ps-5" placeholder="Buscar en el catálogo..." onkeyup="filterMenuSearch()">
+          </div>
+          <select id="sortSelect" class="form-select search-input w-auto" onchange="sortMenu()">
+            <option value="default">Ordenar</option>
+            <option value="price-asc">Precio: Menor a Mayor</option>
+            <option value="price-desc">Precio: Mayor a Menor</option>
+          </select>
         </div>
       </div>
 
-      <!-- Filtro Categorias -->
-      <div class="d-flex flex-wrap mb-4">
-        <button class="cat-pill active" onclick="filterMenu('all', this)">Todos</button><button class="cat-pill" onclick="filterMenu('Alitas', this)">Alitas</button><button class="cat-pill" onclick="filterMenu('Bebidas', this)">Bebidas</button><button class="cat-pill" onclick="filterMenu('Bowls Saludables', this)">Bowls Saludables</button><button class="cat-pill" onclick="filterMenu('Crispy Chicken', this)">Crispy Chicken</button><button class="cat-pill" onclick="filterMenu('Pizza Artesanal', this)">Pizza Artesanal</button><button class="cat-pill" onclick="filterMenu('Smash Burgers', this)">Smash Burgers</button>
+      <!-- Filtros de categoría -->
+      <div class="d-flex flex-wrap gap-1 mb-4" id="categoryFilters">
+        <button class="cat-pill active" onclick="filterMenu('Todos', this)">Todos los Ítems</button>
+        <button class="cat-pill" onclick="filterMenu('Alitas', this)">Alitas</button><button class="cat-pill" onclick="filterMenu('Bebidas', this)">Bebidas</button><button class="cat-pill" onclick="filterMenu('Bowls Saludables', this)">Bowls Saludables</button><button class="cat-pill" onclick="filterMenu('Crispy Chicken', this)">Crispy Chicken</button><button class="cat-pill" onclick="filterMenu('Pizza Artesanal', this)">Pizza Artesanal</button><button class="cat-pill" onclick="filterMenu('Smash Burgers', this)">Smash Burgers</button>
       </div>
 
-      <!-- Grid de Platos -->
-      <div class="row g-4" id="dishesGrid">
-        <!-- Renderizado dinámicamente con JS -->
+      <!-- Grid de platos -->
+      <div class="row g-4" id="dishesGrid"></div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN DE TESTIMONIOS Y RESEÑAS -->
+  <section class="py-5" id="testimonios" style="background-color: rgba(241, 245, 249, 0.6);">
+    <div class="container">
+      <div class="text-center max-w-xl mx-auto mb-5">
+        <span class="badge bg-warning text-dark px-3 py-2 rounded-pill fw-bold mb-2"><i class="fa-solid fa-star me-1"></i> 4.9 / 5.0 en Google Reviews</span>
+        <h2 class="fw-bold section-heading" style="font-size: 32px; letter-spacing: -0.5px;">Lo que Dicen Nuestros Clientes</h2>
+        <p class="text-muted">Opiniones verificadas de clientes que disfrutan de nuestra atención, calidad y servicio.</p>
       </div>
 
-      <div class="order-box">
-        <h5 class="fw-bold text-dark mb-1">¿Desea solicitar un pedido o reservar en Dark Restaurantes Ocultos - Hub Delivery Neiva?</h5>
-        <p class="text-muted mb-3" style="font-size: 14px;">Atención directa de domingo a domingo en nuestro local o para entrega a domicilio en Neiva, Huila.</p>
-        
-        <a href="propuesta.html" class="btn btn-outline-secondary fw-semibold px-4 py-2"><i class="fa-solid fa-download me-1"></i> Descargar Cotización PDF ($872.000)</a>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 p-4 border-0 shadow-sm rounded-4 review-card">
+            <div class="d-flex text-warning mb-3">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="mb-3 fst-italic text-secondary">"Una experiencia incomparable. La atención fue impecable desde el primer momento y la calidad de cada plato supera cualquier expectativa."</p>
+            <div class="d-flex align-items-center mt-auto">
+              <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center fw-bold me-3" style="width: 42px; height: 42px; font-size: 15px;">
+                CP
+              </div>
+              <div>
+                <div class="fw-bold small brand-title">Camila Pardo</div>
+                <div class="text-muted" style="font-size: 12px;">Cliente Frecuente &bull; Reseña Verificada</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 p-4 border-0 shadow-sm rounded-4 review-card">
+            <div class="d-flex text-warning mb-3">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="mb-3 fst-italic text-secondary">"Excelente tener el menú completo en línea para consultar precios antes de llegar. El servicio y el ambiente son 10/10."</p>
+            <div class="d-flex align-items-center mt-auto">
+              <div class="rounded-circle bg-success text-white d-flex align-items-center justify-content-center fw-bold me-3" style="width: 42px; height: 42px; font-size: 15px;">
+                AM
+              </div>
+              <div>
+                <div class="fw-bold small brand-title">Andrés Mauricio Gómez</div>
+                <div class="text-muted" style="font-size: 12px;">Guía Local Google &bull; Nivel 7</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 p-4 border-0 shadow-sm rounded-4 review-card">
+            <div class="d-flex text-warning mb-3">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="mb-3 fst-italic text-secondary">"Hicimos la reserva y consulta de pedido directamente por correo y nos respondieron de inmediato. Muy recomendado."</p>
+            <div class="d-flex align-items-center mt-auto">
+              <div class="rounded-circle bg-info text-white d-flex align-items-center justify-content-center fw-bold me-3" style="width: 42px; height: 42px; font-size: 15px;">
+                VR
+              </div>
+              <div>
+                <div class="fw-bold small brand-title">Valeria Restrepo</div>
+                <div class="text-muted" style="font-size: 12px;">Visita Familiar &bull; Reseña Verificada</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SIMULADOR INTERACTIVO DE INVERSIÓN WEB (Exacto según Cotización Oficial PDF) -->
+  <section class="py-5" id="simulador" style="background: #f1f5f9;">
+    <div class="container">
+      <div class="text-center max-w-xl mx-auto mb-5">
+        <span class="badge bg-primary px-3 py-2 rounded-pill fw-bold mb-2">Presupuesto en Tiempo Real</span>
+        <h2 class="fw-bold section-heading" style="font-size: 32px; letter-spacing: -0.5px;">Simulador de Inversión Web para Dark Restaurantes Ocultos - Hub Delivery Neiva</h2>
+        <p class="text-muted">Precios exactos tomados de la cotización oficial en PDF. Seleccione su alcance ideal y calcule la inversión total.</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="calc-card">
+            <div class="row g-4">
+              <div class="col-md-7">
+                <h5 class="fw-bold mb-3 brand-title"><i class="fa-solid fa-layer-group me-2 text-primary"></i>1. Seleccione el Plan de Desarrollo Web</h5>
+                
+                <div class="d-flex flex-column gap-3 mb-4">
+                  <div class="form-check p-3 rounded-3 border" style="cursor: pointer;">
+                    <input class="form-check-input ms-0 me-3" type="radio" name="planRadio" id="plan1" value="450000" onchange="updateCalc()">
+                    <label class="form-check-label w-100" for="plan1">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <span class="fw-bold">Plan Básico (Landing Page Rápida)</span>
+                        <span class="badge bg-secondary">$450.000 COP</span>
+                      </div>
+                      <small class="text-muted d-block mt-1">1 página, diseño responsive, enlaces a correo y carga ultraveloz.</small>
+                    </label>
+                  </div>
+
+                  <div class="form-check p-3 rounded-3 border border-primary bg-primary bg-opacity-10" style="cursor: pointer;">
+                    <input class="form-check-input ms-0 me-3" type="radio" name="planRadio" id="plan2" value="650000" checked onchange="updateCalc()">
+                    <label class="form-check-label w-100" for="plan2">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <span class="fw-bold text-primary">Plan Intermedio (Multi-sección & Catálogo) ★ Recomendado</span>
+                        <span class="badge bg-primary">$650.000 COP</span>
+                      </div>
+                      <small class="text-muted d-block mt-1">Hasta 5 secciones, catálogo autogestionable, módulo de correo y optimización SEO.</small>
+                    </label>
+                  </div>
+
+                  <div class="form-check p-3 rounded-3 border" style="cursor: pointer;">
+                    <input class="form-check-input ms-0 me-3" type="radio" name="planRadio" id="plan3" value="1200000" onchange="updateCalc()">
+                    <label class="form-check-label w-100" for="plan3">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <span class="fw-bold">Plan Avanzado / Tienda Completa</span>
+                        <span class="badge bg-dark">$1.200.000 COP</span>
+                      </div>
+                      <small class="text-muted d-block mt-1">E-commerce completo, panel administrativo, pagos online y filtros avanzados.</small>
+                    </label>
+                  </div>
+                </div>
+
+                <h5 class="fw-bold mb-3 brand-title"><i class="fa-solid fa-server me-2 text-primary"></i>2. Infraestructura Anual Obligatoria (Fija)</h5>
+                <div class="list-group mb-3">
+                  <div class="list-group-item d-flex justify-content-between align-items-center">
+                    <div>
+                      <div class="fw-semibold">Hosting SSD Alta Velocidad (1er Año)</div>
+                      <small class="text-muted">Certificado SSL Let's Encrypt incluido + Soporte</small>
+                    </div>
+                    <span class="fw-bold text-secondary">$170.000 COP</span>
+                  </div>
+                  <div class="list-group-item d-flex justify-content-between align-items-center">
+                    <div>
+                      <div class="fw-semibold">Dominio Propio .COM o .CO (1er Año)</div>
+                      <small class="text-muted">Registro oficial a nombre del cliente</small>
+                    </div>
+                    <span class="fw-bold text-secondary">$52.000 COP</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-5">
+                <div class="p-4 rounded-4 bg-light border text-center h-100 d-flex flex-column justify-content-between order-box">
+                  <div>
+                    <span class="badge bg-success mb-2">Total Estimado del Proyecto</span>
+                    <h2 class="display-6 fw-black text-primary mb-1" id="totalCalcDisplay">$872.000 COP</h2>
+                    <p class="text-muted small mb-4">Inversión completa Primer Año (Desarrollo + Hosting + Dominio)</p>
+
+                    <div class="text-start border-top pt-3 mb-3 small">
+                      <div class="d-flex justify-content-between mb-1">
+                        <span>Desarrollo Web:</span>
+                        <strong id="calcDevPrice">$650.000 COP</strong>
+                      </div>
+                      <div class="d-flex justify-content-between mb-1">
+                        <span>Hosting Anual:</span>
+                        <strong>$170.000 COP</strong>
+                      </div>
+                      <div class="d-flex justify-content-between mb-1">
+                        <span>Dominio Propio:</span>
+                        <strong>$52.000 COP</strong>
+                      </div>
+                      <div class="d-flex justify-content-between border-top pt-2 mt-2 fw-bold text-dark brand-title">
+                        <span>Total 1er Año:</span>
+                        <span class="text-success" id="calcTotalSummary">$872.000 COP</span>
+                      </div>
+                      <div class="text-muted text-center mt-2" style="font-size: 11px;">
+                        Renovación a partir del 2do año: sólo Hosting + Dominio ($222.000 COP/año)
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <button onclick="requestQuotePlan()" class="btn btn-primary w-100 fw-bold py-2 shadow-sm mb-2">
+                      <i class="fa-solid fa-paper-plane me-1"></i> Solicitar este Plan por Correo
+                    </button>
+                    <a href="propuesta.html" class="btn btn-outline-dark btn-sm w-100">
+                      <i class="fa-solid fa-file-pdf me-1"></i> Descargar Cotización PDF
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN DE PREGUNTAS FRECUENTES (FAQ) -->
+  <section class="py-5" style="background: white;">
+    <div class="container">
+      <div class="text-center max-w-xl mx-auto mb-4">
+        <h2 class="fw-bold section-heading" style="font-size: 28px;">Preguntas Frecuentes</h2>
+        <p class="text-muted">Respuestas claras sobre los tiempos de entrega, formas de pago y soporte.</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="accordion" id="faqAccordion">
+            <div class="accordion-item faq-card mb-2 border rounded-3 overflow-hidden">
+              <h2 class="accordion-header">
+                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                  ¿Cuánto tiempo toma tener mi página web lista y funcionando?
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-secondary">
+                  El tiempo estimado de entrega es de <strong>5 a 8 días hábiles</strong> a partir de la entrega de los contenidos (fotos, logos e información del catálogo).
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item faq-card mb-2 border rounded-3 overflow-hidden">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                  ¿Cómo es la forma de pago?
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-secondary">
+                  Manejamos un esquema seguro: <strong>50% de anticipo</strong> para iniciar el desarrollo y adquisición del dominio/hosting, y el <strong>50% restante contra entrega</strong> a entera satisfacción tras la aprobación final.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item faq-card mb-2 border rounded-3 overflow-hidden">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                  ¿El dominio y el hosting quedan a mi nombre?
+                </button>
+              </h2>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-secondary">
+                  Totalmente. El registro del dominio y el servidor se configuran a nombre de su establecimiento comercial, garantizando propiedad 100% independiente.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="footer-custom">
+  <footer class="footer-custom" id="contacto-directo">
     <div class="container text-center">
-      <div class="fw-bold text-white mb-2">Dark Restaurantes Ocultos - Hub Delivery Neiva &bull; Dark Restaurantes Ocultos S.A.S.</div>
-      <div class="mb-3">Calle 12 Sur # 2 - 47, Neiva, Huila &bull; Teléfono: </div>
-      <div class="text-muted" style="font-size: 12px;">Demostración web y arquitectura digital diseñada por SAIS Gallego (serujio28@gmail.com). Todos los derechos reservados.</div>
+      <h4 class="text-white fw-bold mb-2">Dark Restaurantes Ocultos - Hub Delivery Neiva</h4>
+      <p class="text-muted mb-3" style="max-width: 600px; margin: 0 auto;">Demostración interactiva de propuesta web profesional desarrollada por Sergio Morales. Contacto exclusivo y oficial vía correo electrónico.</p>
+      <div class="d-flex justify-content-center align-items-center gap-3 mb-4">
+        <a href="mailto:serujio28@gmail.com" class="btn btn-warning fw-bold px-4 py-2 text-dark">
+          <i class="fa-solid fa-envelope me-2"></i>Escribir a serujio28@gmail.com
+        </a>
+        <a href="propuesta.html" class="btn btn-outline-light px-4 py-2">
+          <i class="fa-solid fa-file-pdf me-2"></i>Ver Propuesta Oficial PDF
+        </a>
+      </div>
+      <div class="text-secondary small border-top border-secondary border-opacity-25 pt-3">
+        &copy; 2026 Dark Restaurantes Ocultos - Hub Delivery Neiva &bull; Propuesta Web y Cotización Formal por Sergio Morales &bull; serujio28@gmail.com
+      </div>
     </div>
   </footer>
 
+  <!-- Botón Flotante de Mi Solicitud -->
+  <div class="floating-cart-btn" onclick="openCart()" id="floatingCart">
+    <i class="fa-solid fa-clipboard-list fs-5"></i>
+    <span>Mi Solicitud</span>
+    <span class="cart-badge" id="cartCountBadge">0</span>
+  </div>
+
+  <!-- Modal del Carrito / Solicitud -->
+  <div class="modal fade" id="cartModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-4 border-0 shadow">
+        <div class="modal-header border-0 pb-0">
+          <h5 class="modal-title fw-bold brand-title"><i class="fa-solid fa-basket-shopping me-2 text-primary"></i>Su Selección para Consulta</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div id="cartEmptyState" class="text-center py-4 text-muted">
+            <i class="fa-solid fa-inbox fs-1 mb-2 opacity-50"></i>
+            <p>No ha seleccionado ningún ítem aún.<br>Explore el catálogo y haga clic en "Añadir a mi solicitud".</p>
+          </div>
+          <div id="cartItemsList" class="d-flex flex-column gap-2 mb-3"></div>
+          
+          <div id="cartSummaryBlock" class="d-none border-top pt-3">
+            <div class="d-flex justify-content-between align-items-center fw-bold fs-5 mb-3">
+              <span>Total Estimado:</span>
+              <span class="text-success" id="cartTotalSum">$0</span>
+            </div>
+            <div class="mb-3">
+              <label class="form-label small fw-bold">Su Nombre o Razón Social:</label>
+              <input type="text" id="clientNameInput" class="form-control" placeholder="Ej. Carlos Mendoza">
+            </div>
+            <div class="mb-3">
+              <label class="form-label small fw-bold">Mensaje o Instrucción Especial (Opcional):</label>
+              <textarea id="clientNoteInput" class="form-control" rows="2" placeholder="Ej. Requiero entrega para evento el fin de semana..."></textarea>
+            </div>
+            <button onclick="sendOrderEmail()" class="btn btn-primary w-100 fw-bold py-2 shadow-sm">
+              <i class="fa-solid fa-paper-plane me-2"></i>Enviar Solicitud por Correo Electrónico
+            </button>
+            <small class="text-muted d-block text-center mt-2">Se abrirá su cliente de correo con el pedido pre-formateado hacia serujio28@gmail.com</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     const MENU_ITEMS = [{"id": "d1", "category": "Smash Burgers", "title": "Doble Smash Burger Trufada", "price": "$24.500", "desc": "Doble carne de res aplastada a la plancha, queso cheddar americano, mayonesa trufada casera en pan brioche suave.", "img": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80"}, {"id": "d2", "category": "Crispy Chicken", "title": "Crispy Chicken Sándwich", "price": "$22.000", "desc": "Pechuga de pollo apanada al estilo sureño extra crujiente, ensalada coleslaw, pepinillos y salsa honey mustard.", "img": "https://images.unsplash.com/photo-1625813506062-0aeb1d7a094b?auto=format&fit=crop&w=700&q=80"}, {"id": "d3", "category": "Bowls Saludables", "title": "Poke Bowl de Pollo Teriyaki", "price": "$25.000", "desc": "Base de arroz de sushi o quinoa, pollo teriyaki sellado, aguacate hass, edamames, maíz tierno y ajonjolí tostado.", "img": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=700&q=80"}, {"id": "d4", "category": "Pizza Artesanal", "title": "Pizza Pepperoni & Hot Honey (Personal)", "price": "$23.000", "desc": "Masa madre fermentada 48 horas, salsa pomodoro italiana, mozzarella fiordilatte, pepperoni y toque de miel picante.", "img": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=700&q=80"}, {"id": "d5", "category": "Alitas", "title": "Combo 10 Alitas Buffalo o BBQ", "price": "$28.000", "desc": "10 piezas de alitas crujientes bañadas en la salsa de tu elección, acompañadas de bastones de apio y salsa blue cheese.", "img": "https://images.unsplash.com/photo-1527477321055-43615b6294a5?auto=format&fit=crop&w=700&q=80"}, {"id": "d6", "category": "Bebidas", "title": "Limonada de Coco Natural", "price": "$9.000", "desc": "Zumo de limón fresco licuado con crema de coco cremosa y hielo frappé.", "img": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=700&q=80"}];
+    let currentFilter = "Todos";
+    let cart = [];
 
     function renderDishes(items) {
-      const grid = document.getElementById('dishesGrid');
-      grid.innerHTML = '';
+      const grid = document.getElementById("dishesGrid");
+      if (!grid) return;
+      grid.innerHTML = "";
       if (items.length === 0) {
-        grid.innerHTML = '<div class="col-12 text-center text-muted py-5"><h5>No se encontraron platos con ese criterio.</h5></div>';
+        grid.innerHTML = '<div class="col-12 text-center py-5 text-muted">No se encontraron productos coincidentes.</div>';
         return;
       }
       items.forEach(dish => {
-        const col = document.createElement('div');
-        col.className = 'col-md-6 col-lg-4';
+        const col = document.createElement("div");
+        col.className = "col-md-6 col-lg-4";
         col.innerHTML = `
           <div class="dish-card">
-            <img src="${dish.img}" alt="${dish.title}" class="dish-img">
+            <img src="${dish.image}" alt="${dish.name}" class="dish-img">
             <div class="dish-body">
               <div class="dish-cat">${dish.category}</div>
-              <h3 class="dish-title">${dish.title}</h3>
-              <p class="dish-desc">${dish.desc}</p>
-              <div class="d-flex justify-content-between align-items-center pt-2 border-top">
+              <h5 class="dish-title">${dish.name}</h5>
+              <p class="dish-desc">${dish.description}</p>
+              <div class="d-flex justify-content-between align-items-center mt-auto pt-2 border-top">
                 <span class="dish-price">${dish.price}</span>
-                <button class="btn btn-sm btn-outline-dark fw-semibold" onclick="openBookingModal(\'\${dish.id || dish.title}\')">
-                  <i class="fa-solid fa-plus me-1"></i> Pedir
+                <button class="btn btn-sm btn-outline-primary fw-bold px-3 rounded-pill" onclick="addToCart('${dish.name.replace(/'/g, "\\'")}', '${dish.price}')">
+                  <i class="fa-solid fa-plus me-1"></i> Añadir
                 </button>
               </div>
             </div>
@@ -268,80 +691,164 @@
       });
     }
 
-    function filterMenu(cat, btn) {
-      document.querySelectorAll('.cat-pill').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      if (cat === 'all') {
-        renderDishes(MENU_ITEMS);
-      } else {
-        const filtered = MENU_ITEMS.filter(it => it.category === cat);
-        renderDishes(filtered);
-      }
+    function filterMenu(category, btn) {
+      currentFilter = category;
+      document.querySelectorAll(".cat-pill").forEach(p => p.classList.remove("active"));
+      if (btn) btn.classList.add("active");
+      applyFilters();
     }
 
-    function searchMenu() {
-      const q = document.getElementById('searchInput').value.toLowerCase();
-      const filtered = MENU_ITEMS.filter(it => 
-        it.title.toLowerCase().includes(q) || 
-        it.desc.toLowerCase().includes(q) || 
-        it.category.toLowerCase().includes(q)
-      );
+    function filterMenuSearch() {
+      applyFilters();
+    }
+
+    function sortMenu() {
+      applyFilters();
+    }
+
+    function applyFilters() {
+      const search = (document.getElementById("searchInput")?.value || "").toLowerCase();
+      const sort = document.getElementById("sortSelect")?.value || "default";
+
+      let filtered = MENU_ITEMS.filter(it => {
+        const matchCat = (currentFilter === "Todos") || (it.category === currentFilter);
+        const matchSearch = it.name.toLowerCase().includes(search) || it.description.toLowerCase().includes(search);
+        return matchCat && matchSearch;
+      });
+
+      if (sort === "price-asc") {
+        filtered.sort((a, b) => parseInt(a.price.replace(/[^0-9]/g, '')) - parseInt(b.price.replace(/[^0-9]/g, '')));
+      } else if (sort === "price-desc") {
+        filtered.sort((a, b) => parseInt(b.price.replace(/[^0-9]/g, '')) - parseInt(a.price.replace(/[^0-9]/g, '')));
+      }
+
       renderDishes(filtered);
     }
 
-    // Inicializar carta
-    renderDishes(MENU_ITEMS);
-  </script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
-    function openBookingModal(itemKey) {
-      const item = MENU_ITEMS.find(i => (i.id && i.id === itemKey) || i.title === itemKey);
-      if (!item) return;
-      document.getElementById('modalDishTitle').textContent = item.title;
-      document.getElementById('modalDishImg').src = item.img || '';
-      document.getElementById('modalDishImg').style.display = item.img ? 'block' : 'none';
-      document.getElementById('modalDishCat').textContent = item.category || 'Servicio';
-      document.getElementById('modalDishPrice').textContent = item.price || '';
-      document.getElementById('modalDishDesc').textContent = item.desc || '';
-      
-      const subject = encodeURIComponent(`Consulta: ${item.title}`); const body = encodeURIComponent(`Hola, quisiera recibir más información y reservar el servicio: ${item.title} (${item.price}).`); if (document.getElementById('modalMailBtn')) document.getElementById('modalMailBtn').href = `mailto:serujio28@gmail.com?subject=${subject}&body=${body}`;
-      
-      const modalEl = document.getElementById('quickBookingModal');
-      if (window.bootstrap && bootstrap.Modal) {
-        bootstrap.Modal.getOrCreateInstance(modalEl).show();
+    // Shopping Cart Functions
+    function addToCart(name, price) {
+      cart.push({ name, price });
+      updateCartBadge();
+      const toastBtn = document.getElementById("floatingCart");
+      if (toastBtn) {
+        toastBtn.style.transform = "scale(1.15)";
+        setTimeout(() => toastBtn.style.transform = "scale(1)", 200);
       }
     }
 
+    function updateCartBadge() {
+      const badge = document.getElementById("cartCountBadge");
+      if (badge) badge.innerText = cart.length;
+    }
+
+    function openCart() {
+      const list = document.getElementById("cartItemsList");
+      const emptyState = document.getElementById("cartEmptyState");
+      const summaryBlock = document.getElementById("cartSummaryBlock");
+      const totalDisplay = document.getElementById("cartTotalSum");
+
+      if (cart.length === 0) {
+        emptyState.classList.remove("d-none");
+        summaryBlock.classList.add("d-none");
+        list.innerHTML = "";
+      } else {
+        emptyState.classList.add("d-none");
+        summaryBlock.classList.remove("d-none");
+        list.innerHTML = "";
+        let total = 0;
+
+        cart.forEach((it, idx) => {
+          const num = parseInt(it.price.replace(/[^0-9]/g, '')) || 0;
+          total += num;
+          const div = document.createElement("div");
+          div.className = "d-flex justify-content-between align-items-center p-2 rounded bg-light border";
+          div.innerHTML = `
+            <div>
+              <div class="fw-bold small">${it.name}</div>
+              <small class="text-success">${it.price}</small>
+            </div>
+            <button class="btn btn-sm btn-outline-danger py-0 px-2" onclick="removeFromCart(${idx})">
+              <i class="fa-solid fa-trash fs-6"></i>
+            </button>
+          `;
+          list.appendChild(div);
+        });
+
+        totalDisplay.innerText = "$" + total.toLocaleString('es-CO') + " COP";
+      }
+
+      const modal = new bootstrap.Modal(document.getElementById('cartModal'));
+      modal.show();
+    }
+
+    function removeFromCart(idx) {
+      cart.splice(idx, 1);
+      updateCartBadge();
+      openCart();
+    }
+
+    function sendOrderEmail() {
+      const client = document.getElementById("clientNameInput").value || "Cliente Interesado";
+      const note = document.getElementById("clientNoteInput").value || "Sin notas adicionales";
+      let itemsListText = cart.map(i => `- ${i.name} (${i.price})`).join("%0D%0A");
+      
+      const subject = encodeURIComponent("Solicitud de Pedido / Consulta - Dark Restaurantes Ocultos - Hub Delivery Neiva");
+      const body = `Hola Sergio,%0D%0A%0D%0AHe seleccionado los siguientes ítems del catálogo web de Dark Restaurantes Ocultos - Hub Delivery Neiva:%0D%0A${itemsListText}%0D%0A%0D%0ACliente: ${encodeURIComponent(client)}%0D%0ANotas: ${encodeURIComponent(note)}%0D%0A%0D%0AQuedo atento a la confirmación de disponibilidad y tiempos.`;
+
+      window.location.href = `mailto:serujio28@gmail.com?subject=${subject}&body=${body}`;
+    }
+
+    // Simulator Functions
+    function updateCalc() {
+      const planVal = parseInt(document.querySelector('input[name="planRadio"]:checked').value);
+      const hosting = 170000;
+      const domain = 52000;
+      const total = planVal + hosting + domain;
+
+      document.getElementById("calcDevPrice").innerText = "$" + planVal.toLocaleString('es-CO') + " COP";
+      document.getElementById("totalCalcDisplay").innerText = "$" + total.toLocaleString('es-CO') + " COP";
+      document.getElementById("calcTotalSummary").innerText = "$" + total.toLocaleString('es-CO') + " COP";
+    }
+
+    function requestQuotePlan() {
+      const planName = document.querySelector('input[name="planRadio"]:checked').parentNode.querySelector('.fw-bold').innerText;
+      const total = document.getElementById("totalCalcDisplay").innerText;
+
+      const subject = encodeURIComponent("Interés en Propuesta Web: " + planName + " - Dark Restaurantes Ocultos - Hub Delivery Neiva");
+      const body = encodeURIComponent("Hola Sergio,
+
+Revisé la propuesta web para Dark Restaurantes Ocultos - Hub Delivery Neiva y estoy interesado en el siguiente paquete:
+
+- " + planName + "
+- Hosting SSD 1er Año ($170.000 COP)
+- Dominio Propio 1er Año ($52.000 COP)
+- Inversión Total 1er Año: " + total + "
+
+Por favor contáctame para coordinar el inicio del desarrollo.
+
+Saludos,");
+
+      window.location.href = `mailto:serujio28@gmail.com?subject=${subject}&body=${body}`;
+    }
+
+    // Theme Switcher
+    function toggleTheme() {
+      const html = document.documentElement;
+      const btn = document.getElementById("themeBtn");
+      const current = html.getAttribute("data-bs-theme");
+      if (current === "dark") {
+        html.setAttribute("data-bs-theme", "light");
+        btn.innerHTML = '<i class="fa-solid fa-moon"></i>';
+      } else {
+        html.setAttribute("data-bs-theme", "dark");
+        btn.innerHTML = '<i class="fa-solid fa-sun text-warning"></i>';
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      renderDishes(MENU_ITEMS);
+      updateCalc();
+    });
   </script>
-
-  <!-- Modal Armónico de Reserva Rápida -->
-  <div class="modal fade" id="quickBookingModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content" style="border-radius: 16px; border: 1px solid #e2e8f0; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.12);">
-        <div class="modal-header" style="background: #0f172a; color: white; border: none; padding: 18px 24px;">
-          <h5 class="modal-title fw-bold" id="modalDishTitle" style="font-size: 18px;">Detalle del Servicio</h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body" style="padding: 24px;">
-          <img id="modalDishImg" src="" alt="" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 16px;">
-          <div class="d-flex justify-content-between align-items-center mb-2">
-            <span class="badge" id="modalDishCat" style="background: var(--primary, #0f172a); font-size: 11px; text-transform: uppercase;"></span>
-            <span class="fw-bold fs-5 text-dark" id="modalDishPrice"></span>
-          </div>
-          <p class="text-muted" id="modalDishDesc" style="font-size: 14px; line-height: 1.6;"></p>
-          
-          <div class="d-grid gap-2 mt-4">
-            <a href="mailto:serujio28@gmail.com?subject=Consulta%20de%20Servicio" id="modalMailBtn" class="btn btn-dark fw-bold py-2" style="border-radius: 10px; font-size: 15px; background: #0f172a;">
-              <i class="fa-solid fa-envelope me-2"></i> Solicitar Información / Reservar por Correo
-            </a>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  
-
 </body>
 </html>
