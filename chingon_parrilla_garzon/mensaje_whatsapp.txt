@@ -1,0 +1,15 @@
+Hola equipo de *Chingón Parrilla* (Garzón, Huila) 👋
+
+Les escribe Sergio de *SAIS Gallego (Desarrollo Web)*.
+
+Estuvimos revisando su excelente trayectoria en Parrilla al Carbón, Cortes Finos & Asados en Garzón, Huila y preparamos una *demostración web en vivo* con su carta digital y precios interactivos para que sus clientes puedan pedir directamente sin pagar comisiones:
+
+🌐 *Ver demo en vivo:*
+https://trabajoso-two.vercel.app/chingon_parrilla_garzon/
+
+📄 *Ver cotización formal PDF:*
+https://trabajoso-two.vercel.app/chingon_parrilla_garzon/propuesta.html
+
+Plan completo por *$650.000 COP* (inversión total primer año con hosting y dominio desde *$872.000 COP*).
+
+¿Les gustaría que conversemos brevemente sobre cómo implementarlo para su negocio? Quedo atento por este medio. ¡Muchas gracias!
