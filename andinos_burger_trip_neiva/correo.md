@@ -23,13 +23,13 @@ Beneficios inmediatos para Andinos Burger Trip:
 - Botones de contacto y pedidos directos sin intermediarios.
 - Presencia profesional en Google y mapa de ubicación para clientes locales y turistas.
 
-Si les interesa evaluar la implementación, pueden responder directamente a este correo o escribirnos al WhatsApp +57 311 394 8502.
+Si les interesa evaluar la implementación, pueden responder directamente a este correo o escribirnos al WhatsApp +57 321 338 6504.
 
 Atentamente,
 
 SAIS Gallego | Desarrollo web y soluciones digitales
 Correo: serujio28@gmail.com
-WhatsApp: +57 311 394 8502
+WhatsApp: +57 321 338 6504
 Portafolio: https://github.com/serujio123
 
 Si no desea recibir más propuestas, responda 'cancelar'.

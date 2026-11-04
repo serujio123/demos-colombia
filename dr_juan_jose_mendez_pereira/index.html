@@ -831,7 +831,7 @@
         <button class="btn-login" onclick="openLoginModal()">
           <i class="fa-solid fa-lock"></i> Acceso CMS
         </button>
-        <a href="https://wa.me/57573113948502?text=Hola,%20los%20contacto%20desde%20su%20sitio%20web" target="_blank" class="btn-whatsapp-header" id="btn-wa-header">
+        <a href="https://wa.me/57573213386504?text=Hola,%20los%20contacto%20desde%20su%20sitio%20web" target="_blank" class="btn-whatsapp-header" id="btn-wa-header">
           <i class="fa-brands fa-whatsapp"></i> WhatsApp
         </a>
       </div>
@@ -919,7 +919,7 @@
               <span class="info-icon"><i class="fa-solid fa-phone"></i></span>
               <div>
                 <strong>Línea de Pedidos / WhatsApp:</strong><br>
-                <span id="info-biz-phone">+57 311 394 8502</span>
+                <span id="info-biz-phone">+57 321 338 6504</span>
               </div>
             </li>
           </ul>
@@ -936,7 +936,7 @@
   </section>
 
   <!-- Botón Flotante WhatsApp -->
-  <a href="https://wa.me/57573113948502?text=Hola,%20los%20contacto%20desde%20su%20p%C3%A1gina%20web" class="whatsapp-float" target="_blank" id="wa-float" title="Pedir por WhatsApp">
+  <a href="https://wa.me/57573213386504?text=Hola,%20los%20contacto%20desde%20su%20p%C3%A1gina%20web" class="whatsapp-float" target="_blank" id="wa-float" title="Pedir por WhatsApp">
     <i class="fa-brands fa-whatsapp"></i>
   </a>
 
@@ -974,11 +974,11 @@
       </div>
       <div class="form-group">
         <label>Teléfono WhatsApp (sin espacios ni signos):</label>
-        <input type="text" id="edit-biz-phone" class="form-control" placeholder="573113948502">
+        <input type="text" id="edit-biz-phone" class="form-control" placeholder="573213386504">
       </div>
       <div class="form-group">
         <label>Teléfono Visible:</label>
-        <input type="text" id="edit-biz-phone-display" class="form-control" placeholder="+57 311 394 8502">
+        <input type="text" id="edit-biz-phone-display" class="form-control" placeholder="+57 321 338 6504">
       </div>
       <div class="form-group">
         <label>Dirección Física en Colombia:</label>
@@ -1042,7 +1042,7 @@
 
   <!-- Lógica JavaScript Dinámica y CMS -->
   <script>
-    const INITIAL_BIZ = {"id": "dr_juan_jose_mendez_pereira", "name": "Dr. Juan José Méndez Implantes", "tagline": "", "phone": "573113948502", "phone_display": "+57 311 394 8502", "address": "Novacentro Pereira, Consultorio 501, Pereira, Risaralda", "map_query": "Novacentro Pereira, Risaralda, Colombia", "primary_color": "#1e3a8a", "icon_class": "fa-solid fa-tooth", "city_region": "Pereira, Risaralda (Novacentro)", "city_short": "Colombia"};
+    const INITIAL_BIZ = {"id": "dr_juan_jose_mendez_pereira", "name": "Dr. Juan José Méndez Implantes", "tagline": "", "phone": "573213386504", "phone_display": "+57 321 338 6504", "address": "Novacentro Pereira, Consultorio 501, Pereira, Risaralda", "map_query": "Novacentro Pereira, Risaralda, Colombia", "primary_color": "#1e3a8a", "icon_class": "fa-solid fa-tooth", "city_region": "Pereira, Risaralda (Novacentro)", "city_short": "Colombia"};
     const INITIAL_CAROUSEL = [{"badge": "IMPLANTES & REHABILITACIÓN ORAL · NOVACENTRO PEREIRA", "title": "Implantología Oral de Avanzada en Novacentro Pereira", "subtitle": "Especialista en implantes dentales, prótesis sobre implantes y odontología reconstructiva en Pereira.", "img": "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=700&q=80"}, {"badge": "Zirconio", "title": "Coronas sobre Implantes en Zirconio Puro", "subtitle": "Estructuras sin metal de alta durabilidad y estética natural idéntica al diente.", "img": "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=700&q=80"}, {"badge": "Estética", "title": "Carillas Cerámicas E-Max", "subtitle": "Lentes de porcelana para armonización estética de alta gama.", "img": "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=700&q=80"}];
     const INITIAL_MENU_DIA = [{"badge": "Implantes", "title": "Implantes Dentales de Titanio con Carga Guiada", "desc": "Sustitución biocompatible de alta precisión para recuperar piezas perdidas.", "price": "$2.400.000 COP", "img": "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=700&q=80"}, {"badge": "Zirconio", "title": "Coronas sobre Implantes en Zirconio Puro", "desc": "Estructuras sin metal de alta durabilidad y estética natural idéntica al diente.", "price": "$1.100.000 COP", "img": "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=700&q=80"}, {"badge": "Estética", "title": "Carillas Cerámicas E-Max", "desc": "Lentes de porcelana para armonización estética de alta gama.", "price": "$1.250.000 / pieza", "img": "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=700&q=80"}];
     const INITIAL_CARTA = [{"badge": "Implantes", "title": "Implantes Dentales de Titanio con Carga Guiada", "desc": "Sustitución biocompatible de alta precisión para recuperar piezas perdidas.", "price": "$2.400.000 COP", "img": "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=700&q=80"}, {"badge": "Zirconio", "title": "Coronas sobre Implantes en Zirconio Puro", "desc": "Estructuras sin metal de alta durabilidad y estética natural idéntica al diente.", "price": "$1.100.000 COP", "img": "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=700&q=80"}, {"badge": "Estética", "title": "Carillas Cerámicas E-Max", "desc": "Lentes de porcelana para armonización estética de alta gama.", "price": "$1.250.000 / pieza", "img": "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=700&q=80"}, {"badge": "Blanqueamiento", "title": "Blanqueamiento Dental Láser Clínico", "desc": "Aclaramiento intensivo sin provocar sensibilidad.", "price": "$420.000 COP", "img": "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=700&q=80"}, {"badge": "Regeneración", "title": "Injerto Óseo & Regeneración Guiada", "desc": "Preparación previa para pacientes con pérdida ósea para recibir implantes.", "price": "$850.000 COP", "img": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=700&q=80"}, {"badge": "Higiene", "title": "Mantenimiento Periódico de Implantes & Profilaxis", "desc": "Cuidado profiláctico especializado para prótesis e implantes fijos.", "price": "$140.000 COP", "img": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=700&q=80"}];

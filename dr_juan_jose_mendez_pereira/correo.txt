@@ -41,7 +41,7 @@ El desarrollo se paga una sola vez. El hosting y el dominio corresponden a renov
 ¿Hablamos del proyecto?
 Me gustaría tener la oportunidad de presentarles esta propuesta y conocer qué funcionalidades consideran importantes para su equipo.
 
-Si les interesa, podemos conversar por este medio o WhatsApp al +57 311 394 8502. Estoy disponible para resolver sus dudas y ajustar la propuesta sin ningún compromiso.
+Si les interesa, podemos conversar por este medio o WhatsApp al +57 321 338 6504. Estoy disponible para resolver sus dudas y ajustar la propuesta sin ningún compromiso.
 
 Gracias por su tiempo.
 
